@@ -1,0 +1,37 @@
+[project]
+name = "core"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Hoanghuygia",email = "hoanghuy051230@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "uvicorn (>=0.29.0,<0.30.0)",
+    "gunicorn (>=22.0.0,<23.0.0)",
+    "fastapi (>=0.110.0,<0.111.0)",
+    "pydantic (>=2.6.3,<3.0.0)",
+    "email-validator (>=2.1.1,<3.0.0)",
+    "passlib[bcrypt] (>=1.7.4,<2.0.0)",
+    "pyjwt (>=2.8.0,<3.0.0)",
+    "alembic (>=1.13.1,<2.0.0)",
+    "python-slugify (>=8.0.4,<9.0.0)",
+    "unidecode (>=1.3.8,<2.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "databases (>=0.8.0,<0.9.0)",
+    "motor (>=3.3.2,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "core", from = "src"}]
+
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
