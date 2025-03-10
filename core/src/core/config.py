@@ -10,7 +10,8 @@ class Settings(BaseSettings):
     MAX_CONNECTIONS_COUNT: int = 10
     MIN_CONNECTIONS_COUNT: int = 10
     DB_NAME: str     
-    SECRET_KEY: str   
+    SECRET_KEY: str  
+    API_VERSION_1: str = "/apiv1" 
     
     class Config:
         env_file = ".env"
