@@ -27,6 +27,8 @@ Urban traffic congestion is a major challenge for modern cities. This web-based 
 
 ## 🏗️ Technologies Used
 - 🟢 **FastAPI** - Backend framework for API development
+Poetry manage dependencies
+Swagger documentation is available
 - ⚡ **React.js** - Frontend framework for building user interfaces
 - 🗄️ **MongoDB** - NoSQL database for storing traffic and user data
 - 🖥️ **Google OAuth API** - User authentication and authorization
