@@ -1,0 +1,41 @@
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+*.out
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+coverage.xml
+
+# Temporary files
+*.bak
+*.tmp
+
+# macOS
+.DS_Store
+
+# Pyenv (nếu không dùng, có thể bỏ)
+.python-version
