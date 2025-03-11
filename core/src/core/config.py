@@ -9,9 +9,11 @@ class Settings(BaseSettings):
     MONGODB_URL: str  
     MAX_CONNECTIONS_COUNT: int = 10
     MIN_CONNECTIONS_COUNT: int = 10
-    DB_NAME: str     
-    SECRET_KEY: str  
+    DB_NAME: str = "data"   
+    USER_COLLECTION_NAME: str = "users" 
+    SECRET_KEY: str  =  os.getenv("SECRET_KEY", "")
     API_VERSION_1: str = "/apiv1" 
+    ACCESSS_TOKEN_EXPIRED_TIME: int = 60 * 24 * 7
     
     class Config:
         env_file = ".env"
