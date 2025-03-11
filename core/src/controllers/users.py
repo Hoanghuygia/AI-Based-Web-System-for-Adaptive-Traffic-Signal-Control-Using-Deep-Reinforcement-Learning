@@ -29,6 +29,7 @@ async def get_user_by_username(conn: AsyncIOMotorClient, username: str) -> UserI
         {"username": username}
     )
     if user:
+        user["_id"] = str(user["_id"])
         return UserInDB(**user)
 
 
@@ -46,7 +47,7 @@ async def create_user(conn: AsyncIOMotorClient, user: UserInLogin) -> UserInDB:
     db_user.change_password(user.password)
 
     row = await conn[settings.DB_NAME][settings.USER_COLLECTION_NAME].insert_one(
-        db_user.model_dump()
+        db_user.model_dump(exclude={"id"})
     )
 
     db_user.id = row.inserted_id
