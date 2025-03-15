@@ -9,7 +9,7 @@ class UserBase(RWModel):
     image: AnyUrl | None = None
     
 class UserInDB(DBModelMixin, UserBase):
-    salt: str = ""
+    salt: str = "" # we need to use salt to generate random string because if we do not use salt then the two passwords which the same will have the same hased string
     hashed_password: str = ""
     
     def check_password(self, password: str):

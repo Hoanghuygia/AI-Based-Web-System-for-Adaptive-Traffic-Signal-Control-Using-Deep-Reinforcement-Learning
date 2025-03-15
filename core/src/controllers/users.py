@@ -39,8 +39,10 @@ async def create_user(conn: AsyncIOMotorClient, user: UserInLogin) -> UserInDB:
     ].find_one({"username": user.username})
 
     if existing_user:
+        print("User already")
         raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST, detail="Username already registered"
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Username already registered",
         )
 
     db_user = UserInDB(**user.model_dump())
@@ -50,8 +52,15 @@ async def create_user(conn: AsyncIOMotorClient, user: UserInLogin) -> UserInDB:
         db_user.model_dump(exclude={"id"})
     )
 
-    db_user.id = row.inserted_id
+    db_user.id = str(
+        row.inserted_id
+    )  # at here the row.insered_id has the value as objet_id but db_user.id is type int
     db_user.created_at = ObjectId(db_user.id).generation_time
     db_user.updated_at = ObjectId(db_user.id).generation_time
+
+    await conn[settings.DB_NAME][settings.USER_COLLECTION_NAME].update_one(
+        {"_id": ObjectId(db_user.id)},
+        {"$set": {"createdAt": db_user.created_at, "updatedAt": db_user.updated_at}},
+    )
 
     return db_user
