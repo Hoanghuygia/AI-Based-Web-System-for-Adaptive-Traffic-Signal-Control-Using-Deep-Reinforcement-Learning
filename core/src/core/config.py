@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     SECRET_KEY: str  =  os.getenv("SECRET_KEY", "")
     API_VERSION_1: str = "/apiv1" 
     ACCESSS_TOKEN_EXPIRED_TIME: int = 60 * 24 * 7
+    JWT_TOKEN_PREFIX: str = "Token"
     
     class Config:
         env_file = ".env"
