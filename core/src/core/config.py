@@ -13,9 +13,8 @@ class Settings(BaseSettings):
     USER_COLLECTION_NAME: str = "users" 
     SECRET_KEY: str  =  os.getenv("SECRET_KEY", "")
     API_VERSION_1: str = "/apiv1"  
-    # ACCESSS_TOKEN_EXPIRED_TIME: int = 60 * 24 * 7 # token last one week
-    ACCESSS_TOKEN_EXPIRED_TIME: int = 15 # token last one minute
-    REFRESH_TOKEN_EXPIRED_TIME: int = 15 # token last one minute
+    REFRESH_TOKEN_EXPIRED_TIME: int = 60 * 24 * 7 # token last one week
+    ACCESSS_TOKEN_EXPIRED_TIME: int = 30 # token last 30 minutes
     JWT_TOKEN_PREFIX: str = "Token"
     
     class Config:
