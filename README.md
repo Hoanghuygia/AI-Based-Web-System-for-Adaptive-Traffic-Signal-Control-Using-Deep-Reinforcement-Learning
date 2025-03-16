@@ -66,6 +66,7 @@ poetry install
 echo "MONGODB_URL=mongodb://localhost:27017" > .env
 echo "DB_NAME=traffic_db" >> .env
 echo "SECRET_KEY=your_secret_key_here" >> .env
+echo "PROJECT_NAME=your_project_name_here" >> .env
 
 # Run the FastAPI server
 # Option 1: Run directly with Poetry
@@ -82,13 +83,21 @@ exit
 ### Frontend Setup (To Be Updated)
 ```bash
 # Navigate to the frontend directory
-cd frontend
+cd client
 
 # Install dependencies
 npm install
 
 # Start the development server
 npm start
+```
+
+### Model Setup (To Be Updated)
+```bash
+# Navigate to the frontend directory
+cd model
+
+
 ```
 
 ---
@@ -105,9 +114,9 @@ npm start
 
 | Method | Endpoint | Description |
 |--------|---------|-------------|
-| GET    | `/api/users` | Retrieve a list of users |
-| POST   | `/api/login` | User login |
-| PUT    | `/api/users/:id` | Update user information |
+| GET    | `/apiv1/user/me` | Retrieve current users |
+| POST   | `/apiv1/login` | User login |
+| PUT    | `apiv1/register` | User register |
 | DELETE | `/api/users/:id` | Delete a user |
 
 _(More API endpoints will be added as the project progresses.)_
