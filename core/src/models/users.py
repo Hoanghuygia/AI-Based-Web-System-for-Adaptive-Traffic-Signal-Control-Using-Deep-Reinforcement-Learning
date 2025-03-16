@@ -22,6 +22,7 @@ class UserInDB(DBModelMixin, UserBase):
     
 class User(UserBase):
     token: str
+    refresh_token: str
     
 class UserInResponse(RWModel):
     user: User
