@@ -1,7 +1,6 @@
 from fastapi import FastAPI, status
 from starlette.exceptions import HTTPException
 from starlette.middleware.cors import CORSMiddleware
-# from starlette.status import Status
 
 from src.core.config import settings
 from src.core.errors import http_422_error_handler, http_error_handler
