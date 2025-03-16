@@ -27,11 +27,11 @@ async def http_422_error_handler(request: Request, exc: HTTPException) -> JSONRe
 
     if isinstance(exc.detail, Iterable) and not isinstance(
         exc.detail, str
-    ):  # check if error is pydantic's model error
+    ):  
         for error in exc.detail:
             error_name = ".".join(
                 error["loc"][1:]
-            )  # remove 'body' from path to invalid element
+            ) 
             errors["body"].append({error_name: error["msg"]})
     else:
         errors["body"].append(exc.detail)
