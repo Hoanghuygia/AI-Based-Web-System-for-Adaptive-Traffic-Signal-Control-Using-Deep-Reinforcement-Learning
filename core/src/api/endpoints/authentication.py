@@ -33,6 +33,7 @@ async def login(
     )
     return UserInResponse(user=User(**db_user.model_dump(), token=token))
 
+
 @router.post(
     "/users/register",
     response_model=UserInResponse,
