@@ -13,6 +13,7 @@ from .config import settings
 
 ALGORITHM = "HS256"
 access_token_jwt_subject = "access"
+refresh_token_jwt_subject = "refresh"
 
 
 def create_access_token(*, data: dict, expires_delta: timedelta | None = None):
@@ -27,7 +28,21 @@ def create_access_token(*, data: dict, expires_delta: timedelta | None = None):
     return encoded_jwt
 
 
-def _get_authorization_token(authorization: str = Header(...)):
+def create_token(*, data: dict, expires_delta: timedelta | None = None):
+    to_encode = data.copy()
+    
+    if expires_delta:
+        expire = datetime.now(timezone.utc) + expires_delta
+    else:
+        expire = datetime.now(timezone.utc) + timedelta(minutes=15)
+
+    to_encode.update({"exp": expire})
+    encoded_jwt = jwt.encode(to_encode, str(settings.SECRET_KEY), algorithm=ALGORITHM)
+    
+    return encoded_jwt
+
+
+def _get_authorization_token(authorization: str = Header(..., alias="Authorization")):
     token_prefix, token = authorization.split(" ")
     if token_prefix != settings.JWT_TOKEN_PREFIX:
         raise HTTPException(
