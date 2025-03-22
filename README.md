@@ -120,7 +120,7 @@ cd model
 | DELETE | `/api/users/:id` | Delete a user |
 
 _(More API endpoints will be added as the project progresses.)_
-
+API documentation via Swagger UI at `http://localhost:8000/docs`
 ---
 
 ## 📊 Model (To Be Updated)
