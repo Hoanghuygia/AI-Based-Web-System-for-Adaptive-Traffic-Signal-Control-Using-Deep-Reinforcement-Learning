@@ -6,10 +6,11 @@ import { store, RootState } from './stores';
 import { ConfigProvider } from 'antd';
 // import enUS from 'antd/es/calendar/locale/en_US';
 import enUS from 'antd/es/locale/en_US'
+import viVN from 'antd/es/locale/vi_VN'
 import { IntlProvider } from 'react-intl';
 import { localeConfig } from './locale';
 
-export type Locale = 'en_US';
+export type Locale = 'en_US' | 'vi_VN';
 
 const queryClient = new QueryClient();
 
@@ -22,11 +23,10 @@ function App() {
             return enUS;
         }
         else{
-            return enUS
+            return viVN;
         }
     }
     
-
     return (
         <Provider store={store}>
             <QueryClientProvider client={queryClient}>
