@@ -38,14 +38,18 @@ Swagger documentation is available
 
 ## 📦 Setup
 
+### Clone the repository
+```bash
+
+git clone https://github.com/AI-Based-Web-System-for-Adaptive-Traffic-Signal-Control-Using-Deep-Reinforcement-Learning.git
+cd AI-Based-Web-System-for-Adaptive-Traffic-Signal-Control-Using-Deep-Reinforcement-Learning
+
+```
+
 ### Backend Setup
 Follow these steps to set up and run the FastAPI backend locally.
 
 ```bash
-# Clone the repository
-git clone https://github.com/AI-Based-Web-System-for-Adaptive-Traffic-Signal-Control-Using-Deep-Reinforcement-Learning.git
-cd AI-Based-Web-System-for-Adaptive-Traffic-Signal-Control-Using-Deep-Reinforcement-Learning
-
 # Navigate to the backend directory
 cd core
 
@@ -82,14 +86,18 @@ exit
 
 ### Frontend Setup (To Be Updated)
 ```bash
+
 # Navigate to the frontend directory
 cd client
 
+# Install pnpm if not have yet
+npm install -g pnpm
+
 # Install dependencies
-npm install
+pnpm install
 
 # Start the development server
-npm start
+pnpm run dev start
 ```
 
 ### Model Setup (To Be Updated)

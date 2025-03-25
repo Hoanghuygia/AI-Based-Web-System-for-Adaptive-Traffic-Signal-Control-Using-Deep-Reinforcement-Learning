@@ -13,10 +13,10 @@ export default defineConfig({
     port: 5173,
     open: true,
     proxy: {
-      '/apiv1': {
+      '/api': {
         target: 'http://your-api-server.com/users', // Khi frontend gọi /apiv1/users, request sẽ được đổi thành http://your-api-server.com/users.
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/apiv1/, '')
+        rewrite: (path) => path.replace(/^\/api/, '')
       }
     }
   }
