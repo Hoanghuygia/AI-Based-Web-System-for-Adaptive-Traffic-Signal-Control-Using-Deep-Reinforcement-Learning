@@ -1,45 +1,35 @@
-import './App.css';
-import { QueryClient, QueryClientProvider } from 'react-query';
-import { BrowserRouter } from 'react-router-dom';
-import { Provider, useSelector } from 'react-redux';
-import { store, RootState } from './stores';
-import { ConfigProvider } from 'antd';
-// import enUS from 'antd/es/calendar/locale/en_US';
-import enUS from 'antd/es/locale/en_US'
-import viVN from 'antd/es/locale/vi_VN'
-import { IntlProvider } from 'react-intl';
-import { localeConfig } from './locale';
 
-export type Locale = 'en_US' | 'vi_VN';
 
-const queryClient = new QueryClient();
+import React from 'react';
+import { Provider } from 'react-redux';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { store } from './stores';
+
+const TestPage: React.FC = () => {
+  return (
+    <div style={{ 
+      display: 'flex', 
+      justifyContent: 'center', 
+      alignItems: 'center', 
+      height: '100vh', 
+      fontSize: '24px',
+      backgroundColor: '#f0f0f0'
+    }}>
+      Test Page Works!
+    </div>
+  );
+};
 
 function App() {
-
-    const locale = useSelector((state: RootState) => state.user.locale);
-
-    const getAntdLocale = () => {
-        if (locale === 'en_US') {
-            return enUS;
-        }
-        else{
-            return viVN;
-        }
-    }
-    
-    return (
-        <Provider store={store}>
-            <QueryClientProvider client={queryClient}>
-                <ConfigProvider locale={getAntdLocale()} componentSize='middle'>
-                    <IntlProvider locale={locale.split('_')[0]} messages={localeConfig[locale]}>
-                    <BrowserRouter>
-                        {/* Your routes */}
-                    </BrowserRouter>
-                    </IntlProvider>
-                </ConfigProvider>
-            </QueryClientProvider>
-        </Provider>
-    );
+  return (
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<TestPage />} />
+        </Routes>
+      </BrowserRouter>
+    </Provider>
+  );
 }
 
-export default App;
+// export default App;
