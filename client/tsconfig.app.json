@@ -28,6 +28,9 @@
       "@src/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@styles/*": ["src/styles/*"],
+      "@stores/*": ["src/stores/*"],
+      "@api/*": ["src/api/*"],
+      "@config/*": ["src/config/*"],
     }
   },
   "include": ["src"]
