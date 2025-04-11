@@ -1,5 +1,6 @@
 import { UserState } from "./states/UserState"
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { login as loginApi } from "@src/api/auth";
 
 const initialUserState: UserState = {
     currentUser: null,
@@ -15,7 +16,8 @@ export const login = createAsyncThunk(
         username: string;
         password: string
     }) => {
-        const response = await loginApi(credential);
+        // const response = await loginApi(credential);
+        const response = await loginApi({ user: credential });
         return response.data;
     }
 )
@@ -42,12 +44,16 @@ export const userSlice = createSlice({
                 state.error = null;
             })
             .addCase(login.fulfilled, (state, action) => {
+                console.log("Login payload:", action.payload);
+                const { username, token, refresh_token } = action.payload.user;
+
                 state.loading = false;
-                state.currentUser = action.payload.user;
-                state.token = action.payload.token;
-                localStorage.setItem('token', action.payload.token);
-                state.refreshToken = action.payload.refresh_token;
-                localStorage.setItem('refresh-token', action.payload.refresh_token);
+                state.currentUser = { username }; 
+                state.token = token;
+                state.refreshToken = refresh_token;
+
+                localStorage.setItem('token', token);
+                localStorage.setItem('refresh-token', refresh_token);
             })
             .addCase(login.rejected, (state, action) => {
                 state.loading = false;
