@@ -26,7 +26,8 @@ app.add_event_handler("shutdown", close_mongo_connection)
 app.add_exception_handler(HTTPException, http_error_handler)
 app.add_exception_handler(status.HTTP_422_UNPROCESSABLE_ENTITY, http_422_error_handler)
 
-app.include_router(routers, prefix= settings.API_VERSION_1)
+# app.include_router(routers, prefix= settings.API_VERSION_1)
+app.include_router(routers)
 
 @app.get("/", tags= ["root"])
 async def root():
