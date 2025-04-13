@@ -31,6 +31,8 @@
       "@stores/*": ["src/stores/*"],
       "@api/*": ["src/api/*"],
       "@config/*": ["src/config/*"],
+      "@routes/*": ["src/routes/*"],
+      "@pages/*": ["src/pages/*"],
     }
   },
   "include": ["src"]

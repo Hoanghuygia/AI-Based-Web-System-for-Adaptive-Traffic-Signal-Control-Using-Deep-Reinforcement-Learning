@@ -20,7 +20,7 @@ import { Button, Spin } from 'antd';
 
 export default function Test() {
   const dispatch = useDispatch<AppDispatch>();
-  const { currentUser, loading, error, token } = useSelector((state: RootState) => state.user);
+  const { currentUser, loading, error, token, refreshToken } = useSelector((state: RootState) => state.user);
 
   const handleLogin = () => {
     dispatch(login({
@@ -42,8 +42,9 @@ export default function Test() {
         {error && <p className="text-red-500">Error: {error}</p>}
         {currentUser ? (
           <>
-            <p className="text-green-600">Logged in as: {currentUser.username || 'Unknown User'}</p>
+            <p className="text-green-600">Logged in as: {currentUser || 'Unknown User'}</p>
             <p>Token: {token}</p>
+            <p>Refresh token: {refreshToken}</p>
             <Button type="primary" danger onClick={handleLogout}>Logout</Button>
           </>
         ) : (

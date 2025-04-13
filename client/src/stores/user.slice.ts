@@ -16,7 +16,6 @@ export const login = createAsyncThunk(
         username: string;
         password: string
     }) => {
-        // const response = await loginApi(credential);
         const response = await loginApi({ user: credential });
         return response.data;
     }
@@ -48,7 +47,7 @@ export const userSlice = createSlice({
                 const { username, token, refresh_token } = action.payload.user;
 
                 state.loading = false;
-                state.currentUser = { username }; 
+                state.currentUser = username; 
                 state.token = token;
                 state.refreshToken = refresh_token;
 

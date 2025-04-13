@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axiosInstanceAuth from '@src/config/axiosAuth';
 
 interface LoginParam{
     username: string;
@@ -6,5 +6,5 @@ interface LoginParam{
 }
 
 export function login(param: LoginParam){
-    return axios.post('/api/login', param);
+    return axiosInstanceAuth.post('/login', param);
 }
