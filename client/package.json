@@ -14,6 +14,7 @@
     "@types/node": "^22.13.14",
     "antd": "^5.24.5",
     "axios": "^1.8.4",
+    "boxicons": "^2.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
