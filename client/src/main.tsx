@@ -4,6 +4,7 @@ import App from './App.tsx'
 import { Provider } from 'react-redux'
 import { store } from './stores/index.ts'
 import { BrowserRouter } from 'react-router-dom'
+import 'boxicons/css/boxicons.min.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

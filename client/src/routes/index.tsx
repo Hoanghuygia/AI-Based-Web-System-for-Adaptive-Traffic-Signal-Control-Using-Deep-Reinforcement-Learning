@@ -1,7 +1,7 @@
 import { JSX, lazy, SuspenseProps } from "react";
 import { Navigate, RouteObject } from "react-router-dom";
 
-const Auth = lazy(() => import('@pages/login'));
+const Auth = lazy(() => import('@src/pages/login_register'));
 
 const RequireAuth = ({children}: {children: JSX.Element}) => {
     const token = localStorage.getItem('token');
