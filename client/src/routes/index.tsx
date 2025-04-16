@@ -1,11 +1,11 @@
 import Test from "@src/components/Test";
 import EmptyLayout from "@src/layout/EmptyLayout";
-import NotFoundPage from "@src/pages/error";
 import { JSX, lazy, Suspense } from "react";
 import { Navigate, RouteObject } from "react-router-dom";
 
 const Auth = lazy(() => import('@src/pages/login_register'));
 const LoadingPage = lazy(() => import('@src/pages/loading'));
+const NotFoundPage = lazy(() => import('@src/pages/error'))
 
 const RequireAuth = ({children}: {children: JSX.Element}) => {
     const token = localStorage.getItem('token');
@@ -20,49 +20,60 @@ const RequireAuth = ({children}: {children: JSX.Element}) => {
 /*
 Use for testing purpose 
 */
+// const routes: RouteObject[] = [
+//     {
+//         path: '/',
+//         element: (
+//             // <Auth/>
+//             <NotFoundPage/>
+//         )
+//     },
+// ];
+
+// export default routes;
+
 const routes: RouteObject[] = [
     {
         path: '/',
         element: (
-            // <Auth/>
-            <NotFoundPage/>
-        )
+            <RequireAuth>
+                <EmptyLayout/>
+            </RequireAuth>
+        ),
+        children: [
+            {path: '', element: <Navigate to= "/test" replace />},
+            {path: 'test', element: (
+                <Suspense fallback={<LoadingPage/>}>
+                    <Test/>
+                </Suspense>
+            )}
+        ]
     },
+    {
+        path: '/login',
+        element: <EmptyLayout/>,
+        children: [
+            {
+                path: '',
+                element: (
+                    <Suspense fallback={<LoadingPage/>}>
+                        <Auth/>
+                    </Suspense>
+                )
+            }
+        ]
+    },
+    {
+        path: '*',
+        element: (
+            <EmptyLayout>
+                <Suspense fallback={<LoadingPage />}>
+                    <NotFoundPage />
+                </Suspense>
+            </EmptyLayout>
+        ),
+
+    }
 ];
 
 export default routes;
-
-// const routes: RouteObject[] = [
-    // {
-        // path: '/',
-        // element: (
-        //     <RequireAuth>
-        //         <EmptyLayout/>
-        //     </RequireAuth>
-        // ),
-        // children: [
-        //     {path: '', element: <Navigate to= "/test" replace />},
-        //     {path: 'test', element: (
-        //         <Suspense fallback={<LoadingPage/>}>
-        //             <Test/>
-        //         </Suspense>
-        //     )}
-        // ]
-    // },
-    // {
-    //     path: '/login',
-    //     element: <EmptyLayout/>,
-    //     children: [
-    //         {
-    //             path: '',
-    //             element: (
-    //                 <Suspense fallback={<LoadingPage/>}>
-    //                     <Auth/>
-    //                 </Suspense>
-    //             )
-    //         }
-    //     ]
-    // }
-// ];
-
-// export default routes;
