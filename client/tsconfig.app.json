@@ -33,6 +33,7 @@
       "@config/*": ["src/config/*"],
       "@routes/*": ["src/routes/*"],
       "@pages/*": ["src/pages/*"],
+      "@layout/*": ["src/layout/*"],
     }
   },
   "include": ["src"]
