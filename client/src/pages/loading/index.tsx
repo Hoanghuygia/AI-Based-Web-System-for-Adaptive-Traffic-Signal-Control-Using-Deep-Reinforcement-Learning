@@ -4,6 +4,8 @@ import { Loader2 } from "lucide-react"
 const LoadingPage = () => {
   const [progress, setProgress] = useState(0)
 
+  console.log("LoadingPage: Component rendered");
+
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress((prev) => {
