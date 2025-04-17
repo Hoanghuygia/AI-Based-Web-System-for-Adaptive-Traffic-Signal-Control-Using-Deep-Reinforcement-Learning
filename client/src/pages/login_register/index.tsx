@@ -5,7 +5,7 @@ import RegisterForm from "./components/RegisterForm";
 import PanelRegister from "./components/PanelRegister";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@src/stores";
-import { login } from "@src/stores/user.slice";
+import { login, register } from "@src/stores/user.slice";
 import { useNavigate } from "react-router-dom";
 
 const Auth = () => {
@@ -42,15 +42,20 @@ const Auth = () => {
     }
   };
 
-  const handleRegister = () => {
-    console.log("Register with:", {
-      username: registerUsername,
-      email: registerEmail,
-      password: registerPassword,
-    });
-    alert(
-      `Register with: ${registerUsername}, ${registerEmail}, ${registerPassword}`
-    );
+  const handleRegister = async () => {
+    try {
+      const result = await dispatch(register({
+        username: loginUsername,
+        password: loginPassword
+      })).unwrap(); 
+      
+      if (result) { 
+        console.log("Navigate to login");
+        navigate('/login');
+      }
+    } catch (error) {
+      console.error('Register failed:', error);
+    }
   };
 
   const resetStateInput = (isRegistering: boolean) => {
