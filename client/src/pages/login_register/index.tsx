@@ -3,6 +3,10 @@ import LoginForm from "./components/LoginForm";
 import PanelLogin from "./components/PaneLogin";
 import RegisterForm from "./components/RegisterForm";
 import PanelRegister from "./components/PanelRegister";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "@src/stores";
+import { login } from "@src/stores/user.slice";
+import { useNavigate } from "react-router-dom";
 
 const Auth = () => {
   const [isRegistering, setIsRegistering] = useState(false);
@@ -16,13 +20,26 @@ const Auth = () => {
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
 
-  // Handlers
-  const handleLogin = () => {
-    console.log("Login with:", {
-      username: loginUsername,
-      password: loginPassword,
-    });
-    alert(`Login with user: ${loginUsername}, ${loginPassword}`);
+  // redx
+  const dispatch = useDispatch<AppDispatch>();
+  // const { currentUser, loading, error, token, refreshToken } = useSelector((state: RootState) => state.user);
+
+  const navigate = useNavigate();
+
+  const handleLogin = async () => {
+    try {
+      const result = await dispatch(login({
+        username: loginUsername,
+        password: loginPassword
+      })).unwrap(); 
+      
+      if (result) { 
+        console.log("Navigate to test");
+        navigate('/test');
+      }
+    } catch (error) {
+      console.error('Login failed:', error);
+    }
   };
 
   const handleRegister = () => {

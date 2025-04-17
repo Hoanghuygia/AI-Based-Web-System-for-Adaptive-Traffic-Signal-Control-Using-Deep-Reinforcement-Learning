@@ -1,12 +1,14 @@
-import Test from "@src/components/Test";
-import EmptyLayout from "@src/layout/EmptyLayout";
+// import Test from "@src/components/Test";
+// import EmptyLayout from "@src/layout/EmptyLayout";
+import LoadingPage from "@src/pages/loading";
 import { getToken } from "@src/utils/authUtils";
 import { JSX, lazy, Suspense } from "react";
 import { Navigate, RouteObject } from "react-router-dom";
 
 const Auth = lazy(() => import('@src/pages/login_register'));
-const LoadingPage = lazy(() => import('@src/pages/loading'));
-const NotFoundPage = lazy(() => import('@src/pages/error'))
+const NotFoundPage = lazy(() => import('@src/pages/error'));
+const Test = lazy(() => import('@src/components/Test'));
+const EmptyLayout = lazy(() => import('@src/layout/EmptyLayout'));
 
 const AuthRoute = ({children}: {children: JSX.Element}) => {
 

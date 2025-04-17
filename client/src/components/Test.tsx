@@ -12,7 +12,6 @@
 //   )
 // }
 
-import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { login, logout } from '@src/stores/user.slice';
 import { RootState, AppDispatch } from '@src/stores';

@@ -53,6 +53,7 @@ export const userSlice = createSlice({
 
                 localStorage.setItem('token', token);
                 localStorage.setItem('refresh-token', refresh_token);
+                localStorage.setItem('username', username);
             })
             .addCase(login.rejected, (state, action) => {
                 state.loading = false;
