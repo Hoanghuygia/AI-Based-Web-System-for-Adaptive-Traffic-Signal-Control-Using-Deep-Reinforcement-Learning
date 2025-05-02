@@ -13,7 +13,7 @@ const LoadingPage = () => {
           clearInterval(interval)
           return 100
         }
-        return prev + 10
+        return prev + 50
       })
     }, 300)
 
@@ -30,7 +30,7 @@ const LoadingPage = () => {
   }, [progress])
 
   return (
-    <div className="flex h-screen items-center justify-center bg-gradient-to-r from-gray-200 to-indigo-200">
+    <div className="flex w-full h-screen items-center justify-center">
       <div className="w-full max-w-4xl overflow-hidden rounded-2xl shadow-lg">
           <div className="flex flex-col items-center justify-center bg-white p-8 py-12">
             <div
