@@ -1,0 +1,48 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Poetry virtual environment (only if it's inside the project)
+.venv/
+
+# Environment variables
+.env
+
+# Logs and training outputs
+*.log
+*.ckpt
+*.pth
+*.pt
+*.h5
+*.tflite
+*.onnx
+*.pb
+*.npy
+*.npz
+
+# Checkpoints, TensorBoard, wandb, etc.
+checkpoints/
+runs/
+wandb/
+lightning_logs/
+tensorboard/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Compiled C extensions and build artifacts
+*.egg-info/
+build/
+dist/
+
+/cache
