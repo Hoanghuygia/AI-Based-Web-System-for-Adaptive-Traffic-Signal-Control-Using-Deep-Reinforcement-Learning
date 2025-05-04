@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-05-02 07:11:24 by Eclipse SUMO netconvert Version 1.22.0
+<!-- generated on 2025-05-05 01:46:09 by Eclipse SUMO netconvert Version 1.22.0
 <netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
-        <osm-files value="src/model/data/map/region_1.osm"/>
+        <osm-files value="C:\Users\LAPTOP\Documents\Code\FastAPI\AI-Based-Web-System-for-Adaptive-Traffic-Signal-Control-Using-Deep-Reinforcement-Learning\model\src\model\data\map\region_1.osm"/>
     </input>
 
     <output>
-        <output-file value="src/model/sumo_files/network/quan_1.net.xml"/>
+        <output-file value="C:\Users\LAPTOP\Documents\Code\FastAPI\AI-Based-Web-System-for-Adaptive-Traffic-Signal-Control-Using-Deep-Reinforcement-Learning\model\src\model\sumo_files\network\region_1.net.xml"/>
     </output>
 
     <projection>
