@@ -4,7 +4,7 @@ import geopandas as gpd
 import matplotlib.pyplot as plt
 from shapely.geometry import Polygon
 
-def download_map():
+def download_map(savePath):
     # os.makedirs("data/map", exist_ok=True)
     ox.settings.all_oneway = True
 
@@ -32,5 +32,6 @@ def download_map():
     fig, ax = plt.subplots(figsize=(12, 10))
     ox.plot_graph(G, ax=ax, node_color='red', edge_color='blue', node_size=30, show=True, close=False)
     plt.title('Traffic Network of District 1 Area')
-    plt.savefig('src/model/data/map/region_1_network.png')
+    # plt.savefig('src/model/data/map/region_1_network.png')
+    plt.savefig(savePath)
     plt.show()
