@@ -6,24 +6,13 @@ from src.model import config
 import os
 
 # Intersections in District 1, Ho Chi Minh City
-intersections = {
-    "A": {"lat": 10.7731, "lng": 106.7031},
-    "B": {"lat": 10.7751, "lng": 106.7051},
-    "C": {"lat": 10.7771, "lng": 106.7071},
-    "D": {"lat": 10.7791, "lng": 106.7091},
-    "E": {"lat": 10.7811, "lng": 106.7111}
-}
-
-# Mapping of weekdays to English names
-weekday_map = {
-    0: "monday",
-    1: "tuesday",
-    2: "wednesday",
-    3: "thursday",
-    4: "friday",
-    5: "saturday",
-    6: "sunday"
-}
+# intersections = {
+#     "A": {"lat": 10.7731, "lng": 106.7031},
+#     "B": {"lat": 10.7751, "lng": 106.7051},
+#     "C": {"lat": 10.7771, "lng": 106.7071},
+#     "D": {"lat": 10.7791, "lng": 106.7091},
+#     "E": {"lat": 10.7811, "lng": 106.7111}
+# }
 
 def get_traffic_data(origin_coords, destination_coords, api_key, departure_time):
     """
@@ -94,7 +83,7 @@ def collect_traffic_data(intersections, api_key, specific_date=None, output_dir=
     data_records = []
     weekday = specific_date.weekday()
     date_str = specific_date.strftime("%Y-%m-%d")
-    weekday_str = weekday_map[weekday]
+    weekday_str = config.WEEKDAY_MAP[weekday]
 
     for hour in hours_to_check:
         # Create precise timestamp for each hour
@@ -132,7 +121,7 @@ def collect_traffic_data(intersections, api_key, specific_date=None, output_dir=
     print(f"[INFO] Collected {len(df)} records and saved to {filepath}")
 
 # Example: Run for a specific day
-if __name__ == "__main__":
-    # Example: Collect data for May 13, 2025
-    specific_date = datetime(2025, 5, 13)
-    collect_traffic_data(intersections, config.GOOGLE_MAP_DIRECTIONS_API_KEY, specific_date=specific_date, output_dir="data/traffic")
+# if __name__ == "__main__":
+#     # Example: Collect data for May 13, 2025
+#     specific_date = datetime(2025, 5, 13)
+#     collect_traffic_data(intersections, config.GOOGLE_MAP_DIRECTIONS_API_KEY, specific_date=specific_date, output_dir="data/traffic")
