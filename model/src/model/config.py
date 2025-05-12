@@ -1,5 +1,8 @@
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -14,3 +17,6 @@ SUMO_DIR = os.path.join(BASE_DIR, 'sumo_files')
 
 NETWORK_DIR = os.path.join(SUMO_DIR, 'network')
 DISTRICT_1_NET = os.path.join(NETWORK_DIR, 'region_1.net.xml')
+
+GOOGLE_MAP_DIRECTIONS_API_KEY = os.environ.get("GOOGLE_MAP_DIRECTIONS_API_KEY")
+BASE_GOOGLE_MAP_URL = "https://maps.googleapis.com/maps/api/directions/json"
