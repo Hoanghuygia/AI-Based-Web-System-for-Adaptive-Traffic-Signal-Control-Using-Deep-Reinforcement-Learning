@@ -120,7 +120,7 @@ def main():
     collect_traffic_parser.add_argument(
         '--api-key',
         type=str,
-        default=getattr(config, 'GOOGLE_MAPS_API_KEY', 'your_api_key_here'),
+        default=getattr(config, 'GOOGLE_MAP_DIRECTIONS_API_KEY', 'your_api_key_here'),
         help="Google Maps API key (default: config.GOOGLE_MAPS_API_KEY or placeholder)"
     )
 

@@ -5,15 +5,6 @@ from datetime import datetime, timedelta
 from src.model import config
 import os
 
-# Intersections in District 1, Ho Chi Minh City
-# intersections = {
-#     "A": {"lat": 10.7731, "lng": 106.7031},
-#     "B": {"lat": 10.7751, "lng": 106.7051},
-#     "C": {"lat": 10.7771, "lng": 106.7071},
-#     "D": {"lat": 10.7791, "lng": 106.7091},
-#     "E": {"lat": 10.7811, "lng": 106.7111}
-# }
-
 def get_traffic_data(origin_coords, destination_coords, api_key, departure_time):
     """
     Fetch traffic information between two points at a specific time.
@@ -35,6 +26,7 @@ def get_traffic_data(origin_coords, destination_coords, api_key, departure_time)
         result = response.json()
 
         if result.get("status") == "OK":
+            print('ok')
             leg = result["routes"][0]["legs"][0]
             duration = leg["duration"]["value"]
             distance = leg["distance"]["value"]
@@ -73,6 +65,7 @@ def collect_traffic_data(intersections, api_key, specific_date=None, output_dir=
     """
     # List of hours to check: peak and off-peak hours
     hours_to_check = [7, 9, 12, 17, 19, 22]
+    count = 0
 
     intersection_keys = list(intersections.keys())
     
@@ -95,6 +88,7 @@ def collect_traffic_data(intersections, api_key, specific_date=None, output_dir=
                     continue  # Skip same point
 
                 result = get_traffic_data(intersections[src], intersections[dst], api_key, query_time)
+                count += 1
 
                 if result:
                     data_records.append({
@@ -107,16 +101,20 @@ def collect_traffic_data(intersections, api_key, specific_date=None, output_dir=
                         "day_of_week": weekday,
                         "hour_of_day": hour
                     })
+                print('Count: ', count)
+                time.sleep(2)  # Avoid API rate limits
 
-                time.sleep(1.5)  # Avoid API rate limits
-
+    print('Output Dir: ', output_dir)
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
     
     # Save data for the current day
     df = pd.DataFrame(data_records)
+    print('After saving')
     filename = f"traffic_data_{weekday_str}_{date_str}.csv"
     filepath = os.path.join(output_dir, filename)
+    print('Filename: ', filename)
+    print('Path name: ', filepath)
     df.to_csv(filepath, index=False)
     print(f"[INFO] Collected {len(df)} records and saved to {filepath}")
 
