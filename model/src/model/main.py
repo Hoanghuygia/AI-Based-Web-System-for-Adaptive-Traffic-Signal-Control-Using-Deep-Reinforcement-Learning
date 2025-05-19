@@ -62,23 +62,83 @@ def collect_traffic_infor(args):
         )
     except Exception as e:
         print(f"[ERROR] Failed to collect traffic data: {e}")
+        
+import pandas as pd
+import glob
+import os
+import sys
+from datetime import datetime
 
+def create_route_file(net_file, traffic_data_files, intersection_file, output_file, simulation_period):
+    # Giả sử bạn đã định nghĩa đầy đủ hàm này
+    pass
+
+def create_demand_file(args):
+    # 1. Kiểm tra net file
+    if not os.path.exists(args.net_path):
+        print(f"[ERROR] Net file not found at {args.net_path}")
+        return
+
+    # 2. Đọc intersection file
+    try:
+        df = pd.read_csv(args.intersection_file)
+        if not all(col in df.columns for col in ['name', 'lat', 'lng']):
+            raise ValueError("CSV file must contain 'name', 'lat', and 'lng' columns")
+    except FileNotFoundError:
+        print(f"[ERROR] Intersection file not found at {args.intersection_file}")
+        return
+    except Exception as e:
+        print(f"[ERROR] Failed to read intersection file: {e}")
+        return
+
+    # 3. Lấy danh sách traffic CSV files
+    try:
+        traffic_data_files = glob.glob(f"{args.traffic_data_files}/*.csv")
+        if not traffic_data_files:
+            raise FileNotFoundError
+    except FileNotFoundError:
+        print(f"[ERROR] No traffic CSV files found in directory {args.traffic_data_files}")
+        return
+    except Exception as e:
+        print(f"[ERROR] Failed to load traffic data files: {e}")
+        return
+
+    # 5. Gọi hàm tạo route
+    try:
+        create_route_file(
+            net_file=args.net_path,
+            traffic_data_files=traffic_data_files,
+            intersection_file=args.intersection_file,
+            output_file=args.out_dir,
+            simulation_period=int(args.simulation_period)
+        )
+        print("[INFO] Route file created successfully.")
+    except Exception as e:
+        print(f"[ERROR] Failed to create route file: {e}")
 
 def main():
     """
     Main function to parse arguments and execute commands.
     """
-    # check GPU and Torch
+    # ================================================
+    # Optional: Check GPU and Torch (uncomment if needed)
+    # ================================================
     # print("PyTorch version:", torch.__version__)
     # print("CUDA available:", torch.cuda.is_available())
     # print("CUDA version:", torch.version.cuda)
     # print("GPU name:", torch.cuda.get_device_name(0) if torch.cuda.is_available() else "No GPU found")
+
+    # ================================================
+    # Argument Parser Setup
+    # ================================================
     parser = argparse.ArgumentParser(
         description="Model to optimize traffic light signal"
     )
     subparser = parser.add_subparsers(dest="command", help="Command to run")
 
-    # Parser for collecting map data
+    # ------------------------------------------------
+    # Subparser: collect_data_map
+    # ------------------------------------------------
     collect_parser = subparser.add_parser(
         "collect_data_map", help="Collect data map for model"
     )
@@ -95,7 +155,9 @@ def main():
         help="Path to traffic chart image",
     )
 
-    # Parser for collecting traffic data
+    # ------------------------------------------------
+    # Subparser: collect_traffic
+    # ------------------------------------------------
     collect_traffic_parser = subparser.add_parser(
         'collect_traffic', help="Collect traffic data"
     )
@@ -124,15 +186,60 @@ def main():
         help="Google Maps API key (default: config.GOOGLE_MAPS_API_KEY or placeholder)"
     )
 
+    # ------------------------------------------------
+    # Subparser: create_demand
+    # ------------------------------------------------
+    create_demand = subparser.add_parser(
+        'create_demand', help="Create demand file"
+    )
+    create_demand.add_argument(
+        '--net-path',
+        type=str,
+        default="src/model/sumo_files/network/region_1.net.xml",
+        help="Path to net file"
+    )
+    create_demand.add_argument(
+        '--traffic-data-files',
+        type=str,
+        default="src/model/data/traffic",
+        help="Folder containing traffic data CSV files"
+    )
+    create_demand.add_argument(
+        '--intersection-file',
+        type=str,
+        default="src/model/data/traffic/intersection_list.csv",
+        help="CSV file with intersection list"
+    )
+    create_demand.add_argument(
+        '--out-dir',
+        type=str,
+        default="src/model/sumo_files/routes/region_1.rou.xml",
+        help="Output route file path"
+    )
+    create_demand.add_argument(
+        '--simulation-period',
+        type=str,
+        default=259200,
+        help="Simulation time in seconds (default = 3 days)"
+    )
+
+    # ================================================
+    # Parse Arguments and Execute
+    # ================================================
     args = parser.parse_args()
 
     if args.command == "collect_data_map":
         collect_map_data(args)
     elif args.command == "collect_traffic":
         collect_traffic_infor(args)
+    elif args.command == "create_demand":
+        create_demand_file(args)
     else:
         parser.print_help()
 
 
+# ================================================
+# Entry Point
+# ================================================
 if __name__ == "__main__":
     main()

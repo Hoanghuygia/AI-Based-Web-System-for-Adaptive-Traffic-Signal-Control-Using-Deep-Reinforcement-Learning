@@ -53,7 +53,7 @@ def get_traffic_data(origin_coords, destination_coords, api_key, departure_time)
         print(f"[ERROR] Error calling API: {e}")
         return None
 
-def collect_traffic_data(intersections, api_key, specific_date=None, output_dir="data/traffic"):
+def collect_traffic_data(intersections, api_key, specific_date=None, output_dir="src/model/data/traffic"):
     """
     Collect traffic data for bidirectional routes between intersections for a specific day.
     
