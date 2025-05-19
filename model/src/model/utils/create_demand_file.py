@@ -4,14 +4,15 @@ import sumolib
 import os
 import numpy as np
 from datetime import datetime
+from pyproj import Transformer
 
 def define_vehicle_types(routes):
     """
-    Định nghĩa các loại phương tiện (vType) cho file .rou.xml, dựa trên giao thông HCMC.
-    Điều chỉnh để mô phỏng lấn làn, chuyển làn hung hăng, và chen lên.
+    Define vehicle types (vType) for .rou.xml file, based on HCMC traffic.
+    Adjusted to simulate lane invasion, aggressive lane changing, and cutting in.
     
     Args:
-        routes: ElementTree root của file .rou.xml
+        routes: ElementTree root of .rou.xml file
     """
     vtypes = [
         {
@@ -19,64 +20,64 @@ def define_vehicle_types(routes):
             "vClass": "motorcycle",
             "accel": "3.0",
             "decel": "5.0",
-            "sigma": "0.7",  # Tăng để mô phỏng lấn làn, chen lên ngẫu nhiên
+            "sigma": "0.7",  # Increased to simulate random lane invasion and cutting in
             "length": "2.0",
             "width": "0.8",
             "maxSpeed": "16.67",  # 60 km/h
             "color": "yellow",
-            "minGap": "0.5",  # Giữ khe hẹp để chen lấn
-            "lcAssertive": "1.6",  # Hung hăng khi chuyển làn
-            "lcSpeedGain": "1.6",  # Ưu tiên chuyển làn để đi nhanh hơn
-            "lcStrategic": "1.3",  # Chuẩn bị chuyển làn sớm
-            "lcCooperative": "0.7"  # Ít hợp tác, chen lấn
+            "minGap": "0.5",  # Keep narrow gap for cutting in
+            "lcAssertive": "1.6",  # Aggressive when changing lanes
+            "lcSpeedGain": "1.6",  # Prioritize lane changing for faster speed
+            "lcStrategic": "1.3",  # Prepare to change lanes early
+            "lcCooperative": "0.7"  # Less cooperative, more cutting in
         },
         {
             "id": "car",
             "vClass": "passenger",
             "accel": "2.5",
             "decel": "4.5",
-            "sigma": "0.3",  # Hơi ngẫu nhiên, nhưng ít hơn xe máy
+            "sigma": "0.3",  # Slightly random, but less than motorcycles
             "length": "4.5",
             "width": "1.8",
             "maxSpeed": "13.89",  # 50 km/h
             "color": "blue",
-            "minGap": "2.0",  # Giảm nhẹ để cho phép vượt gần hơn
-            "lcAssertive": "1.2",  # Chuyển làn thận trọng nhưng vẫn vượt
-            "lcSpeedGain": "1.3",  # Vượt khi làn bên nhanh hơn
-            "lcStrategic": "1.6",  # Chuẩn bị chuyển làn sớm
-            "lcCooperative": "0.8"  # Hợp tác hơn xe máy
+            "minGap": "2.0",  # Slightly reduced to allow closer overtaking
+            "lcAssertive": "1.2",  # Cautious lane changing but still overtakes
+            "lcSpeedGain": "1.3",  # Overtakes when the adjacent lane is faster
+            "lcStrategic": "1.6",  # Prepare to change lanes early
+            "lcCooperative": "0.8"  # More cooperative than motorcycles
         },
         {
             "id": "bus",
             "vClass": "bus",
             "accel": "1.5",
             "decel": "3.5",
-            "sigma": "0.2",  # Ổn định, ít lấn làn
+            "sigma": "0.2",  # Stable, less lane invasion
             "length": "12.0",
             "width": "2.5",
             "maxSpeed": "11.11",  # 40 km/h
             "color": "green",
             "minGap": "3.0",
-            "lcAssertive": "1.0",  # Bình thường, ít chuyển làn
-            "lcSpeedGain": "1.0",  # Ít vượt
-            "lcStrategic": "1.0",  # Bình thường
-            "lcCooperative": "1.0"  # Hợp tác bình thường
+            "lcAssertive": "1.0",  # Normal, less lane changing
+            "lcSpeedGain": "1.0",  # Less overtaking
+            "lcStrategic": "1.0",  # Normal
+            "lcCooperative": "1.0"  # Normal cooperation
         },
         {
             "id": "truck",
             "vClass": "truck",
             "accel": "1.8",
             "decel": "4.0",
-            "sigma": "0.2",  # Ổn định, ít lấn làn
+            "sigma": "0.2",  # Stable, less lane invasion
             "length": "7.5",
             "width": "2.2",
             "maxSpeed": "11.11",  # 40 km/h
             "color": "red",
             "minGap": "3.0",
-            "lcAssertive": "1.0",  # Bình thường, ít chuyển làn
-            "lcSpeedGain": "1.0",  # Ít vượt
-            "lcStrategic": "1.0",  # Bình thường
-            "lcCooperative": "1.0"  # Hợp tác bình thường
+            "lcAssertive": "1.0",  # Normal, less lane changing
+            "lcSpeedGain": "1.0",  # Less overtaking
+            "lcStrategic": "1.0",  # Normal
+            "lcCooperative": "1.0"  # Normal cooperation
         }
     ]
     for vtype in vtypes:
@@ -85,15 +86,15 @@ def define_vehicle_types(routes):
 
 def get_route_info(net, route_id, routes):
     """
-    Lấy thông tin độ rộng và loại đường từ route trong mạng SUMO.
+    Get width and road type information from a route in the SUMO network.
     
     Args:
-        net: Mạng SUMO (sumolib.net.readNet)
-        route_id: ID của route
-        routes: ElementTree root của file .rou.xml
+        net: SUMO network (sumolib.net.readNet)
+        route_id: ID of the route
+        routes: ElementTree root of .rou.xml file
     
     Returns:
-        tuple: (trung bình độ rộng (m), loại đường (str))
+        tuple: (average width (m), road type (str))
     """
     try:
         route = routes.find(f"route[@id='{route_id}']")
@@ -108,7 +109,7 @@ def get_route_info(net, route_id, routes):
             edge_type = edge.getType() or "highway.secondary"
             edge_types.append(edge_type)
         avg_width = total_width / len(edges)
-        # Chọn loại đường phổ biến nhất
+        # Choose the most common road type
         route_type = max(set(edge_types), key=edge_types.count)
         return avg_width, route_type
     except Exception as e:
@@ -117,22 +118,22 @@ def get_route_info(net, route_id, routes):
 
 def estimate_vehicle_counts(traffic_condition, distance_meters, duration_seconds, route_id, routes, net):
     """
-    Ước tính số lượng phương tiện mỗi giờ dựa trên mật độ giao thông, khoảng cách, tốc độ,
-    độ rộng đường, và loại đường.
+    Estimate the number of vehicles per hour based on traffic density, distance, speed,
+    road width, and road type.
     
     Args:
         traffic_condition (str): normal, moderate, heavy
-        distance_meters (float): Khoảng cách giữa hai giao lộ
-        duration_seconds (float): Thời gian di chuyển
-        route_id (str): ID của route
-        routes: ElementTree root của file .rou.xml
-        net: Mạng SUMO
+        distance_meters (float): Distance between two intersections
+        duration_seconds (float): Travel time
+        route_id (str): ID of the route
+        routes: ElementTree root of .rou.xml file
+        net: SUMO network
     
     Returns:
-        dict: Số lượng xe máy, ô tô, xe buýt, xe tải mỗi giờ
+        dict: Number of motorcycles, cars, buses, trucks per hour
     """
     try:
-        # Mật độ cơ bản (xe/km) dựa trên Jakarta (Transportation Research Procedia, 2020)
+        # Base density (vehicles/km) based on Jakarta (Transportation Research Procedia, 2020)
         base_density = {
             'normal': {'motorcycle': 50, 'car': 10, 'bus': 1, 'truck': 0.5},
             'moderate': {'motorcycle': 100, 'car': 15, 'bus': 2, 'truck': 1},
@@ -140,21 +141,21 @@ def estimate_vehicle_counts(traffic_condition, distance_meters, duration_seconds
         }
         density = base_density.get(traffic_condition.lower(), base_density['normal'])
         
-        # Lấy độ rộng và loại đường
+        # Get road width and type
         route_width, route_type = get_route_info(net, route_id, routes)
         
-        # Điều chỉnh theo độ rộng (4m là chuẩn)
-        scale_width = min(2.0, route_width / 4.0)  # Tăng tối đa 2x cho đường rộng
-        # Điều chỉnh theo loại đường
+        # Adjust based on width (4m is standard)
+        scale_width = min(2.0, route_width / 4.0)  # Increase up to 2x for wide roads
+        # Adjust based on road type
         scale_type = 1.5 if "primary" in route_type else 0.5 if "residential" in route_type else 1.0
-        # Tính tốc độ (km/h) từ duration_seconds
+        # Calculate speed (km/h) from duration_seconds
         speed = (distance_meters / max(duration_seconds, 1)) * 3.6  # m/s to km/h
-        speed = max(5.0, min(speed, 40.0))  # Giới hạn tốc độ 5-40 km/h
+        speed = max(5.0, min(speed, 40.0))  # Limit speed to 5-40 km/h
         
-        # Chuyển mật độ thành lưu lượng (xe/giờ = xe/km × km/h)
+        # Convert density to flow (vehicles/hour = vehicles/km × km/h)
         counts = {k: int(v * scale_width * scale_type * speed) for k, v in density.items()}
         
-        # Giới hạn lưu lượng tối đa (dựa trên Jakarta và Hà Nội)
+        # Maximum flow limits (based on Jakarta and Hanoi)
         max_flow = {'motorcycle': 1000, 'car': 300, 'bus': 20, 'truck': 15}
         counts = {k: min(v, max_flow[k]) for k, v in counts.items()}
         
@@ -164,25 +165,31 @@ def estimate_vehicle_counts(traffic_condition, distance_meters, duration_seconds
         return {'motorcycle': 300, 'car': 50, 'bus': 5, 'truck': 3}
 
 def find_closest_node(net, lat, lng):
-    # nó tương tự như một hàm tìm giá trị bé nhất, gán cái đầu tiên nhỏ nhất rồi sau đó loop qua để tìm cái bé nhất
     """
-    Tìm node gần nhất trong mạng SUMO dựa trên tọa độ lat, lng.
+    Find the closest node in the SUMO network based on lat, lng coordinates.
     
     Args:
-        net: Mạng SUMO
-        lat, lng: Tọa độ của giao lộ
+        net: SUMO network
+        lat, lng: Intersection coordinates (WGS84, degrees)
     
     Returns:
-        str: ID của node gần nhất hoặc None nếu không tìm thấy
+        str: ID of the closest node or None if not found
     """
     try:
+        # Chuyển đổi lat, lng từ WGS84 sang UTM zone 48N
+        transformer = Transformer.from_crs("EPSG:4326", "EPSG:32648")  # WGS84 to UTM 48N
+        x_utm, y_utm = transformer.transform(lat, lng)
+        
+        # Áp dụng netOffset từ region_1.net.xml
+        net_offset_x, net_offset_y = -684826.81, -1192114.63
+        x_input = x_utm - net_offset_x  # Tọa độ tương đối trong hệ SUMO
+        y_input = y_utm - net_offset_y
+        
         min_dist = float('inf')
         closest_node = None
         for node in net.getNodes():
-            x, y = node.getCoord()
-            # Giả định tọa độ x, y trong SUMO gần với lat, lng
-            # Tính khoảng cách Euclidean giữa tọa độ đầu vào (lat, lng) và tọa độ node (x, y)
-            dist = ((lat - x) ** 2 + (lng - y) ** 2) ** 0.5
+            x, y = node.getCoord()  # Tọa độ trong hệ SUMO (mét, sau offset)
+            dist = ((x_input - x) ** 2 + (y_input - y) ** 2) ** 0.5
             if dist < min_dist:
                 min_dist = dist
                 closest_node = node.getID()
@@ -193,16 +200,16 @@ def find_closest_node(net, lat, lng):
 
 def find_route(net, from_node, to_node, vehicle_id, routes):
     """
-    Tìm đường đi ngắn nhất giữa hai node và thêm route vào file .rou.xml.
+    Find the shortest path between two nodes and add the route to the .rou.xml file.
     
     Args:
-        net: Mạng SUMO
-        from_node, to_node: ID của node nguồn và đích
-        vehicle_id: ID để tạo route duy nhất
-        routes: ElementTree root của file .rou.xml
+        net: SUMO network
+        from_node, to_node: IDs of source and destination nodes
+        vehicle_id: ID to create a unique route
+        routes: ElementTree root of .rou.xml file
     
     Returns:
-        str: ID của route hoặc None nếu không tìm thấy
+        str: ID of the route or None if not found
     """
     try:
         path = net.getShortestPath(net.getNode(from_node), net.getNode(to_node))[0]
@@ -219,14 +226,14 @@ def find_route(net, from_node, to_node, vehicle_id, routes):
 
 def create_flows(routes, net, traffic_data, intersection_mapping, simulation_period):
     """
-    Tạo các flow cho file .rou.xml dựa trên dữ liệu giao thông.
+    Create flows for .rou.xml file based on traffic data.
     
     Args:
         routes: ElementTree root
-        net: Mạng SUMO
-        traffic_data: DataFrame chứa dữ liệu giao thông
-        intersection_mapping: Dict ánh xạ tên giao lộ sang node ID
-        simulation_period: Thời gian mô phỏng (giây)
+        net: SUMO network
+        traffic_data: DataFrame containing traffic data
+        intersection_mapping: Dict mapping intersection names to node IDs
+        simulation_period: Simulation time (seconds)
     """
     vehicle_id = 0
     hours_to_check = [7, 9, 12, 17, 19, 22]
@@ -259,7 +266,7 @@ def create_flows(routes, net, traffic_data, intersection_mapping, simulation_per
                     if not route_id:
                         continue
                     
-                    # Ước tính lưu lượng dựa trên mật độ
+                    # Estimate flow based on density
                     counts = estimate_vehicle_counts(
                         row['traffic_condition'],
                         row['distance_meters'],
@@ -269,7 +276,7 @@ def create_flows(routes, net, traffic_data, intersection_mapping, simulation_per
                         net
                     )
                     
-                    # Tạo flow cho từng loại phương tiện 
+                    # Create flow for each vehicle type
                     for vtype, count in counts.items():
                         if count > 0:
                             flow = ET.SubElement(
@@ -290,14 +297,14 @@ def create_flows(routes, net, traffic_data, intersection_mapping, simulation_per
 
 def create_route_file(net_file, traffic_data_files, intersection_file, output_file, simulation_period=259200):
     """
-    Tạo file .rou.xml từ dữ liệu lưu lượng giao thông.
+    Create .rou.xml file from traffic flow data.
     
     Args:
-        net_file: Đường dẫn đến file .net.xml
-        traffic_data_files: List các file CSV giao thông
-        intersection_file: File CSV chứa tọa độ giao lộ
-        output_file: Đường dẫn đến file .rou.xml
-        simulation_period: Thời gian mô phỏng (giây, mặc định: 3 ngày)
+        net_file: Path to .net.xml file
+        traffic_data_files: List of traffic CSV files
+        intersection_file: CSV file containing intersection coordinates
+        output_file: Path to .rou.xml file
+        simulation_period: Simulation time (seconds, default: 3 days)
     """
     try:
         net = sumolib.net.readNet(net_file)
@@ -330,14 +337,14 @@ def create_route_file(net_file, traffic_data_files, intersection_file, output_fi
 
 if __name__ == "__main__":
     traffic_data_files = [
-        "data/traffic/traffic_data_wednesday_2025-05-14.csv",
-        "data/traffic/traffic_data_thursday_2025-05-15.csv",
-        "data/traffic/traffic_data_friday_2025-05-16.csv"
+        "src/model/data/traffic/traffic_data_wednesday_2025-05-14.csv"
+        "src/model/data/traffic/traffic_data_thursday_2025-05-15.csv"
+        "src/model/data/traffic/traffic_data_friday_2025-05-16.csv"
     ]
     create_route_file(
-        net_file="sumo_files/network/region_1.net.xml",
+        net_file="src/model/sumo_files/network/region_1.net.xml",
         traffic_data_files=traffic_data_files,
-        intersection_file="data/intersection_list.csv",
-        output_file="sumo_files/routes/region_1.rou.xml",
+        intersection_file="src/model/data/traffic/intersection_list.csv",
+        output_file="src/model/sumo_files/routes/region_1.rou.xml",
         simulation_period=259200
     )
