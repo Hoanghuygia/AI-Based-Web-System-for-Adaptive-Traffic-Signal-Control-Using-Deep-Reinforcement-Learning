@@ -8,6 +8,7 @@ from datetime import datetime
 def define_vehicle_types(routes):
     """
     Định nghĩa các loại phương tiện (vType) cho file .rou.xml, dựa trên giao thông HCMC.
+    Điều chỉnh để mô phỏng lấn làn, chuyển làn hung hăng, và chen lên.
     
     Args:
         routes: ElementTree root của file .rou.xml
@@ -18,54 +19,69 @@ def define_vehicle_types(routes):
             "vClass": "motorcycle",
             "accel": "3.0",
             "decel": "5.0",
-            "sigma": "0.5",
+            "sigma": "0.7",  # Tăng để mô phỏng lấn làn, chen lên ngẫu nhiên
             "length": "2.0",
             "width": "0.8",
             "maxSpeed": "16.67",  # 60 km/h
             "color": "yellow",
-            "minGap": "0.5",
-            "lcAssertive": "1.0"
+            "minGap": "0.5",  # Giữ khe hẹp để chen lấn
+            "lcAssertive": "1.6",  # Hung hăng khi chuyển làn
+            "lcSpeedGain": "1.6",  # Ưu tiên chuyển làn để đi nhanh hơn
+            "lcStrategic": "1.3",  # Chuẩn bị chuyển làn sớm
+            "lcCooperative": "0.7"  # Ít hợp tác, chen lấn
         },
         {
             "id": "car",
             "vClass": "passenger",
             "accel": "2.5",
             "decel": "4.5",
-            "sigma": "0.3",
+            "sigma": "0.3",  # Hơi ngẫu nhiên, nhưng ít hơn xe máy
             "length": "4.5",
             "width": "1.8",
             "maxSpeed": "13.89",  # 50 km/h
             "color": "blue",
-            "minGap": "2.5"
+            "minGap": "2.0",  # Giảm nhẹ để cho phép vượt gần hơn
+            "lcAssertive": "1.2",  # Chuyển làn thận trọng nhưng vẫn vượt
+            "lcSpeedGain": "1.3",  # Vượt khi làn bên nhanh hơn
+            "lcStrategic": "1.6",  # Chuẩn bị chuyển làn sớm
+            "lcCooperative": "0.8"  # Hợp tác hơn xe máy
         },
         {
             "id": "bus",
             "vClass": "bus",
             "accel": "1.5",
             "decel": "3.5",
-            "sigma": "0.2",
+            "sigma": "0.2",  # Ổn định, ít lấn làn
             "length": "12.0",
             "width": "2.5",
             "maxSpeed": "11.11",  # 40 km/h
             "color": "green",
-            "minGap": "3.0"
+            "minGap": "3.0",
+            "lcAssertive": "1.0",  # Bình thường, ít chuyển làn
+            "lcSpeedGain": "1.0",  # Ít vượt
+            "lcStrategic": "1.0",  # Bình thường
+            "lcCooperative": "1.0"  # Hợp tác bình thường
         },
         {
             "id": "truck",
             "vClass": "truck",
             "accel": "1.8",
             "decel": "4.0",
-            "sigma": "0.3",
+            "sigma": "0.2",  # Ổn định, ít lấn làn
             "length": "7.5",
             "width": "2.2",
             "maxSpeed": "11.11",  # 40 km/h
             "color": "red",
-            "minGap": "3.0"
+            "minGap": "3.0",
+            "lcAssertive": "1.0",  # Bình thường, ít chuyển làn
+            "lcSpeedGain": "1.0",  # Ít vượt
+            "lcStrategic": "1.0",  # Bình thường
+            "lcCooperative": "1.0"  # Hợp tác bình thường
         }
     ]
     for vtype in vtypes:
         ET.SubElement(routes, "vType", **vtype)
-    print("[INFO] Defined vehicle types")
+    print("[INFO] Defined vehicle types with adjusted lane-changing behavior")
 
 def get_route_info(net, route_id, routes):
     """
@@ -314,9 +330,9 @@ def create_route_file(net_file, traffic_data_files, intersection_file, output_fi
 
 if __name__ == "__main__":
     traffic_data_files = [
-        "data/traffic/traffic_data_Wednesday_2025-05-14.csv",
-        "data/traffic/traffic_data_Thursday_2025-05-15.csv",
-        "data/traffic/traffic_data_Friday_2025-05-16.csv"
+        "data/traffic/traffic_data_wednesday_2025-05-14.csv",
+        "data/traffic/traffic_data_thursday_2025-05-15.csv",
+        "data/traffic/traffic_data_friday_2025-05-16.csv"
     ]
     create_route_file(
         net_file="sumo_files/network/region_1.net.xml",
