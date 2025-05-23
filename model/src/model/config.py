@@ -32,4 +32,5 @@ WEEKDAY_MAP = {
 }
 
 TRAFFIC_DIR = os.path.join(DATA_DIR, 'traffic')
-INTERSECTION_DATA_FILE = os.path.join(TRAFFIC_DIR, 'intersection_list.csv')
+INTERSEC_DIR = os.path.join(DATA_DIR, 'intersections')
+INTERSECTION_DATA_FILE = os.path.join(INTERSEC_DIR, 'intersection_list.csv')
