@@ -2,12 +2,17 @@ import argparse
 import pandas as pd
 from datetime import datetime
 import os
+import glob
 
 from src.model import config
 from model.utils.map_downloader import download_map
 from model.utils.osm_to_sumo import convert_osm_to_net
 from model.utils.collect_traffic_data import collect_traffic_data
-
+from model.utils.create_demand_file import create_route_file
+from model.utils.create_demand_file import test_find_closest_node
+# from model.utils.create_demand_file import test_node_number
+# from model.utils.create_demand_file import test_node_connection
+# from model.utils.create_demand_file import check_data_sync
 
 def collect_map_data(args):
     """
@@ -62,16 +67,6 @@ def collect_traffic_infor(args):
         )
     except Exception as e:
         print(f"[ERROR] Failed to collect traffic data: {e}")
-        
-import pandas as pd
-import glob
-import os
-import sys
-from datetime import datetime
-
-def create_route_file(net_file, traffic_data_files, intersection_file, output_file, simulation_period):
-    # Giả sử bạn đã định nghĩa đầy đủ hàm này
-    pass
 
 def create_demand_file(args):
     # 1. Kiểm tra net file
@@ -115,6 +110,9 @@ def create_demand_file(args):
         print("[INFO] Route file created successfully.")
     except Exception as e:
         print(f"[ERROR] Failed to create route file: {e}")
+
+def test(args):
+    test_find_closest_node()
 
 def main():
     """
@@ -207,7 +205,7 @@ def main():
     create_demand.add_argument(
         '--intersection-file',
         type=str,
-        default="src/model/data/traffic/intersection_list.csv",
+        default="src/model/data/intersections/intersection_list.csv",
         help="CSV file with intersection list"
     )
     create_demand.add_argument(
@@ -222,6 +220,12 @@ def main():
         default=259200,
         help="Simulation time in seconds (default = 3 days)"
     )
+    # ------------------------------------------------
+    # Subparser: test command
+    # ------------------------------------------------
+    test_command = subparser.add_parser(
+        'test', help="Create demand file"
+    )
 
     # ================================================
     # Parse Arguments and Execute
@@ -234,6 +238,8 @@ def main():
         collect_traffic_infor(args)
     elif args.command == "create_demand":
         create_demand_file(args)
+    elif args.command == "test":
+        test(args)
     else:
         parser.print_help()
 

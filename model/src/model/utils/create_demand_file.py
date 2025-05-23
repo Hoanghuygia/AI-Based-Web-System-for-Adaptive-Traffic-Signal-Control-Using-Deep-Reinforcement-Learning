@@ -5,6 +5,7 @@ import os
 import numpy as np
 from datetime import datetime
 from pyproj import Transformer
+import glob
 
 def define_vehicle_types(routes):
     """
@@ -169,30 +170,43 @@ def find_closest_node(net, lat, lng):
     Find the closest node in the SUMO network based on lat, lng coordinates.
     
     Args:
-        net: SUMO network
+        net: SUMO network object
         lat, lng: Intersection coordinates (WGS84, degrees)
     
     Returns:
         str: ID of the closest node or None if not found
     """
     try:
-        # Chuyển đổi lat, lng từ WGS84 sang UTM zone 48N
-        transformer = Transformer.from_crs("EPSG:4326", "EPSG:32648")  # WGS84 to UTM 48N
-        x_utm, y_utm = transformer.transform(lat, lng)
+        # Read netOffset from region_1.net.xml
+        tree = ET.parse("src/model/sumo_files/network/region_1.net.xml")
+        location = tree.find("location")
+        net_offset = location.get("netOffset").split(",")
+        net_offset_x, net_offset_y = float(net_offset[0]), float(net_offset[1])
         
-        # Áp dụng netOffset từ region_1.net.xml
-        net_offset_x, net_offset_y = -684826.81, -1192114.63
-        x_input = x_utm - net_offset_x  # Tọa độ tương đối trong hệ SUMO
+        # Convert lat, lng to UTM zone 48N
+        transformer = Transformer.from_crs("EPSG:4326", "EPSG:32648")
+        x_utm, y_utm = transformer.transform(lat, lng)
+        print(f"Input lat,lng: ({lat}, {lng}) -> UTM: ({x_utm}, {y_utm})")
+        
+        # Convert UTM to internal coordinates
+        x_input = x_utm - net_offset_x
         y_input = y_utm - net_offset_y
+        print(f"Internal coords: ({x_input}, {y_input})")
         
         min_dist = float('inf')
         closest_node = None
         for node in net.getNodes():
-            x, y = node.getCoord()  # Tọa độ trong hệ SUMO (mét, sau offset)
-            dist = ((x_input - x) ** 2 + (y_input - y) ** 2) ** 0.5
+            x_internal, y_internal = node.getCoord()
+            dist = ((x_input - x_internal) ** 2 + (y_input - y_internal) ** 2) ** 0.5
+            print(f"Node {node.getID()}: Internal ({x_internal}, {y_internal}), Distance: {dist}m")
             if dist < min_dist:
                 min_dist = dist
                 closest_node = node.getID()
+        
+        print(f"Closest node: {closest_node}, Min distance: {min_dist}m")
+        if min_dist > 500:  # Threshold for small urban area
+            print(f"[WARNING] Closest node {closest_node} is too far ({min_dist}m)")
+            return None
         return closest_node
     except Exception as e:
         print(f"[ERROR] Failed to find closest node for lat={lat}, lng={lng}: {e}")
@@ -212,6 +226,10 @@ def find_route(net, from_node, to_node, vehicle_id, routes):
         str: ID of the route or None if not found
     """
     try:
+        if from_node == to_node:
+            print(f"[WARNING] Skipping route from {from_node} to {to_node}: same node")
+            return None
+            
         path = net.getShortestPath(net.getNode(from_node), net.getNode(to_node))[0]
         if not path:
             print(f"[WARNING] No path from {from_node} to {to_node}")
@@ -294,7 +312,7 @@ def create_flows(routes, net, traffic_data, intersection_mapping, simulation_per
         print(f"[INFO] Created {vehicle_id} flows")
     except Exception as e:
         print(f"[ERROR] Failed to create flows: {e}")
-
+    
 def create_route_file(net_file, traffic_data_files, intersection_file, output_file, simulation_period=259200):
     """
     Create .rou.xml file from traffic flow data.
@@ -323,6 +341,15 @@ def create_route_file(net_file, traffic_data_files, intersection_file, output_fi
             else:
                 print(f"[WARNING] No node found for intersection {name}")
         
+        print(f"Intersection mapping: {intersection_mapping}")
+        print(f"Unique nodes: {len(set(intersection_mapping.values()))}")
+        if not intersection_mapping:
+            print("[ERROR] Intersection mapping is empty. Check find_closest_node or intersection coordinates.")
+            return
+        if len(set(intersection_mapping.values())) < 2:
+            print(f"[ERROR] Only {len(set(intersection_mapping.values()))} unique node(s). Need at least 2 for routes.")
+            return
+        
         routes = ET.Element("routes")
         define_vehicle_types(routes)
         create_flows(routes, net, traffic_data, intersection_mapping, simulation_period)
@@ -334,17 +361,60 @@ def create_route_file(net_file, traffic_data_files, intersection_file, output_fi
         
     except Exception as e:
         print(f"[ERROR] Failed to create route file: {e}")
+def test_find_closest_node():
+    import sumolib
+    net = sumolib.net.readNet("src/model/sumo_files/network/region_1.net.xml")
+    print(find_closest_node(net, 10.782879, 106.698107))  # Hai Ba Trung - Nguyen Thi Minh Khai
+    # import pandas as pd
+    # from shapely.geometry import Point, Polygon
 
-if __name__ == "__main__":
-    traffic_data_files = [
-        "src/model/data/traffic/traffic_data_wednesday_2025-05-14.csv"
-        "src/model/data/traffic/traffic_data_thursday_2025-05-15.csv"
-        "src/model/data/traffic/traffic_data_friday_2025-05-16.csv"
-    ]
-    create_route_file(
-        net_file="src/model/sumo_files/network/region_1.net.xml",
-        traffic_data_files=traffic_data_files,
-        intersection_file="src/model/data/traffic/intersection_list.csv",
-        output_file="src/model/sumo_files/routes/region_1.rou.xml",
-        simulation_period=259200
-    )
+    # quan_1_coords = [
+    #     (106.689806, 10.783667),
+    #     (106.693667, 10.787028),
+    #     (106.6983333, 10.7829445),
+    #     (106.695000, 10.779250),
+    # ]
+    # quan_1_poly = Polygon(quan_1_coords)
+    # df = pd.read_csv("src/model/data/intersections/intersection_list.csv")
+    # for _, row in df.iterrows():
+    #     point = Point(row['lng'], row['lat'])
+    #     print(f"{row['name']}: {'Inside' if point.within(quan_1_poly) else 'Outside'}")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+# if __name__ == "__main__":
+#     traffic_data_files = [
+#         "src/model/data/traffic/traffic_data_wednesday_2025-05-14.csv"
+#         "src/model/data/traffic/traffic_data_thursday_2025-05-15.csv"
+#         "src/model/data/traffic/traffic_data_friday_2025-05-16.csv"
+#     ]
+#     create_route_file(
+#         net_file="src/model/sumo_files/network/region_1.net.xml",
+#         traffic_data_files=traffic_data_files,
+#         intersection_file="src/model/data/traffic/intersection_list.csv",
+#         output_file="src/model/sumo_files/routes/region_1.rou.xml",
+#         simulation_period=259200
+#     )
