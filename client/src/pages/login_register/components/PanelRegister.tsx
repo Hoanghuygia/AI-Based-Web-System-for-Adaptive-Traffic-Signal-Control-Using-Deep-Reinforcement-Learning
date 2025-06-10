@@ -7,12 +7,12 @@ type PanelRegisterProps = {
 
 const PanelRegister: React.FC<PanelRegisterProps> = ({ resetStateInput }) => {
   return (
-    <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center bg-indigo-400 p-6">
+    <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center bg-purple-500 p-6">
       <h1 className="text-2xl font-bold mb-2">Welcome Back!</h1>
       <p className="mb-4">Already have an account?</p>
       <Button
         onClick={() => resetStateInput(false)}
-        className="border-white text-white bg-indigo-400 hover:bg-indigo-500"
+        className="border-white text-white bg-purple-500 hover:bg-purple-600"
       >
         Login
       </Button>

@@ -9,10 +9,6 @@ from model.utils.map_downloader import download_map
 from model.utils.osm_to_sumo import convert_osm_to_net
 from model.utils.collect_traffic_data import collect_traffic_data
 from model.utils.create_demand_file import create_route_file
-from model.utils.create_demand_file import test_find_closest_node
-# from model.utils.create_demand_file import test_node_number
-# from model.utils.create_demand_file import test_node_connection
-# from model.utils.create_demand_file import check_data_sync
 
 def collect_map_data(args):
     """
@@ -69,21 +65,27 @@ def collect_traffic_infor(args):
         print(f"[ERROR] Failed to collect traffic data: {e}")
 
 def create_demand_file(args):
+    """
+    Create demand file (.rou.xml) for SUMO simulation.
+    
+    Args:
+        args: ArgumentParser object with net_path, traffic_data_files, mapping_file, out_dir, simulation_period
+    """
     # 1. Kiểm tra net file
     if not os.path.exists(args.net_path):
         print(f"[ERROR] Net file not found at {args.net_path}")
         return
 
-    # 2. Đọc intersection file
+    # 2. Đọc mapping file
     try:
-        df = pd.read_csv(args.intersection_file)
-        if not all(col in df.columns for col in ['name', 'lat', 'lng']):
-            raise ValueError("CSV file must contain 'name', 'lat', and 'lng' columns")
+        df = pd.read_csv(args.mapping_file)
+        if not all(col in df.columns for col in ['Intersection', 'Junction_ID']):
+            raise ValueError("CSV file must contain 'Intersection' and 'Junction_ID' columns")
     except FileNotFoundError:
-        print(f"[ERROR] Intersection file not found at {args.intersection_file}")
+        print(f"[ERROR] Mapping file not found at {args.mapping_file}")
         return
     except Exception as e:
-        print(f"[ERROR] Failed to read intersection file: {e}")
+        print(f"[ERROR] Failed to read mapping file: {e}")
         return
 
     # 3. Lấy danh sách traffic CSV files
@@ -98,13 +100,14 @@ def create_demand_file(args):
         print(f"[ERROR] Failed to load traffic data files: {e}")
         return
 
-    # 5. Gọi hàm tạo route
+    # 4. Gọi hàm tạo route
     try:
+        output_file = os.path.join(args.out_dir, "region_1.rou.xml")
         create_route_file(
             net_file=args.net_path,
             traffic_data_files=traffic_data_files,
-            intersection_file=args.intersection_file,
-            output_file=args.out_dir,
+            mapping_file=args.mapping_file,
+            output_file=output_file,
             simulation_period=int(args.simulation_period)
         )
         print("[INFO] Route file created successfully.")
@@ -112,7 +115,8 @@ def create_demand_file(args):
         print(f"[ERROR] Failed to create route file: {e}")
 
 def test(args):
-    test_find_closest_node()
+    # test_find_closest_node()
+    pass
 
 def main():
     """
@@ -203,10 +207,10 @@ def main():
         help="Folder containing traffic data CSV files"
     )
     create_demand.add_argument(
-        '--intersection-file',
+        '--mapping-file',
         type=str,
-        default="src/model/data/intersections/intersection_list.csv",
-        help="CSV file with intersection list"
+        default="src/model/data/intersections/intersection_mapping.csv",
+        help="CSV file with intersection mapping list"
     )
     create_demand.add_argument(
         '--out-dir',

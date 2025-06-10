@@ -62,7 +62,7 @@ def convert_osm_to_net(osm_file, net_file):
         'netconvert',
         '--osm', osm_file,
         '--output', net_file,
-        '--proj.utm', 'true',  # Thay đổi từ false sang true để sử dụng UTM projection
+        '--proj.utm', 'true', 
         '--roundabouts.guess', 'true',
         '--tls.guess', 'true',
         '--tls.discard-simple', 'false',
@@ -75,7 +75,6 @@ def convert_osm_to_net(osm_file, net_file):
         '--lefthand', 'false',
         '--verbose', 'true',
     ]
-    # Loại bỏ tham số --proj.scale vì không cần thiết khi sử dụng --proj.utm
     
     process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout, stderr = process.communicate()

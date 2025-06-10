@@ -55,7 +55,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
         type="primary"
         block
         size="large"
-        className="mb-4"
+        className="mb-4 bg-purple-500"
         onClick={handleRegister}
       >
         Register
