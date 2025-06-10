@@ -13,3 +13,4 @@ python main.py collect_traffic --intersection-path data/custom_intersections.csv
 poetry run python -m model.utils.generate_mapping
 
 
+

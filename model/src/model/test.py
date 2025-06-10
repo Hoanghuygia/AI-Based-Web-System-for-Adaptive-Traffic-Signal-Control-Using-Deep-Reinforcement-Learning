@@ -1,22 +1,75 @@
-import pandas as pd
-from pyproj import Transformer
+# app/api/v1/endpoints/models.py
+from fastapi import APIRouter, Depends, UploadFile, File
+from app.services.ml.inference import ModelInferenceService
+from app.models.schemas.models import PredictionRequest, PredictionResponse
 
-# Tạo transformer từ WGS84 (EPSG:4326) sang UTM zone 48N (EPSG:32648)
-transformer = Transformer.from_crs("EPSG:4326", "+proj=utm +zone=48 +ellps=WGS84 +datum=WGS84 +units=m +no_defs")
+router = APIRouter()
 
-# Đọc file CSV đầu vào
-df = pd.read_csv("src/model/data/intersections/intersection_list.csv")
+@router.post("/predict", response_model=PredictionResponse)
+async def predict_traffic_signals(
+    request: PredictionRequest,
+    inference_service: ModelInferenceService = Depends(get_inference_service)
+):
+    """Generate traffic light timing predictions using MARL-RNN model."""
+    predictions = await inference_service.predict(
+        traffic_data=request.traffic_data,
+        intersection_ids=request.intersection_ids,
+        prediction_horizon=request.prediction_horizon
+    )
+    
+    return PredictionResponse(
+        predictions=predictions,
+        confidence_scores=predictions.confidence,
+        timestamp=datetime.utcnow()
+    )
 
-# Chuyển đổi từng dòng sang UTM
-def convert_row(row):
-    x, y = transformer.transform(row['lat'], row['lng'])  # lat, lng => x, y
-    return pd.Series({'x': x, 'y': y})
+@router.post("/model/upload")
+async def upload_model(
+    file: UploadFile = File(...),
+    inference_service: ModelInferenceService = Depends(get_inference_service)
+):
+    """Upload and deploy a new trained model."""
+    if not file.filename.endswith(('.pkl', '.pt', '.h5')):
+        raise HTTPException(status_code=400, detail="Invalid model file format")
+    
+    model_id = await inference_service.deploy_model(file)
+    return {"model_id": model_id, "status": "deployed"}
 
-# Áp dụng chuyển đổi và ghép vào DataFrame ban đầu
-utm_coords = df.apply(convert_row, axis=1)
-df = pd.concat([df, utm_coords], axis=1)
 
-# Xuất ra file CSV mới
-df.to_csv("src/model/data/intersections/intersection_list_utm.csv", index=False)
+@app.post("/simulation/start")
+async def start_simulation(config_id: str):
+    config_path = f"configs/{config_id}.sumocfg"
+    try:
+        init_sumo_simulation(config_path)
+        return {"status": "Simulation started", "config_id": config_id}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to start simulation: {str(e)}")
+    
+    
+    
+    def load_marl_model(model_path: str = "models/marl_rnn.pt"):
+    model = MARL_RNN_Model()  # Model class definition
+    model.load_state_dict(torch.load(model_path, map_location=torch.device("cuda" if torch.cuda.is_available() else "cpu")))
+    model.eval()  # Set to inference mode
+    return model
 
-print("Chuyển đổi hoàn tất. Kết quả được lưu vào 'output_with_utm.csv'")
+
+interface TrafficData {
+  vehicleCount: number;
+  queueLength: number;
+}
+
+const useTrafficWebSocket = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const ws = new WebSocket('ws://backend-api/ws/traffic');
+    ws.onmessage = (event) => {
+      const data: TrafficData = JSON.parse(event.data);
+      dispatch(updateTrafficState(data));
+    };
+    return () => ws.close();
+  }, [dispatch]);
+};
+
+export default useTrafficWebSocket;

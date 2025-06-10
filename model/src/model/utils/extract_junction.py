@@ -21,8 +21,8 @@ def extract_junctions(net_file_path):
         junction_id = junction.get('id')
         
         # Skip internal junctions if needed (those with ":"" in their ID)
-        # if ":" in junction_id:
-        #     continue
+        if ":" in junction_id:
+            continue
         
         x = float(junction.get('x', 0))
         y = float(junction.get('y', 0))
