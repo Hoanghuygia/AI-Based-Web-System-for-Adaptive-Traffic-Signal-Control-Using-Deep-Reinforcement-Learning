@@ -9,6 +9,7 @@ from model.utils.map_downloader import download_map
 from model.utils.osm_to_sumo import convert_osm_to_net
 from model.utils.collect_traffic_data import collect_traffic_data
 from model.utils.create_demand_file import create_route_file
+from model.utils.create_traffic_light_config import create_traffic_light_config
 
 def collect_map_data(args):
     """
@@ -113,6 +114,29 @@ def create_demand_file(args):
         print("[INFO] Route file created successfully.")
     except Exception as e:
         print(f"[ERROR] Failed to create route file: {e}")
+
+def create_tfl_config(args):
+    """
+    Create traffic light configuration file (.tl.xml) for SUMO simulation.
+    
+    Args:
+        args: ArgumentParser object with net_file, output_file, tl_type
+    """
+    # 1. Kiểm tra net file
+    if not os.path.exists(args.net_file):
+        print(f"[ERROR] Net file not found at {args.net_file}")
+        return
+
+    # 2. Gọi hàm tạo traffic light config
+    try:
+        create_traffic_light_config(
+            net_file=args.net_file,
+            output_file=args.output_file,
+            tl_type=args.tl_type
+        )
+        print("[INFO] Traffic light configuration file created successfully.")
+    except Exception as e:
+        print(f"[ERROR] Failed to create traffic light configuration file: {e}")
 
 def test(args):
     # test_find_closest_node()
@@ -225,6 +249,31 @@ def main():
         help="Simulation time in seconds (default = 3 days)"
     )
     # ------------------------------------------------
+    # Subparser: create traffic light config command
+    # ------------------------------------------------
+    create_tl_config = subparser.add_parser(
+        'create_tl_config', help="Create traffic light configuration file"
+    )
+    create_tl_config.add_argument(
+        '--net-file',
+        type=str,
+        default="src/model/sumo_files/network/region_1.net.xml",
+        help="Path to net file"
+    )
+    create_tl_config.add_argument(
+        '--output-file',
+        type=str,
+        default="src/model/sumo_files/traffic_lights/region_1.tl.xml",
+        help="Output traffic light config file path"
+    )
+    create_tl_config.add_argument(
+        '--tl-type',
+        type=str,
+        default="static",
+        help="Traffic light type (default: static)"
+    )
+
+    # ------------------------------------------------
     # Subparser: test command
     # ------------------------------------------------
     test_command = subparser.add_parser(
@@ -242,14 +291,12 @@ def main():
         collect_traffic_infor(args)
     elif args.command == "create_demand":
         create_demand_file(args)
+    elif args.command == "create_tl_config":
+        create_tfl_config(args)
     elif args.command == "test":
         test(args)
     else:
         parser.print_help()
 
-
-# ================================================
-# Entry Point
-# ================================================
 if __name__ == "__main__":
     main()
