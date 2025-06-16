@@ -10,6 +10,7 @@ from model.utils.osm_to_sumo import convert_osm_to_net
 from model.utils.collect_traffic_data import collect_traffic_data
 from model.utils.create_demand_file import create_route_file
 from model.utils.create_traffic_light_config import create_traffic_light_config
+from model.utils.create_sumo_config_file import create_sumo_config
 
 def collect_map_data(args):
     """
@@ -137,6 +138,36 @@ def create_tfl_config(args):
         print("[INFO] Traffic light configuration file created successfully.")
     except Exception as e:
         print(f"[ERROR] Failed to create traffic light configuration file: {e}")
+        
+def create_sumo_config_file(args):
+    """
+    Create SUMO configuration file (.sumocfg) for simulation.
+    """
+    # 1. Kiểm tra net file
+    if not os.path.exists(args.net_file):
+        print(f"[ERROR] Net file not found at {args.net_file}")
+        return
+    # 2. Kiểm tra route file
+    if not os.path.exists(args.route_file):
+        print(f"[ERROR] Route file not found at {args.route_file}")
+        return
+    # 3. Kiểm tra traffic light file
+    if not os.path.exists(args.traffic_light_file):
+        print(f"[ERROR] Traffic light file not found at {args.traffic_light_file}")
+        return
+    # 4. Gọi hàm tạo SUMO config
+    try:
+        create_sumo_config(
+            net_file=args.net_file,
+            route_file=args.route_file,
+            traffic_light_file=args.traffic_light_file,
+            output_file=args.output_file,
+            begin_time=args.begin_time,
+            end_time=args.end_time
+        )
+        print("[INFO] SUMO configuration file created successfully.")
+    except Exception as e:
+        print(f"[ERROR] Failed to create SUMO configuration file: {e}")
 
 def test(args):
     # test_find_closest_node()
@@ -272,7 +303,48 @@ def main():
         default="static",
         help="Traffic light type (default: static)"
     )
-
+    # ------------------------------------------------
+    # Subparser: create sumo config command
+    # ------------------------------------------------
+    create_sumo_config = subparser.add_parser(
+        'create_sumo_config', help="Create SUMO configuration file"
+    )
+    create_sumo_config.add_argument(
+        '--net-file',
+        type=str,
+        default="src/model/sumo_files/network/region_1.net.xml",
+        help="Path to net file"
+    )
+    create_sumo_config.add_argument(
+        '--route-file',
+        type=str,
+        default="src/model/sumo_files/routes/region_1.rou.xml",
+        help="Path to route file"
+    )
+    create_sumo_config.add_argument(
+        '--traffic-light-file',
+        type=str,
+        default="src/model/sumo_files/traffic_lights/region_1.tl.xml",
+        help="Path to traffic light file"
+    )
+    create_sumo_config.add_argument(
+        '--output-file',
+        type=str,
+        default="src/model/sumo_files/region_1.sumocfg",
+        help="Path to output SUMO config file"
+    )
+    create_sumo_config.add_argument(
+        '--begin-time',
+        type=int,
+        default=0,
+        help="Begin time for simulation (default: 0)"
+    )
+    create_sumo_config.add_argument(
+        '--end-time',
+        type=int,
+        default=3600,
+        help="End time for simulation (default: 3600)"
+    )
     # ------------------------------------------------
     # Subparser: test command
     # ------------------------------------------------
@@ -293,6 +365,8 @@ def main():
         create_demand_file(args)
     elif args.command == "create_tl_config":
         create_tfl_config(args)
+    elif args.command == "create_sumo_config":
+        create_sumo_config_file(args)
     elif args.command == "test":
         test(args)
     else:
