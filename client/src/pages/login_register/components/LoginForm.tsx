@@ -41,7 +41,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
             <div className="mb-2 text-right">
                 <a
                     href="#"
-                    className="text-sm text-gray-500 hover:text-indigo-600"
+                    className="text-sm text-gray-500 hover:text-purple-700"
                 >
                     Forgot Password?
                 </a>
@@ -50,7 +50,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
                 type="primary"
                 block
                 size="large"
-                className="mb-4"
+                className="mb-4 bg-purple-500"
                 onClick={handleLogin}
             >
                 Login

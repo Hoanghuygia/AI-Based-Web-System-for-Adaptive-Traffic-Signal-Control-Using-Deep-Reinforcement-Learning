@@ -1,0 +1,1441 @@
+timestamp,origin,destination,duration_seconds,distance_meters,traffic_condition,day_of_week,hour_of_day
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,124,434,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,171,649,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,250,867,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,186,715,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,147,572,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Ho Con Rua,95,329,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,48,155,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,95,309,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,133,465,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,187,654,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,228,798,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,418,1469,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,256,970,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,226,781,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,177,626,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,52,183,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,103,464,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,203,745,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,139,593,moderate,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,99,451,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Ho Con Rua,48,207,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,106,338,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,153,492,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,85,344,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,132,516,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,173,661,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,408,1474,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,201,832,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,179,660,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,223,808,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,100,360,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,46,177,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,150,447,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,86,295,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,42,153,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Thi Minh Khai,Ho Con Rua,99,384,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,154,515,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,201,669,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,136,521,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,78,310,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,120,454,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,309,1125,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,144,625,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,202,805,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,242,952,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,139,502,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,85,319,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,39,142,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,127,437,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,83,295,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Ho Con Rua,138,526,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,193,657,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,240,811,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,175,663,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,119,452,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,161,596,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,350,1267,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,184,767,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,243,947,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,283,1094,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Nguyen Thi Minh Khai,199,654,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Nguyen Thi Minh Khai,145,471,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Nguyen Thi Minh Khai,99,294,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,55,152,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Vo Van Tan,143,447,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Ho Con Rua,198,678,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Tran Cao Van,253,809,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Nguyen Dinh Chieu,300,963,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Nguyen Dinh Chieu,235,815,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Nguyen Dinh Chieu,179,604,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,221,748,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Dien Bien Phu,233,827,moderate,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Dien Bien Phu,244,919,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Dien Bien Phu,303,1099,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Dien Bien Phu,343,1246,normal,2,7
+2025-05-14 07:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Nguyen Thi Minh Khai,247,794,normal,2,7
+2025-05-14 07:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Nguyen Thi Minh Khai,193,611,normal,2,7
+2025-05-14 07:00:00,Pasteur - Vo Van Tan,Pasteur - Nguyen Thi Minh Khai,147,434,normal,2,7
+2025-05-14 07:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,103,292,normal,2,7
+2025-05-14 07:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Vo Van Tan,39,140,normal,2,7
+2025-05-14 07:00:00,Pasteur - Vo Van Tan,Ho Con Rua,246,818,normal,2,7
+2025-05-14 07:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Tran Cao Van,301,949,normal,2,7
+2025-05-14 07:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Nguyen Dinh Chieu,276,1112,normal,2,7
+2025-05-14 07:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Nguyen Dinh Chieu,240,969,normal,2,7
+2025-05-14 07:00:00,Pasteur - Vo Van Tan,Pasteur - Nguyen Dinh Chieu,35,157,normal,2,7
+2025-05-14 07:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,77,301,normal,2,7
+2025-05-14 07:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Dien Bien Phu,273,967,moderate,2,7
+2025-05-14 07:00:00,Pasteur - Vo Van Tan,Pasteur - Dien Bien Phu,101,472,normal,2,7
+2025-05-14 07:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Dien Bien Phu,159,653,normal,2,7
+2025-05-14 07:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Dien Bien Phu,199,800,normal,2,7
+2025-05-14 07:00:00,Ho Con Rua,Hai Ba Trung - Nguyen Thi Minh Khai,117,443,normal,2,7
+2025-05-14 07:00:00,Ho Con Rua,Pham Ngoc Thach - Nguyen Thi Minh Khai,54,260,normal,2,7
+2025-05-14 07:00:00,Ho Con Rua,Pasteur - Nguyen Thi Minh Khai,158,724,normal,2,7
+2025-05-14 07:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,149,510,normal,2,7
+2025-05-14 07:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Vo Van Tan,85,358,normal,2,7
+2025-05-14 07:00:00,Ho Con Rua,Pasteur - Vo Van Tan,45,216,normal,2,7
+2025-05-14 07:00:00,Ho Con Rua,Hai Ba Trung - Tran Cao Van,171,598,normal,2,7
+2025-05-14 07:00:00,Ho Con Rua,Hai Ba Trung - Nguyen Dinh Chieu,218,752,normal,2,7
+2025-05-14 07:00:00,Ho Con Rua,Pham Ngoc Thach - Nguyen Dinh Chieu,30,108,normal,2,7
+2025-05-14 07:00:00,Ho Con Rua,Pasteur - Nguyen Dinh Chieu,77,280,normal,2,7
+2025-05-14 07:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,118,425,normal,2,7
+2025-05-14 07:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Dien Bien Phu,308,1095,normal,2,7
+2025-05-14 07:00:00,Ho Con Rua,Pasteur - Dien Bien Phu,146,596,normal,2,7
+2025-05-14 07:00:00,Ho Con Rua,Pham Ngoc Thach - Dien Bien Phu,124,424,normal,2,7
+2025-05-14 07:00:00,Ho Con Rua,Hai Ba Trung - Dien Bien Phu,168,572,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Nguyen Thi Minh Khai,43,155,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Nguyen Thi Minh Khai,103,462,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Nguyen Thi Minh Khai,207,926,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,198,712,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Vo Van Tan,134,560,moderate,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Vo Van Tan,95,417,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Tran Cao Van,Ho Con Rua,43,174,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Nguyen Dinh Chieu,47,154,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Nguyen Dinh Chieu,81,310,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Nguyen Dinh Chieu,128,482,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,169,627,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Dien Bien Phu,368,1387,moderate,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Dien Bien Phu,197,798,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Dien Bien Phu,174,626,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Dien Bien Phu,129,471,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,87,309,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,120,519,moderate,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,224,984,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,215,769,moderate,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,151,617,moderate,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,111,475,moderate,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Ho Con Rua,91,328,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,44,154,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,44,172,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,89,345,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,130,489,moderate,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,320,1160,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,158,661,moderate,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,143,488,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,81,317,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,138,530,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,75,347,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,179,812,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,170,597,moderate,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,106,445,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,66,303,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Ho Con Rua,102,342,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,192,685,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,215,776,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,44,172,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,85,317,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,275,987,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,113,488,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,94,316,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,138,464,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,296,956,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,242,773,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,196,596,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,152,454,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,94,302,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,240,749,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Dinh Chieu,Ho Con Rua,295,980,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,287,1109,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,241,955,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,205,812,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,40,144,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,230,815,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,65,316,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,124,496,normal,2,7
+2025-05-14 07:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,164,643,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,254,812,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,200,629,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,154,452,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,110,310,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,52,158,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,198,605,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Ho Con Rua,253,836,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,308,967,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,355,1121,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,290,973,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,234,762,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,188,671,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,230,811,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,280,988,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,321,1136,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,298,1086,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,249,980,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,236,776,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,192,634,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,133,482,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Vo Van Tan,240,936,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Ho Con Rua,276,975,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,255,931,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,209,777,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,173,633,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,221,805,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,82,324,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Dien Bien Phu,42,140,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,92,317,normal,2,7
+2025-05-14 07:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,133,464,normal,2,7
+2025-05-14 07:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,257,945,normal,2,7
+2025-05-14 07:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,207,840,normal,2,7
+2025-05-14 07:00:00,Pasteur - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,311,1305,normal,2,7
+2025-05-14 07:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,302,1090,normal,2,7
+2025-05-14 07:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,238,938,moderate,2,7
+2025-05-14 07:00:00,Pasteur - Dien Bien Phu,Pasteur - Vo Van Tan,198,796,normal,2,7
+2025-05-14 07:00:00,Pasteur - Dien Bien Phu,Ho Con Rua,234,835,normal,2,7
+2025-05-14 07:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,214,790,normal,2,7
+2025-05-14 07:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,168,636,normal,2,7
+2025-05-14 07:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,131,493,normal,2,7
+2025-05-14 07:00:00,Pasteur - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,179,665,normal,2,7
+2025-05-14 07:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,220,810,normal,2,7
+2025-05-14 07:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,183,643,moderate,2,7
+2025-05-14 07:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,50,177,normal,2,7
+2025-05-14 07:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,91,324,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,206,769,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,157,663,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,261,1128,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,252,913,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,188,761,moderate,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Vo Van Tan,148,619,moderate,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Dien Bien Phu,Ho Con Rua,184,658,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,163,614,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,117,460,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,81,316,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,129,488,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,170,633,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,226,814,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Dien Bien Phu,198,804,normal,2,7
+2025-05-14 07:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,40,148,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,283,1174,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,325,1296,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,422,1959,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,420,1546,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,356,1394,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Vo Van Tan,316,1252,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Dien Bien Phu,Ho Con Rua,269,1193,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,226,1019,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,199,873,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,244,1046,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,288,1218,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,329,1362,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,260,953,moderate,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Dien Bien Phu,311,1096,normal,2,7
+2025-05-14 07:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,166,633,normal,2,7
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,124,434,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,171,649,normal,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,250,867,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,186,715,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,147,572,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Ho Con Rua,95,329,normal,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,48,155,normal,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,95,309,normal,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,133,465,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,180,637,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,221,782,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,418,1469,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,262,1044,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,226,781,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,177,626,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,52,183,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,103,464,normal,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,203,745,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,139,593,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,99,451,normal,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Ho Con Rua,48,207,normal,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,106,338,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,153,492,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,85,344,normal,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,132,516,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,173,661,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,363,1331,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,201,832,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,179,660,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,223,808,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,100,360,heavy,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,46,177,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,150,447,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,86,295,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,42,153,normal,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Thi Minh Khai,Ho Con Rua,99,384,normal,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,154,515,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,201,669,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,136,521,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,78,310,normal,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,120,454,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,309,1125,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,144,625,normal,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,202,805,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,242,952,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,139,502,heavy,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,85,319,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,39,142,normal,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,127,437,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,83,295,normal,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Ho Con Rua,138,526,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,193,657,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,240,811,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,175,663,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,119,452,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,161,596,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,350,1267,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,184,767,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,243,947,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,283,1094,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Nguyen Thi Minh Khai,199,654,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Nguyen Thi Minh Khai,145,471,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Nguyen Thi Minh Khai,99,294,normal,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,55,152,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Vo Van Tan,143,447,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Ho Con Rua,198,678,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Tran Cao Van,253,809,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Nguyen Dinh Chieu,300,963,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Nguyen Dinh Chieu,235,815,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Nguyen Dinh Chieu,179,604,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,221,748,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Dien Bien Phu,233,827,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Dien Bien Phu,244,919,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Dien Bien Phu,303,1099,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Dien Bien Phu,343,1246,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Nguyen Thi Minh Khai,247,794,heavy,2,9
+2025-05-14 09:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Nguyen Thi Minh Khai,193,611,heavy,2,9
+2025-05-14 09:00:00,Pasteur - Vo Van Tan,Pasteur - Nguyen Thi Minh Khai,147,434,heavy,2,9
+2025-05-14 09:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,103,292,heavy,2,9
+2025-05-14 09:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Vo Van Tan,39,140,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Vo Van Tan,Ho Con Rua,246,818,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Tran Cao Van,301,949,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Nguyen Dinh Chieu,276,1112,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Nguyen Dinh Chieu,240,969,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Vo Van Tan,Pasteur - Nguyen Dinh Chieu,35,157,normal,2,9
+2025-05-14 09:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,77,301,normal,2,9
+2025-05-14 09:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Dien Bien Phu,273,967,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Vo Van Tan,Pasteur - Dien Bien Phu,101,472,normal,2,9
+2025-05-14 09:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Dien Bien Phu,159,653,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Dien Bien Phu,199,800,moderate,2,9
+2025-05-14 09:00:00,Ho Con Rua,Hai Ba Trung - Nguyen Thi Minh Khai,117,443,moderate,2,9
+2025-05-14 09:00:00,Ho Con Rua,Pham Ngoc Thach - Nguyen Thi Minh Khai,54,260,normal,2,9
+2025-05-14 09:00:00,Ho Con Rua,Pasteur - Nguyen Thi Minh Khai,158,724,moderate,2,9
+2025-05-14 09:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,149,510,heavy,2,9
+2025-05-14 09:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Vo Van Tan,85,358,moderate,2,9
+2025-05-14 09:00:00,Ho Con Rua,Pasteur - Vo Van Tan,45,216,normal,2,9
+2025-05-14 09:00:00,Ho Con Rua,Hai Ba Trung - Tran Cao Van,171,598,moderate,2,9
+2025-05-14 09:00:00,Ho Con Rua,Hai Ba Trung - Nguyen Dinh Chieu,218,752,moderate,2,9
+2025-05-14 09:00:00,Ho Con Rua,Pham Ngoc Thach - Nguyen Dinh Chieu,30,108,normal,2,9
+2025-05-14 09:00:00,Ho Con Rua,Pasteur - Nguyen Dinh Chieu,77,280,normal,2,9
+2025-05-14 09:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,118,425,moderate,2,9
+2025-05-14 09:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Dien Bien Phu,308,1095,moderate,2,9
+2025-05-14 09:00:00,Ho Con Rua,Pasteur - Dien Bien Phu,146,596,moderate,2,9
+2025-05-14 09:00:00,Ho Con Rua,Pham Ngoc Thach - Dien Bien Phu,124,424,moderate,2,9
+2025-05-14 09:00:00,Ho Con Rua,Hai Ba Trung - Dien Bien Phu,168,572,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Nguyen Thi Minh Khai,43,155,normal,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Nguyen Thi Minh Khai,103,462,normal,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Nguyen Thi Minh Khai,207,926,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,198,712,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Vo Van Tan,134,560,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Vo Van Tan,95,417,normal,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Tran Cao Van,Ho Con Rua,43,174,normal,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Nguyen Dinh Chieu,47,154,normal,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Nguyen Dinh Chieu,81,310,normal,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Nguyen Dinh Chieu,128,482,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,169,627,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Dien Bien Phu,359,1297,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Dien Bien Phu,197,798,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Dien Bien Phu,174,626,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Dien Bien Phu,129,471,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,87,309,normal,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,120,519,heavy,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,224,984,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,215,769,heavy,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,151,617,heavy,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,111,475,heavy,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Ho Con Rua,91,328,normal,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,44,154,normal,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,44,172,heavy,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,89,345,heavy,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,130,489,heavy,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,320,1160,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,158,661,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,143,488,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,81,317,normal,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,138,530,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,75,347,normal,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,179,812,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,170,597,heavy,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,106,445,heavy,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,66,303,normal,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Ho Con Rua,102,342,normal,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,192,685,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,215,776,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,44,172,normal,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,85,317,normal,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,275,987,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,113,488,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,94,316,normal,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,138,464,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,296,956,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,242,773,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,196,596,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,152,454,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,94,302,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,240,749,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Dinh Chieu,Ho Con Rua,308,1154,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,287,1109,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,241,955,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,205,812,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,40,144,normal,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,230,815,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,65,316,normal,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,124,496,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,164,643,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,254,812,heavy,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,200,629,heavy,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,154,452,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,110,310,heavy,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,52,158,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,198,605,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Ho Con Rua,253,836,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,308,967,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,355,1121,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,290,973,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,234,762,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,188,671,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,230,811,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,280,988,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,321,1136,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,298,1086,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,249,980,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,236,776,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,192,634,heavy,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,133,482,heavy,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Vo Van Tan,240,936,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Ho Con Rua,276,975,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,255,931,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,209,777,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,173,633,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,221,805,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,82,324,moderate,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Dien Bien Phu,42,140,normal,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,92,317,normal,2,9
+2025-05-14 09:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,133,464,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,257,945,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,207,840,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,311,1305,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,302,1090,heavy,2,9
+2025-05-14 09:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,238,938,heavy,2,9
+2025-05-14 09:00:00,Pasteur - Dien Bien Phu,Pasteur - Vo Van Tan,198,796,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Dien Bien Phu,Ho Con Rua,234,835,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,214,790,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,168,636,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,131,493,heavy,2,9
+2025-05-14 09:00:00,Pasteur - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,179,665,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,220,810,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,183,643,moderate,2,9
+2025-05-14 09:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,50,177,normal,2,9
+2025-05-14 09:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,91,324,normal,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,206,769,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,157,663,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,261,1128,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,252,913,heavy,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,188,761,heavy,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Vo Van Tan,148,619,heavy,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Dien Bien Phu,Ho Con Rua,184,658,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,163,614,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,117,460,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,81,316,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,129,488,heavy,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,170,633,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,226,814,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Dien Bien Phu,198,804,moderate,2,9
+2025-05-14 09:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,40,148,normal,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,283,1174,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,325,1296,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,429,1761,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,424,1731,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,360,1579,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Vo Van Tan,321,1436,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Dien Bien Phu,Ho Con Rua,269,1193,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,226,1019,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,199,873,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,244,1046,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,288,1218,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,329,1362,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,260,953,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Dien Bien Phu,311,1096,moderate,2,9
+2025-05-14 09:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,166,633,moderate,2,9
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,124,434,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,171,649,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,250,867,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,186,715,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,147,572,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Ho Con Rua,95,329,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,48,155,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,95,309,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,133,465,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,187,654,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,228,798,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,418,1469,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,256,970,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,226,781,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,177,626,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,52,183,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,103,464,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,203,745,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,139,593,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,99,451,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Ho Con Rua,48,207,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,106,338,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,153,492,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,85,344,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,132,516,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,173,661,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,363,1331,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,201,832,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,179,660,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,223,808,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,100,360,normal,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,46,177,normal,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,150,447,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,86,295,normal,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,42,153,normal,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Thi Minh Khai,Ho Con Rua,99,384,normal,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,154,515,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,201,669,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,136,521,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,78,310,normal,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,120,454,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,309,1125,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,144,625,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,202,805,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,242,952,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,139,502,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,85,319,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,39,142,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,127,437,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,83,295,normal,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Ho Con Rua,138,526,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,193,657,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,240,811,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,175,663,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,119,452,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,161,596,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,350,1267,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,184,767,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,243,947,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,283,1094,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Nguyen Thi Minh Khai,199,654,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Nguyen Thi Minh Khai,145,471,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Nguyen Thi Minh Khai,99,294,normal,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,55,152,normal,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Vo Van Tan,143,447,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Ho Con Rua,198,678,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Tran Cao Van,253,809,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Nguyen Dinh Chieu,300,963,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Nguyen Dinh Chieu,235,815,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Nguyen Dinh Chieu,179,604,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,221,748,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Dien Bien Phu,233,827,heavy,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Dien Bien Phu,244,919,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Dien Bien Phu,303,1099,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Dien Bien Phu,343,1246,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Nguyen Thi Minh Khai,247,794,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Nguyen Thi Minh Khai,193,611,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Vo Van Tan,Pasteur - Nguyen Thi Minh Khai,147,434,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,103,292,normal,2,12
+2025-05-14 12:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Vo Van Tan,39,140,normal,2,12
+2025-05-14 12:00:00,Pasteur - Vo Van Tan,Ho Con Rua,246,818,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Tran Cao Van,301,949,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Nguyen Dinh Chieu,276,1112,normal,2,12
+2025-05-14 12:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Nguyen Dinh Chieu,240,969,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Vo Van Tan,Pasteur - Nguyen Dinh Chieu,35,157,normal,2,12
+2025-05-14 12:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,77,301,normal,2,12
+2025-05-14 12:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Dien Bien Phu,288,1119,normal,2,12
+2025-05-14 12:00:00,Pasteur - Vo Van Tan,Pasteur - Dien Bien Phu,101,472,normal,2,12
+2025-05-14 12:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Dien Bien Phu,159,653,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Dien Bien Phu,199,800,moderate,2,12
+2025-05-14 12:00:00,Ho Con Rua,Hai Ba Trung - Nguyen Thi Minh Khai,117,443,moderate,2,12
+2025-05-14 12:00:00,Ho Con Rua,Pham Ngoc Thach - Nguyen Thi Minh Khai,54,260,normal,2,12
+2025-05-14 12:00:00,Ho Con Rua,Pasteur - Nguyen Thi Minh Khai,158,724,moderate,2,12
+2025-05-14 12:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,149,510,moderate,2,12
+2025-05-14 12:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Vo Van Tan,85,358,normal,2,12
+2025-05-14 12:00:00,Ho Con Rua,Pasteur - Vo Van Tan,45,216,normal,2,12
+2025-05-14 12:00:00,Ho Con Rua,Hai Ba Trung - Tran Cao Van,171,598,moderate,2,12
+2025-05-14 12:00:00,Ho Con Rua,Hai Ba Trung - Nguyen Dinh Chieu,218,752,moderate,2,12
+2025-05-14 12:00:00,Ho Con Rua,Pham Ngoc Thach - Nguyen Dinh Chieu,30,108,normal,2,12
+2025-05-14 12:00:00,Ho Con Rua,Pasteur - Nguyen Dinh Chieu,77,280,normal,2,12
+2025-05-14 12:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,118,425,moderate,2,12
+2025-05-14 12:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Dien Bien Phu,308,1095,moderate,2,12
+2025-05-14 12:00:00,Ho Con Rua,Pasteur - Dien Bien Phu,146,596,moderate,2,12
+2025-05-14 12:00:00,Ho Con Rua,Pham Ngoc Thach - Dien Bien Phu,124,424,moderate,2,12
+2025-05-14 12:00:00,Ho Con Rua,Hai Ba Trung - Dien Bien Phu,168,572,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Nguyen Thi Minh Khai,43,155,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Nguyen Thi Minh Khai,103,462,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Nguyen Thi Minh Khai,207,926,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,198,712,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Vo Van Tan,134,560,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Vo Van Tan,95,417,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Tran Cao Van,Ho Con Rua,43,174,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Nguyen Dinh Chieu,47,154,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Nguyen Dinh Chieu,81,310,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Nguyen Dinh Chieu,128,482,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,169,627,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Dien Bien Phu,390,1423,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Dien Bien Phu,197,798,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Dien Bien Phu,174,626,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Dien Bien Phu,129,471,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,87,309,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,120,519,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,224,984,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,215,769,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,151,617,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,111,475,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Ho Con Rua,91,328,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,44,154,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,44,172,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,89,345,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,130,489,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,320,1160,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,158,661,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,143,488,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,81,317,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,138,530,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,75,347,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,179,812,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,170,597,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,106,445,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,66,303,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Ho Con Rua,102,342,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,192,685,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,215,776,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,44,172,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,85,317,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,275,987,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,113,488,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,94,316,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,138,464,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,296,956,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,242,773,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,196,596,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,152,454,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,94,302,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,240,749,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Dinh Chieu,Ho Con Rua,308,1154,normal,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,287,1109,normal,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,241,955,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,205,812,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,40,144,normal,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,230,815,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,65,316,normal,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,124,496,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,164,643,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,254,812,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,200,629,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,154,452,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,110,310,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,52,158,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,198,605,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Ho Con Rua,253,836,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,308,967,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,355,1121,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,290,973,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,234,762,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,188,671,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,230,811,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,280,988,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,321,1136,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,298,1086,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,249,980,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,236,776,heavy,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,192,634,heavy,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,133,482,heavy,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Vo Van Tan,240,936,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Ho Con Rua,276,975,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,255,931,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,209,777,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,173,633,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,221,805,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,82,324,moderate,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Dien Bien Phu,42,140,normal,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,92,317,normal,2,12
+2025-05-14 12:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,133,464,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,257,945,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,207,840,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,311,1305,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,302,1090,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,238,938,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Dien Bien Phu,Pasteur - Vo Van Tan,198,796,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Dien Bien Phu,Ho Con Rua,234,835,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,214,790,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,168,636,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,131,493,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,179,665,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,220,810,moderate,2,12
+2025-05-14 12:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,183,643,normal,2,12
+2025-05-14 12:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,50,177,normal,2,12
+2025-05-14 12:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,91,324,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,206,769,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,157,663,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,261,1128,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,252,913,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,188,761,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Vo Van Tan,148,619,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Dien Bien Phu,Ho Con Rua,184,658,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,163,614,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,117,460,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,81,316,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,129,488,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,170,633,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,226,814,normal,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Dien Bien Phu,198,804,moderate,2,12
+2025-05-14 12:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,40,148,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,283,1174,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,325,1296,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,422,1959,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,420,1546,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,356,1394,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Vo Van Tan,316,1252,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Dien Bien Phu,Ho Con Rua,269,1193,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,226,1019,moderate,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,199,873,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,244,1046,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,288,1218,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,329,1362,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,260,953,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Dien Bien Phu,311,1096,normal,2,12
+2025-05-14 12:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,166,633,moderate,2,12
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,124,434,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,171,649,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,250,867,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,186,715,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,147,572,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Ho Con Rua,95,329,normal,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,48,155,normal,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,95,309,normal,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,133,465,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,187,654,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,228,798,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,420,1542,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,262,1044,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,226,781,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,177,626,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,52,183,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,103,464,normal,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,203,745,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,139,593,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,99,451,normal,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Ho Con Rua,48,207,normal,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,106,338,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,153,492,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,85,344,normal,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,132,516,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,173,661,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,373,1421,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,201,832,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,179,660,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,223,808,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,100,360,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,46,177,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,150,447,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,86,295,normal,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,42,153,normal,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Thi Minh Khai,Ho Con Rua,99,384,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,154,515,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,201,669,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,136,521,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,78,310,normal,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,120,454,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,309,1125,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,144,625,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,202,805,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,242,952,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,139,502,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,85,319,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,39,142,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,127,437,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,83,295,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Ho Con Rua,138,526,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,193,657,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,240,811,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,175,663,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,119,452,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,161,596,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,350,1267,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,184,767,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,243,947,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,283,1094,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Nguyen Thi Minh Khai,199,654,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Nguyen Thi Minh Khai,145,471,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Nguyen Thi Minh Khai,99,294,normal,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,55,152,normal,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Vo Van Tan,143,447,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Ho Con Rua,198,678,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Tran Cao Van,253,809,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Nguyen Dinh Chieu,300,963,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Nguyen Dinh Chieu,235,815,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Nguyen Dinh Chieu,179,604,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,221,748,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Dien Bien Phu,233,827,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Dien Bien Phu,244,919,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Dien Bien Phu,303,1099,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Dien Bien Phu,343,1246,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Nguyen Thi Minh Khai,247,794,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Nguyen Thi Minh Khai,193,611,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Vo Van Tan,Pasteur - Nguyen Thi Minh Khai,147,434,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,103,292,normal,2,17
+2025-05-14 17:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Vo Van Tan,39,140,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Vo Van Tan,Ho Con Rua,246,818,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Tran Cao Van,301,949,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Nguyen Dinh Chieu,276,1112,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Nguyen Dinh Chieu,240,969,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Vo Van Tan,Pasteur - Nguyen Dinh Chieu,35,157,normal,2,17
+2025-05-14 17:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,77,301,normal,2,17
+2025-05-14 17:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Dien Bien Phu,273,967,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Vo Van Tan,Pasteur - Dien Bien Phu,101,472,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Dien Bien Phu,159,653,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Dien Bien Phu,199,800,heavy,2,17
+2025-05-14 17:00:00,Ho Con Rua,Hai Ba Trung - Nguyen Thi Minh Khai,117,443,moderate,2,17
+2025-05-14 17:00:00,Ho Con Rua,Pham Ngoc Thach - Nguyen Thi Minh Khai,54,260,normal,2,17
+2025-05-14 17:00:00,Ho Con Rua,Pasteur - Nguyen Thi Minh Khai,158,724,moderate,2,17
+2025-05-14 17:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,149,510,moderate,2,17
+2025-05-14 17:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Vo Van Tan,85,358,moderate,2,17
+2025-05-14 17:00:00,Ho Con Rua,Pasteur - Vo Van Tan,45,216,moderate,2,17
+2025-05-14 17:00:00,Ho Con Rua,Hai Ba Trung - Tran Cao Van,171,598,moderate,2,17
+2025-05-14 17:00:00,Ho Con Rua,Hai Ba Trung - Nguyen Dinh Chieu,218,752,moderate,2,17
+2025-05-14 17:00:00,Ho Con Rua,Pham Ngoc Thach - Nguyen Dinh Chieu,30,108,moderate,2,17
+2025-05-14 17:00:00,Ho Con Rua,Pasteur - Nguyen Dinh Chieu,77,280,moderate,2,17
+2025-05-14 17:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,118,425,heavy,2,17
+2025-05-14 17:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Dien Bien Phu,308,1095,heavy,2,17
+2025-05-14 17:00:00,Ho Con Rua,Pasteur - Dien Bien Phu,146,596,heavy,2,17
+2025-05-14 17:00:00,Ho Con Rua,Pham Ngoc Thach - Dien Bien Phu,124,424,heavy,2,17
+2025-05-14 17:00:00,Ho Con Rua,Hai Ba Trung - Dien Bien Phu,168,572,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Nguyen Thi Minh Khai,43,155,normal,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Nguyen Thi Minh Khai,103,462,normal,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Nguyen Thi Minh Khai,207,926,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,198,712,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Vo Van Tan,134,560,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Vo Van Tan,95,417,normal,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Tran Cao Van,Ho Con Rua,43,174,normal,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Nguyen Dinh Chieu,47,154,normal,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Nguyen Dinh Chieu,81,310,normal,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Nguyen Dinh Chieu,128,482,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,169,627,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Dien Bien Phu,368,1387,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Dien Bien Phu,197,798,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Dien Bien Phu,174,626,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Dien Bien Phu,129,471,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,87,309,normal,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,120,519,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,224,984,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,215,769,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,151,617,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,111,475,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Ho Con Rua,91,328,normal,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,44,154,normal,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,44,172,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,89,345,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,130,489,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,320,1160,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,158,661,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,143,488,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,81,317,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,138,530,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,75,347,normal,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,179,812,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,170,597,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,106,445,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,66,303,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Ho Con Rua,102,342,normal,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,192,685,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,239,839,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,44,172,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,85,317,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,275,987,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,113,488,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,94,316,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,138,464,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,296,956,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,242,773,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,196,596,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,152,454,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,94,302,normal,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,240,749,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Dinh Chieu,Ho Con Rua,295,980,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,287,1109,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,241,955,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,205,812,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,40,144,normal,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,230,815,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,65,316,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,124,496,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,164,643,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,254,812,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,200,629,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,154,452,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,110,310,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,52,158,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,198,605,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Ho Con Rua,253,836,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,308,967,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,355,1121,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,290,973,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,234,762,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,188,671,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,230,811,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,280,988,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,321,1136,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,298,1086,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,249,980,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,236,776,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,192,634,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,133,482,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Vo Van Tan,240,936,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Ho Con Rua,276,975,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,255,931,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,209,777,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,173,633,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,221,805,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,82,324,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Dien Bien Phu,42,140,moderate,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,92,317,heavy,2,17
+2025-05-14 17:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,133,464,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,257,945,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,207,840,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,311,1305,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,302,1090,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,238,938,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Dien Bien Phu,Pasteur - Vo Van Tan,198,796,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Dien Bien Phu,Ho Con Rua,234,835,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,214,790,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,168,636,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,131,493,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,179,665,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,220,810,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,183,643,heavy,2,17
+2025-05-14 17:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,50,177,moderate,2,17
+2025-05-14 17:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,91,324,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,206,769,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,157,663,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,261,1128,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,252,913,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,188,761,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Vo Van Tan,148,619,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Dien Bien Phu,Ho Con Rua,184,658,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,163,614,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,117,460,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,81,316,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,129,488,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,170,633,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,226,814,moderate,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Dien Bien Phu,198,804,heavy,2,17
+2025-05-14 17:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,40,148,normal,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,283,1174,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,329,1481,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,422,1959,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,424,1731,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,360,1579,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Vo Van Tan,321,1436,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Dien Bien Phu,Ho Con Rua,269,1193,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,226,1019,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,199,873,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,244,1046,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,288,1218,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,329,1362,heavy,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,260,953,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Dien Bien Phu,311,1096,moderate,2,17
+2025-05-14 17:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,166,633,moderate,2,17
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,124,434,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,171,649,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,250,867,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,186,715,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,147,572,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Ho Con Rua,95,329,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,48,155,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,95,309,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,133,465,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,187,654,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,228,798,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,420,1542,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,256,970,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,226,781,heavy,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,177,626,heavy,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,52,183,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,103,464,normal,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,203,745,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,139,593,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,99,451,normal,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Ho Con Rua,48,207,normal,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,106,338,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,153,492,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,85,344,normal,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,132,516,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,173,661,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,373,1421,normal,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,201,832,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,179,660,heavy,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,223,808,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,100,360,heavy,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,46,177,heavy,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,150,447,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,86,295,normal,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,42,153,normal,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Thi Minh Khai,Ho Con Rua,99,384,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,154,515,heavy,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,201,669,heavy,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,136,521,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,78,310,normal,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,120,454,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,309,1125,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,144,625,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,202,805,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,242,952,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,139,502,heavy,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,85,319,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,39,142,normal,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,127,437,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,83,295,normal,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Ho Con Rua,138,526,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,193,657,heavy,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,240,811,heavy,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,175,663,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,119,452,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,161,596,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,350,1267,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,184,767,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,243,947,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,283,1094,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Nguyen Thi Minh Khai,199,654,heavy,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Nguyen Thi Minh Khai,145,471,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Nguyen Thi Minh Khai,99,294,normal,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,55,152,normal,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Vo Van Tan,143,447,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Ho Con Rua,198,678,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Tran Cao Van,253,809,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Nguyen Dinh Chieu,300,963,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Nguyen Dinh Chieu,235,815,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Nguyen Dinh Chieu,179,604,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,221,748,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Dien Bien Phu,233,827,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Dien Bien Phu,244,919,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Dien Bien Phu,303,1099,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Dien Bien Phu,343,1246,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Nguyen Thi Minh Khai,247,794,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Nguyen Thi Minh Khai,193,611,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Vo Van Tan,Pasteur - Nguyen Thi Minh Khai,147,434,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,103,292,normal,2,19
+2025-05-14 19:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Vo Van Tan,39,140,normal,2,19
+2025-05-14 19:00:00,Pasteur - Vo Van Tan,Ho Con Rua,246,818,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Tran Cao Van,301,949,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Nguyen Dinh Chieu,276,1112,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Nguyen Dinh Chieu,240,969,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Vo Van Tan,Pasteur - Nguyen Dinh Chieu,35,157,normal,2,19
+2025-05-14 19:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,77,301,normal,2,19
+2025-05-14 19:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Dien Bien Phu,273,967,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Vo Van Tan,Pasteur - Dien Bien Phu,101,472,heavy,2,19
+2025-05-14 19:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Dien Bien Phu,159,653,heavy,2,19
+2025-05-14 19:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Dien Bien Phu,199,800,moderate,2,19
+2025-05-14 19:00:00,Ho Con Rua,Hai Ba Trung - Nguyen Thi Minh Khai,117,443,moderate,2,19
+2025-05-14 19:00:00,Ho Con Rua,Pham Ngoc Thach - Nguyen Thi Minh Khai,54,260,normal,2,19
+2025-05-14 19:00:00,Ho Con Rua,Pasteur - Nguyen Thi Minh Khai,158,724,normal,2,19
+2025-05-14 19:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,149,510,moderate,2,19
+2025-05-14 19:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Vo Van Tan,85,358,normal,2,19
+2025-05-14 19:00:00,Ho Con Rua,Pasteur - Vo Van Tan,45,216,normal,2,19
+2025-05-14 19:00:00,Ho Con Rua,Hai Ba Trung - Tran Cao Van,171,598,moderate,2,19
+2025-05-14 19:00:00,Ho Con Rua,Hai Ba Trung - Nguyen Dinh Chieu,218,752,moderate,2,19
+2025-05-14 19:00:00,Ho Con Rua,Pham Ngoc Thach - Nguyen Dinh Chieu,30,108,normal,2,19
+2025-05-14 19:00:00,Ho Con Rua,Pasteur - Nguyen Dinh Chieu,77,280,normal,2,19
+2025-05-14 19:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,118,425,moderate,2,19
+2025-05-14 19:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Dien Bien Phu,308,1095,moderate,2,19
+2025-05-14 19:00:00,Ho Con Rua,Pasteur - Dien Bien Phu,146,596,heavy,2,19
+2025-05-14 19:00:00,Ho Con Rua,Pham Ngoc Thach - Dien Bien Phu,124,424,heavy,2,19
+2025-05-14 19:00:00,Ho Con Rua,Hai Ba Trung - Dien Bien Phu,168,572,heavy,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Nguyen Thi Minh Khai,43,155,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Nguyen Thi Minh Khai,103,462,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Nguyen Thi Minh Khai,207,926,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,198,712,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Vo Van Tan,134,560,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Vo Van Tan,95,417,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Tran Cao Van,Ho Con Rua,43,174,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Nguyen Dinh Chieu,47,154,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Nguyen Dinh Chieu,81,310,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Nguyen Dinh Chieu,128,482,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,169,627,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Dien Bien Phu,368,1387,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Dien Bien Phu,197,798,heavy,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Dien Bien Phu,174,626,heavy,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Dien Bien Phu,129,471,heavy,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,87,309,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,120,519,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,224,984,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,215,769,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,151,617,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,111,475,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Ho Con Rua,91,328,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,44,154,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,44,172,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,89,345,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,130,489,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,320,1160,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,158,661,heavy,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,143,488,heavy,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,81,317,heavy,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,138,530,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,75,347,normal,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,179,812,normal,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,170,597,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,106,445,normal,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,66,303,normal,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Ho Con Rua,102,342,normal,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,192,685,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,215,776,heavy,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,44,172,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,85,317,normal,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,275,987,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,113,488,heavy,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,94,316,heavy,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,138,464,heavy,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,296,956,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,242,773,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,196,596,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,152,454,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,94,302,heavy,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,240,749,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Dinh Chieu,Ho Con Rua,295,980,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,287,1109,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,241,955,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,205,812,heavy,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,40,144,normal,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,230,815,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,65,316,heavy,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,124,496,heavy,2,19
+2025-05-14 19:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,164,643,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,254,812,heavy,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,200,629,heavy,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,154,452,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,110,310,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,52,158,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,198,605,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Ho Con Rua,253,836,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,308,967,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,355,1121,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,290,973,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,234,762,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,188,671,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,230,811,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,280,988,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,321,1136,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,298,1086,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,249,980,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,236,776,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,192,634,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,133,482,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Vo Van Tan,240,936,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Ho Con Rua,276,975,normal,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,255,931,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,209,777,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,173,633,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,221,805,moderate,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,82,324,normal,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Dien Bien Phu,42,140,normal,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,92,317,normal,2,19
+2025-05-14 19:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,133,464,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,257,945,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,207,840,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,311,1305,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,302,1090,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,238,938,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Dien Bien Phu,Pasteur - Vo Van Tan,198,796,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Dien Bien Phu,Ho Con Rua,234,835,normal,2,19
+2025-05-14 19:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,214,790,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,168,636,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,131,493,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,179,665,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,220,810,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,183,643,moderate,2,19
+2025-05-14 19:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,50,177,normal,2,19
+2025-05-14 19:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,91,324,normal,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,206,769,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,157,663,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,261,1128,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,252,913,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,188,761,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Vo Van Tan,148,619,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Dien Bien Phu,Ho Con Rua,184,658,normal,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,163,614,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,117,460,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,81,316,normal,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,129,488,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,170,633,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,226,814,moderate,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Dien Bien Phu,198,804,heavy,2,19
+2025-05-14 19:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,40,148,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,283,1174,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,329,1481,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,422,1959,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,424,1731,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,360,1579,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Vo Van Tan,321,1436,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Dien Bien Phu,Ho Con Rua,269,1193,normal,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,226,1019,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,199,873,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,244,1046,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,288,1218,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,329,1362,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,260,953,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Dien Bien Phu,311,1096,moderate,2,19
+2025-05-14 19:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,166,633,moderate,2,19
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,124,434,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,171,649,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,250,867,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,186,715,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,147,572,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Ho Con Rua,95,329,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,48,155,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,95,309,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,133,465,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,187,654,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,228,798,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,418,1469,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,256,970,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,226,781,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,177,626,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,52,183,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,103,464,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,203,745,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,139,593,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,99,451,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Ho Con Rua,48,207,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,106,338,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,153,492,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,85,344,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,132,516,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,173,661,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,373,1421,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,201,832,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,179,660,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,223,808,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,100,360,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,46,177,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,150,447,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,86,295,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,42,153,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Thi Minh Khai,Ho Con Rua,99,384,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,154,515,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,201,669,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,136,521,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,78,310,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,120,454,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,309,1125,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,144,625,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,202,805,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,242,952,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Thi Minh Khai,139,502,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Thi Minh Khai,85,319,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Nguyen Thi Minh Khai,39,142,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Vo Van Tan,127,437,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Vo Van Tan,83,295,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Ho Con Rua,138,526,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Tran Cao Van,193,657,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Nguyen Dinh Chieu,240,811,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Nguyen Dinh Chieu,175,663,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Nguyen Dinh Chieu,119,452,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,161,596,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Nam Ky Khoi Nghia - Dien Bien Phu,350,1267,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pasteur - Dien Bien Phu,184,767,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Pham Ngoc Thach - Dien Bien Phu,243,947,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,Hai Ba Trung - Dien Bien Phu,283,1094,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Nguyen Thi Minh Khai,199,654,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Nguyen Thi Minh Khai,145,471,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Nguyen Thi Minh Khai,99,294,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,55,152,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Vo Van Tan,143,447,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Ho Con Rua,198,678,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Tran Cao Van,253,809,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Nguyen Dinh Chieu,300,963,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Nguyen Dinh Chieu,235,815,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Nguyen Dinh Chieu,179,604,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,221,748,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Nam Ky Khoi Nghia - Dien Bien Phu,233,827,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pasteur - Dien Bien Phu,244,919,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Pham Ngoc Thach - Dien Bien Phu,303,1099,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Vo Van Tan,Hai Ba Trung - Dien Bien Phu,343,1246,normal,2,22
+2025-05-14 22:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Nguyen Thi Minh Khai,247,794,normal,2,22
+2025-05-14 22:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Nguyen Thi Minh Khai,193,611,normal,2,22
+2025-05-14 22:00:00,Pasteur - Vo Van Tan,Pasteur - Nguyen Thi Minh Khai,147,434,normal,2,22
+2025-05-14 22:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,103,292,normal,2,22
+2025-05-14 22:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Vo Van Tan,39,140,normal,2,22
+2025-05-14 22:00:00,Pasteur - Vo Van Tan,Ho Con Rua,246,818,normal,2,22
+2025-05-14 22:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Tran Cao Van,301,949,normal,2,22
+2025-05-14 22:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Nguyen Dinh Chieu,276,1112,normal,2,22
+2025-05-14 22:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Nguyen Dinh Chieu,240,969,normal,2,22
+2025-05-14 22:00:00,Pasteur - Vo Van Tan,Pasteur - Nguyen Dinh Chieu,35,157,normal,2,22
+2025-05-14 22:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,77,301,normal,2,22
+2025-05-14 22:00:00,Pasteur - Vo Van Tan,Nam Ky Khoi Nghia - Dien Bien Phu,273,967,normal,2,22
+2025-05-14 22:00:00,Pasteur - Vo Van Tan,Pasteur - Dien Bien Phu,101,472,normal,2,22
+2025-05-14 22:00:00,Pasteur - Vo Van Tan,Pham Ngoc Thach - Dien Bien Phu,159,653,normal,2,22
+2025-05-14 22:00:00,Pasteur - Vo Van Tan,Hai Ba Trung - Dien Bien Phu,199,800,normal,2,22
+2025-05-14 22:00:00,Ho Con Rua,Hai Ba Trung - Nguyen Thi Minh Khai,117,443,normal,2,22
+2025-05-14 22:00:00,Ho Con Rua,Pham Ngoc Thach - Nguyen Thi Minh Khai,54,260,normal,2,22
+2025-05-14 22:00:00,Ho Con Rua,Pasteur - Nguyen Thi Minh Khai,158,724,normal,2,22
+2025-05-14 22:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,149,510,normal,2,22
+2025-05-14 22:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Vo Van Tan,85,358,normal,2,22
+2025-05-14 22:00:00,Ho Con Rua,Pasteur - Vo Van Tan,45,216,normal,2,22
+2025-05-14 22:00:00,Ho Con Rua,Hai Ba Trung - Tran Cao Van,171,598,normal,2,22
+2025-05-14 22:00:00,Ho Con Rua,Hai Ba Trung - Nguyen Dinh Chieu,218,752,normal,2,22
+2025-05-14 22:00:00,Ho Con Rua,Pham Ngoc Thach - Nguyen Dinh Chieu,30,108,normal,2,22
+2025-05-14 22:00:00,Ho Con Rua,Pasteur - Nguyen Dinh Chieu,77,280,normal,2,22
+2025-05-14 22:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,118,425,normal,2,22
+2025-05-14 22:00:00,Ho Con Rua,Nam Ky Khoi Nghia - Dien Bien Phu,308,1095,normal,2,22
+2025-05-14 22:00:00,Ho Con Rua,Pasteur - Dien Bien Phu,146,596,normal,2,22
+2025-05-14 22:00:00,Ho Con Rua,Pham Ngoc Thach - Dien Bien Phu,124,424,normal,2,22
+2025-05-14 22:00:00,Ho Con Rua,Hai Ba Trung - Dien Bien Phu,168,572,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Nguyen Thi Minh Khai,43,155,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Nguyen Thi Minh Khai,103,462,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Nguyen Thi Minh Khai,207,926,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,198,712,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Vo Van Tan,134,560,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Vo Van Tan,95,417,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Tran Cao Van,Ho Con Rua,43,174,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Nguyen Dinh Chieu,47,154,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Nguyen Dinh Chieu,81,310,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Nguyen Dinh Chieu,128,482,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,169,627,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Tran Cao Van,Nam Ky Khoi Nghia - Dien Bien Phu,368,1387,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Tran Cao Van,Pasteur - Dien Bien Phu,197,798,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Tran Cao Van,Pham Ngoc Thach - Dien Bien Phu,174,626,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Tran Cao Van,Hai Ba Trung - Dien Bien Phu,129,471,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,87,309,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,120,519,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,224,984,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,215,769,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,151,617,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,111,475,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Ho Con Rua,91,328,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,44,154,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,44,172,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,89,345,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,130,489,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,320,1160,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,158,661,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,143,488,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,81,317,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,138,530,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,75,347,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,179,812,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,170,597,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,106,445,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,66,303,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Ho Con Rua,102,342,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,192,685,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,215,776,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,44,172,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,85,317,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,275,987,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,113,488,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,94,316,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,138,464,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,296,956,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,242,773,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,196,596,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,152,454,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,94,302,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,240,749,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Dinh Chieu,Ho Con Rua,295,980,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,287,1109,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,241,955,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,205,812,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,40,144,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,230,815,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,65,316,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,124,496,normal,2,22
+2025-05-14 22:00:00,Pasteur - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,164,643,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Thi Minh Khai,254,812,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Thi Minh Khai,200,629,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Nguyen Thi Minh Khai,154,452,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,110,310,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Vo Van Tan,52,158,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Vo Van Tan,198,605,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Ho Con Rua,253,836,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Tran Cao Van,308,967,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Nguyen Dinh Chieu,355,1121,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Nguyen Dinh Chieu,290,973,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Nguyen Dinh Chieu,234,762,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Nam Ky Khoi Nghia - Dien Bien Phu,188,671,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pasteur - Dien Bien Phu,230,811,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Pham Ngoc Thach - Dien Bien Phu,280,988,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,Hai Ba Trung - Dien Bien Phu,321,1136,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,298,1086,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,249,980,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,236,776,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,192,634,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,133,482,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Vo Van Tan,240,936,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Ho Con Rua,276,975,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,255,931,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,209,777,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,173,633,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,221,805,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,82,324,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pasteur - Dien Bien Phu,42,140,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,92,317,normal,2,22
+2025-05-14 22:00:00,Nam Ky Khoi Nghia - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,133,464,normal,2,22
+2025-05-14 22:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,257,945,normal,2,22
+2025-05-14 22:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,207,840,normal,2,22
+2025-05-14 22:00:00,Pasteur - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,311,1305,normal,2,22
+2025-05-14 22:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,302,1090,normal,2,22
+2025-05-14 22:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,238,938,normal,2,22
+2025-05-14 22:00:00,Pasteur - Dien Bien Phu,Pasteur - Vo Van Tan,198,796,normal,2,22
+2025-05-14 22:00:00,Pasteur - Dien Bien Phu,Ho Con Rua,234,835,normal,2,22
+2025-05-14 22:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,214,790,normal,2,22
+2025-05-14 22:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,168,636,normal,2,22
+2025-05-14 22:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,131,493,normal,2,22
+2025-05-14 22:00:00,Pasteur - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,179,665,normal,2,22
+2025-05-14 22:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,220,810,normal,2,22
+2025-05-14 22:00:00,Pasteur - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,183,643,normal,2,22
+2025-05-14 22:00:00,Pasteur - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,50,177,normal,2,22
+2025-05-14 22:00:00,Pasteur - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,91,324,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,206,769,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,157,663,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,261,1128,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,252,913,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,188,761,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Vo Van Tan,148,619,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Dien Bien Phu,Ho Con Rua,184,658,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,163,614,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,117,460,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,81,316,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,129,488,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,170,633,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,226,814,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Dien Bien Phu,Pasteur - Dien Bien Phu,198,804,normal,2,22
+2025-05-14 22:00:00,Pham Ngoc Thach - Dien Bien Phu,Hai Ba Trung - Dien Bien Phu,40,148,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Nguyen Thi Minh Khai,283,1174,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Nguyen Thi Minh Khai,325,1296,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Nguyen Thi Minh Khai,422,1959,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Thi Minh Khai,420,1546,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Vo Van Tan,356,1394,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Vo Van Tan,316,1252,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Dien Bien Phu,Ho Con Rua,269,1193,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Tran Cao Van,226,1019,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Dien Bien Phu,Hai Ba Trung - Nguyen Dinh Chieu,199,873,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Nguyen Dinh Chieu,244,1046,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Nguyen Dinh Chieu,288,1218,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Nguyen Dinh Chieu,329,1362,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Dien Bien Phu,Nam Ky Khoi Nghia - Dien Bien Phu,260,953,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Dien Bien Phu,Pasteur - Dien Bien Phu,311,1096,normal,2,22
+2025-05-14 22:00:00,Hai Ba Trung - Dien Bien Phu,Pham Ngoc Thach - Dien Bien Phu,166,633,normal,2,22

@@ -14,7 +14,11 @@ dependencies = [
     "numpy (>=2.2.5,<3.0.0)",
     "pandas (>=2.2.3,<3.0.0)",
     "matplotlib (>=3.10.1,<4.0.0)",
-    "geopandas (>=1.0.1,<2.0.0)"
+    "geopandas (>=1.0.1,<2.0.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "pyproj (>=3.7.1,<4.0.0)",
+    "folium (>=0.19.6,<0.20.0)"
 ]
 
 [tool.poetry]
