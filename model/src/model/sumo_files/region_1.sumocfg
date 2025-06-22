@@ -2,7 +2,6 @@
     <input>
         <net-file value="network/region_1.net.xml"/>
         <route-files value="routes/generated_routes.rou.xml"/>
-        <additional-files value="additional/detectors_fixed.xml,additional/calibrator_fixed.xml"/>
     </input>
     <output>
         <summary-output value="output/summary.xml"/>
