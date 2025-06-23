@@ -1,6 +1,7 @@
 from .rwmodels import RWModel
 from pydantic import AnyUrl, Field, field_validator
 import re
+from typing import Optional
 
 from .dbmodel import DBModelMixin
 from ..core.security import verify_password, generate_salt, get_password_hash
@@ -22,7 +23,8 @@ class UserInDB(DBModelMixin, UserBase):
     
 class User(UserBase):
     token: str
-    refresh_token: str
+    # refresh_token: str
+    refresh_token: Optional[str] = None
     
 class UserInResponse(RWModel):
     user: User

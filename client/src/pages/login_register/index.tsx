@@ -28,6 +28,7 @@ const Auth = () => {
 
   const handleLogin = async () => {
     try {
+      console.log("Login with: ", loginUsername, loginPassword);
       const result = await dispatch(login({
         username: loginUsername,
         password: loginPassword
@@ -44,14 +45,16 @@ const Auth = () => {
 
   const handleRegister = async () => {
     try {
+      console.log("Register with: ", registerUsername, registerEmail, registerPassword);
       const result = await dispatch(register({
-        username: loginUsername,
-        password: loginPassword
+        username: registerUsername,
+        password: registerPassword
       })).unwrap(); 
       
       if (result) { 
         console.log("Navigate to login");
-        navigate('/login');
+        resetStateInput(false);
+        // navigate('/login');
       }
     } catch (error) {
       console.error('Register failed:', error);

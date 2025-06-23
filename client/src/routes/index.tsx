@@ -1,5 +1,6 @@
 // import Test from "@src/components/Test";
 // import EmptyLayout from "@src/layout/EmptyLayout";
+import Dashboard from "@src/pages/dashboard";
 import LoadingPage from "@src/pages/loading";
 import { getToken } from "@src/utils/authUtils";
 import { JSX, lazy, Suspense } from "react";
@@ -57,7 +58,11 @@ const routes: RouteObject[] = [
             {path: '', element: <Navigate to= "/test" replace />},
             {path: 'test', element: (
                 <Test/>
-            )}
+            )},
+            // {path: 'setting', element: (
+            //     <Test/>
+            // )}
+
         ]
     },
     {
@@ -75,6 +80,21 @@ const routes: RouteObject[] = [
                 )
             }
         ]
+    },
+    {
+    path: '/dashboard',
+        element: (
+        <AuthRoute>
+            <Suspense fallback={<LoadingPage />}>
+                {/* <DashboardLayout /> */}
+                <Dashboard/>
+            </Suspense>
+        </AuthRoute>
+        ),
+        // children: [
+        //     { path: '', element: <DashboardHome /> },
+        //     { path: 'overview', element: <DashboardOverview /> }
+        // ]
     },
     {
         path: '*',
