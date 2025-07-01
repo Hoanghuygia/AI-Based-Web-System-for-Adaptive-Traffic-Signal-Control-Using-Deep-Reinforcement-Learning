@@ -5,14 +5,16 @@ from traffic_phase import TrafficPhase
 
 class TrafficStateSpace:
     def __init__(self, max_queue_length: int = 50, max_density: float = 1.0, 
-                 max_waiting_time: float = 300.0, num_lanes: int = 4, junction_id: str = None, 
-                 phase_mapping: Dict[int, TrafficPhase] = None):
+                max_waiting_time: float = 300.0, num_lanes: int = 4, junction_id: str = None, 
+                phase_mapping: Dict[int, TrafficPhase] = None):
         self.max_queue_length = max_queue_length
         self.max_density = max_density
         self.max_waiting_time = max_waiting_time
         self.num_lanes = num_lanes
+        if junction_id is None:
+            raise ValueError("junction_id cannot be None. Please provide a valid string identifier.")
         self.junction_id = junction_id
-        if phase_mapping is None:
+        if phase_mapping is None: 
             self.phase_mapping = {phase.value: phase for phase in TrafficPhase}
         else:
             self.phase_mapping = phase_mapping
@@ -23,7 +25,7 @@ class TrafficStateSpace:
             'waiting_times': num_lanes,
             'current_phase': 1,
             'phase_duration': 1,
-            'time_since_last_change': 1
+            'time_since_last_change': 1 # có thể bỏ qua cái này được 
         }
 
         self.state_size = sum(self.state_components.values())
@@ -65,11 +67,11 @@ class TrafficStateSpace:
         if traffic_phase is None:
             raise ValueError(f"Invalid SUMO phase {sumo_phase} for junction {self.junction_id}")
         
-        available_phases = list(set(self.phase_mapping.values()) - {None})
+        available_phases = list(set(self.phase_mapping.values()) - {None}) 
         current_phase_idx = available_phases.index(traffic_phase) if traffic_phase in available_phases else 0
         current_phase = current_phase_idx / (len(available_phases) - 1) if len(available_phases) > 1 else 0.0
         
-        phase_duration = min(raw_state['phase_duration'], 300.0) / 300.0
+        phase_duration = min(raw_state['phase_duration'], self.max_waiting_time) / self.max_waiting_time
         time_since_change = min(raw_state['time_since_last_change'], 300.0) / 300.0
         
         normalized_state = np.concatenate([

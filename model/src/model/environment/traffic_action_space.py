@@ -6,19 +6,20 @@ import numpy as np
 class TrafficActionSpace:
     """Defines the action space for a traffic control agent."""
 
-    def __init__(self, junction_id: str, phase_mapping: Dict[int, TrafficPhase], 
+    def __init__(self, phase_mapping: Dict[int, TrafficPhase], 
                  min_phase_duration: int = 15, max_phase_duration: int = 120):
         """
         Args:
-            junction_id: ID of the junction to identify its phase mapping
             phase_mapping: Mapping from SUMO phases to internal TrafficPhase
             min_phase_duration: Minimum duration a phase must run before switching
             max_phase_duration: Maximum allowed duration of a single phase
         """
-        self.junction_id = junction_id
-        self.phase_mapping = phase_mapping
         self.min_phase_duration = min_phase_duration
         self.max_phase_duration = max_phase_duration
+        if phase_mapping is None: 
+            self.phase_mapping = {phase.value: phase for phase in TrafficPhase}
+        else:
+            self.phase_mapping = phase_mapping
 
         self.available_phases = list(set(phase_mapping.values()) - {None})
 
@@ -55,6 +56,7 @@ class TrafficActionSpace:
         elif action_name.startswith("SWITCH_TO_"):
             target_phase_name = action_name.replace("SWITCH_TO_", "")
             try:
+                # Ở đây là nó check xem phase cần check có khác với phase hiện tại hay không và cái duration có hợp lệ
                 target_phase = TrafficPhase[target_phase_name]
                 return (current_phase != target_phase and 
                         phase_duration >= self.min_phase_duration)
@@ -66,6 +68,8 @@ class TrafficActionSpace:
                           phase_duration: int) -> List[int]:
         """
         Returns a list of all currently valid actions.
+        This function should be extend more. 
+        Có nghĩa rằng là mình check tại cái phase với duration hiện tại thì action có hợp lệ hay không 
         """
         return [action for action in self.actions 
                 if self.is_valid_action(action, current_phase, phase_duration)]

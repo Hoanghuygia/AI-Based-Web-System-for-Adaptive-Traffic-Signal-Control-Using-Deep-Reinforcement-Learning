@@ -4,7 +4,8 @@ from traffic_action_space import TrafficActionSpace
 from traffic_reward_function import TrafficRewardFunction
 
 from gym import spaces
-from typing import List, Dict
+from typing import List, Dict, Any
+import numpy as np
 
 class TrafficControlSpaceManager:
     """Manager class để quản lý tất cả các không gian cho traffic control"""
@@ -17,18 +18,21 @@ class TrafficControlSpaceManager:
             max_queue_length=config.get('max_queue_length', 50),
             max_density=config.get('max_density', 1.0),
             max_waiting_time=config.get('max_waiting_time', 300.0),
-            num_lanes=config.get('num_lanes', 4)
+            num_lanes=config.get('num_lanes', 4),
+            junction_id=config.get('junction_id', None),
+            phase_mapping=config.get('phase_mapping', None)
         )
         
         self.action_space = TrafficActionSpace(
-            min_phase_duration=config.get('min_phase_duration', 10),
+            phase_mapping=config.get('phase_mapping', None),
+            min_phase_duration=config.get('min_phase_duration', 15),
             max_phase_duration=config.get('max_phase_duration', 120)
         )
         
         self.reward_function = TrafficRewardFunction(
+            state_space=self.state_space,
             queue_weight=config.get('queue_weight', 0.4),
             waiting_weight=config.get('waiting_weight', 0.4),
-            throughput_weight=config.get('throughput_weight', 0.2),
             penalty_weight=config.get('penalty_weight', 0.1)
         )
     
