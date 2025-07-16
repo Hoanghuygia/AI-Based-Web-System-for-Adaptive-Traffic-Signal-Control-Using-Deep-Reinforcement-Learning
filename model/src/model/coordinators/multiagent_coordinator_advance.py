@@ -10,295 +10,24 @@ import time
 from dataclasses import dataclass
 import pickle
 
-# Experience tuple for storing trajectories
-Experience = namedtuple('Experience', [
-    'state', 'action', 'reward', 'next_state', 'done', 
-    'hidden_state', 'cell_state', 'log_prob', 'value'
-])
-
-@dataclass
-class NetworkConfig:
-    """Configuration cho neural networks"""
-    input_size: int
-    hidden_size: int = 128
-    num_layers: int = 2
-    dropout: float = 0.1
-    learning_rate: float = 3e-4
-    device: str = "cuda" if torch.cuda.is_available() else "cpu"
-
-class LSTMPolicyNetwork(nn.Module):
-    """LSTM-based Policy Network cho mỗi agent"""
-    
-    def __init__(self, config: NetworkConfig, action_space_size: int):
-        super(LSTMPolicyNetwork, self).__init__()
-        
-        self.config = config
-        self.action_space_size = action_space_size
-        self.device = config.device
-        
-        # Input processing layers
-        self.input_norm = nn.LayerNorm(config.input_size)
-        self.input_fc = nn.Linear(config.input_size, config.hidden_size)
-        
-        # LSTM layers
-        self.lstm = nn.LSTM(
-            input_size=config.hidden_size,
-            hidden_size=config.hidden_size,
-            num_layers=config.num_layers,
-            dropout=config.dropout if config.num_layers > 1 else 0,
-            batch_first=True
-        )
-        
-        # Policy head (actor)
-        self.policy_head = nn.Sequential(
-            nn.Linear(config.hidden_size, config.hidden_size),
-            nn.ReLU(),
-            nn.Dropout(config.dropout),
-            nn.Linear(config.hidden_size, config.hidden_size // 2),
-            nn.ReLU(),
-            nn.Linear(config.hidden_size // 2, action_space_size)
-        )
-        
-        # Value head (critic)
-        self.value_head = nn.Sequential(
-            nn.Linear(config.hidden_size, config.hidden_size),
-            nn.ReLU(),
-            nn.Dropout(config.dropout),
-            nn.Linear(config.hidden_size, config.hidden_size // 2),
-            nn.ReLU(),
-            nn.Linear(config.hidden_size // 2, 1)
-        )
-        
-        # Attention mechanism for multi-agent coordination
-        self.attention = nn.MultiheadAttention(
-            embed_dim=config.hidden_size,
-            num_heads=8,
-            dropout=config.dropout,
-            batch_first=True
-        )
-        
-        # Initialize weights
-        self.apply(self._init_weights)
-        
-    def _init_weights(self, module):
-        """Initialize network weights"""
-        if isinstance(module, nn.Linear):
-            torch.nn.init.xavier_uniform_(module.weight)
-            if module.bias is not None:
-                torch.nn.init.zeros_(module.bias)
-        elif isinstance(module, nn.LSTM):
-            for name, param in module.named_parameters():
-                if 'weight' in name:
-                    torch.nn.init.xavier_uniform_(param)
-                elif 'bias' in name:
-                    torch.nn.init.zeros_(param)
-    
-    def forward(self, state, hidden_state=None, mask=None):
-        """Forward pass through network"""
-        batch_size = state.size(0)
-        seq_len = state.size(1) if len(state.shape) == 3 else 1
-        
-        # Handle single step vs sequence
-        if len(state.shape) == 2:
-            state = state.unsqueeze(1)  # Add sequence dimension
-        
-        # Input processing
-        state = self.input_norm(state)
-        processed_input = F.relu(self.input_fc(state))
-        
-        # LSTM forward pass
-        if hidden_state is None:
-            lstm_out, hidden_state = self.lstm(processed_input)
-        else:
-            lstm_out, hidden_state = self.lstm(processed_input, hidden_state)
-        
-        # Apply attention if we have sequence data
-        if seq_len > 1:
-            attended_out, attention_weights = self.attention(
-                lstm_out, lstm_out, lstm_out, key_padding_mask=mask
-            )
-            lstm_out = lstm_out + attended_out  # Residual connection
-        
-        # Get last timestep output
-        if seq_len > 1:
-            last_output = lstm_out[:, -1, :]
-        else:
-            last_output = lstm_out.squeeze(1)
-        
-        # Policy and value outputs
-        logits = self.policy_head(last_output)
-        value = self.value_head(last_output)
-        
-        return logits, value, hidden_state
-    
-    def get_action_and_value(self, state, hidden_state=None, mask=None, 
-                           valid_actions=None):
-        """Get action distribution and value estimate"""
-        logits, value, new_hidden_state = self.forward(state, hidden_state, mask)
-        
-        # Apply valid action mask if provided
-        if valid_actions is not None:
-            logits = self._apply_action_mask(logits, valid_actions)
-        
-        # Create action distribution
-        probs = F.softmax(logits, dim=-1)
-        dist = Categorical(probs)
-        
-        # Sample action
-        action = dist.sample()
-        log_prob = dist.log_prob(action)
-        entropy = dist.entropy()
-        
-        return {
-            'action': action,
-            'log_prob': log_prob,
-            'value': value.squeeze(-1),
-            'entropy': entropy,
-            'hidden_state': new_hidden_state,
-            'action_probs': probs
-        }
-    
-    def _apply_action_mask(self, logits, valid_actions):
-        """Apply mask for invalid actions"""
-        masked_logits = logits.clone()
-        
-        # Set invalid actions to large negative value
-        for i, valid_acts in enumerate(valid_actions):
-            invalid_mask = torch.ones(self.action_space_size, dtype=torch.bool)
-            invalid_mask[valid_acts] = False
-            masked_logits[i, invalid_mask] = -1e8
-        
-        return masked_logits
-    
-    def evaluate_actions(self, states, actions, hidden_states=None, masks=None):
-        """Evaluate actions for training"""
-        logits, values, _ = self.forward(states, hidden_states, masks)
-        
-        dist = Categorical(logits=logits)
-        log_probs = dist.log_prob(actions)
-        entropy = dist.entropy()
-        
-        return log_probs, values.squeeze(-1), entropy
-
-class SharedCriticNetwork(nn.Module):
-    """Shared Critic Network cho centralized training"""
-    
-    def __init__(self, config: NetworkConfig, num_agents: int):
-        super(SharedCriticNetwork, self).__init__()
-        
-        self.num_agents = num_agents
-        
-        # Global state processing
-        global_input_size = config.input_size * num_agents
-        
-        self.global_norm = nn.LayerNorm(global_input_size)
-        self.global_fc = nn.Sequential(
-            nn.Linear(global_input_size, config.hidden_size * 2),
-            nn.ReLU(),
-            nn.Dropout(config.dropout),
-            nn.Linear(config.hidden_size * 2, config.hidden_size)
-        )
-        
-        # LSTM for temporal processing
-        self.lstm = nn.LSTM(
-            input_size=config.hidden_size,
-            hidden_size=config.hidden_size,
-            num_layers=config.num_layers,
-            dropout=config.dropout if config.num_layers > 1 else 0,
-            batch_first=True
-        )
-        
-        # Value head
-        self.value_head = nn.Sequential(
-            nn.Linear(config.hidden_size, config.hidden_size),
-            nn.ReLU(),
-            nn.Dropout(config.dropout),
-            nn.Linear(config.hidden_size, config.hidden_size // 2),
-            nn.ReLU(),
-            nn.Linear(config.hidden_size // 2, num_agents)  # Value for each agent
-        )
-        
-        self.apply(self._init_weights)
-    
-    def _init_weights(self, module):
-        if isinstance(module, nn.Linear):
-            torch.nn.init.xavier_uniform_(module.weight)
-            if module.bias is not None:
-                torch.nn.init.zeros_(module.bias)
-    
-    def forward(self, global_states, hidden_state=None):
-        """Forward pass for global value estimation"""
-        batch_size = global_states.size(0)
-        
-        if len(global_states.shape) == 2:
-            global_states = global_states.unsqueeze(1)
-        
-        # Process global state
-        normalized_states = self.global_norm(global_states)
-        processed_states = self.global_fc(normalized_states)
-        
-        # LSTM processing
-        if hidden_state is None:
-            lstm_out, hidden_state = self.lstm(processed_states)
-        else:
-            lstm_out, hidden_state = self.lstm(processed_states, hidden_state)
-        
-        # Get last timestep
-        last_output = lstm_out[:, -1, :] if lstm_out.size(1) > 1 else lstm_out.squeeze(1)
-        
-        # Value estimation
-        values = self.value_head(last_output)
-        
-        return values, hidden_state
-
-class ExperienceBuffer:
-    """Experience buffer cho multi-agent training"""
-    
-    def __init__(self, capacity: int = 10000):
-        self.capacity = capacity
-        self.buffer = deque(maxlen=capacity)
-        self.lock = threading.Lock()
-    
-    def push(self, experience: Experience):
-        """Add experience to buffer"""
-        with self.lock:
-            self.buffer.append(experience)
-    
-    def sample(self, batch_size: int) -> List[Experience]:
-        """Sample batch of experiences"""
-        with self.lock:
-            if len(self.buffer) < batch_size:
-                return list(self.buffer)
-            
-            indices = np.random.choice(len(self.buffer), batch_size, replace=False)
-            return [self.buffer[i] for i in indices]
-    
-    def get_all(self) -> List[Experience]:
-        """Get all experiences"""
-        with self.lock:
-            return list(self.buffer)
-    
-    def clear(self):
-        """Clear buffer"""
-        with self.lock:
-            self.buffer.clear()
-    
-    def __len__(self):
-        return len(self.buffer)
+from ..configs.network_config import NetworkConfig
+from ..agents.lstm_policy import LSTMPolicyNetwork
+from ..agents.share_critic_network import SharedCriticNetwork
+from ..utils.experience_buffer import ExperienceBuffer, Experience
 
 class MultiAgentCoordinatorAdvanced:
     """Advanced Multi-Agent Coordinator với centralized training"""
     
     def __init__(self, 
-                 agent_configs: Dict[str, NetworkConfig],
+                 agent_configs: Dict[str, NetworkConfig], #Agent configurations is a dic of all agents configurations
                  action_space_sizes: Dict[str, int],
                  coordination_config: Dict[str, Any]):
         
         self.agent_configs = agent_configs
         self.action_space_sizes = action_space_sizes
         self.coordination_config = coordination_config
-        self.device = list(agent_configs.values())[0].device
-        
+        self.device = list(agent_configs.values())[0].device # take the the device of the first agent config as the default for system
+
         # Initialize networks
         self.policy_networks = {}
         self.optimizers = {}
@@ -315,8 +44,8 @@ class MultiAgentCoordinatorAdvanced:
         
         # Shared critic for centralized training
         num_agents = len(agent_configs)
-        shared_config = list(agent_configs.values())[0]
-        
+        shared_config = list(agent_configs.values())[0] # use the first agent config as the shared config
+
         self.shared_critic = SharedCriticNetwork(
             shared_config, num_agents
         ).to(self.device)
@@ -338,8 +67,8 @@ class MultiAgentCoordinatorAdvanced:
         # Training statistics
         self.training_stats = {
             'policy_losses': deque(maxlen=1000),
-            'value_losses': deque(maxlen=1000),
-            'entropy_losses': deque(maxlen=1000),
+            'value_losses': deque(maxlen=1000), # loss for xritic layer
+            'entropy_losses': deque(maxlen=1000), # the level of randomness action, show if the agent is exploring or exploiting
             'coordination_rewards': deque(maxlen=1000)
         }
         
@@ -650,87 +379,3 @@ class MultiAgentCoordinatorAdvanced:
                 stats[f'recent_{key}'] = np.mean(list(values)[-100:]) if len(values) >= 100 else np.mean(values)
         
         return stats
-
-class GlobalStateAggregator:
-    """Aggregate global state information for centralized training"""
-    
-    def __init__(self, num_agents: int):
-        self.num_agents = num_agents
-        self.state_history = deque(maxlen=100)
-    
-    def aggregate_states(self, agent_states: Dict[str, torch.Tensor]) -> torch.Tensor:
-        """Aggregate individual agent states into global state"""
-        # Sort agents for consistent ordering
-        sorted_agents = sorted(agent_states.keys())
-        
-        # Concatenate states
-        global_state = torch.cat([
-            agent_states[agent_id] for agent_id in sorted_agents
-        ])
-        
-        # Store in history
-        self.state_history.append(global_state.clone())
-        
-        return global_state
-    
-    def get_state_statistics(self) -> Dict[str, float]:
-        """Get statistics about global states"""
-        if not self.state_history:
-            return {}
-        
-        states = torch.stack(list(self.state_history))
-        
-        return {
-            'mean': states.mean().item(),
-            'std': states.std().item(),
-            'min': states.min().item(),
-            'max': states.max().item()
-        }
-
-# Example usage
-if __name__ == "__main__":
-    # Configuration
-    agent_configs = {
-        'agent_1': NetworkConfig(input_size=20, hidden_size=128),
-        'agent_2': NetworkConfig(input_size=20, hidden_size=128),
-        'agent_3': NetworkConfig(input_size=20, hidden_size=128),
-        'agent_4': NetworkConfig(input_size=20, hidden_size=128)
-    }
-    
-    action_space_sizes = {
-        'agent_1': 5,
-        'agent_2': 5,
-        'agent_3': 5,
-        'agent_4': 5
-    }
-    
-    coordination_config = {
-        'enable_coordination': True,
-        'buffer_size': 10000
-    }
-    
-    # Initialize coordinator
-    coordinator = MultiAgentCoordinatorAdvanced(
-        agent_configs, action_space_sizes, coordination_config
-    )
-    
-    # Test with sample observations
-    observations = {
-        'agent_1': torch.randn(20),
-        'agent_2': torch.randn(20),
-        'agent_3': torch.randn(20),
-        'agent_4': torch.randn(20)
-    }
-    
-    # Get actions
-    actions_info = coordinator.get_actions(observations, training=False)
-    
-    print("Agent actions:")
-    for agent_id, info in actions_info.items():
-        print(f"{agent_id}: action={info['action'].item()}, value={info['value'].item():.3f}")
-    
-    print(f"\nCoordination matrix shape: {coordinator.coordination_matrix.shape}")
-    print(f"Experience buffer size: {len(coordinator.experience_buffer)}")
-    
-    # Test training (would need proper experiences)
-    print(f"Training stats: {coordinator.get_training_stats()}")
