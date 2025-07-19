@@ -2,8 +2,9 @@ from fastapi import FastAPI, status
 from starlette.exceptions import HTTPException as StarletteHTTPException
 from starlette.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
+import asyncio
 
-from src.simulator.sumo_manager import SUMOManager
+from core.src.core.sumo_manager import SUMOManager
 from src.core.config import settings
 from src.core.errors import http_422_error_handler, http_error_handler
 from src.db.mongodb_utils import close_mongo_connection, open_mongo_connection
@@ -11,13 +12,20 @@ from src.api.routers import routers
 
 sumo_manager = SUMOManager(sumo_cfg_path="data/map.sumocfg")
 
+async def run_sumo_steps():
+    while sumo_manager.is_running():
+        sumo_manager.step()
+        await asyncio.sleep(1)  # delay 1 giây mỗi step
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     await open_mongo_connection()
     sumo_manager.start()
+    step_task = asyncio.create_task(run_sumo_steps())
 
     yield
     
+    step_task.cancel()
     await close_mongo_connection()
     sumo_manager.stop()
 
