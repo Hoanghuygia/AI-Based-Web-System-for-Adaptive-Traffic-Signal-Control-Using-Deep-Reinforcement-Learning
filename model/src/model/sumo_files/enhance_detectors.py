@@ -7,7 +7,7 @@ def fix_induction_loops():
     
     # Kiểm tra file tồn tại
     net_file = "network/region_1.net.xml"
-    det_file = "additional/detectors.xml"
+    det_file = "additional/detectors_new.xml"
     
     if not os.path.exists(net_file):
         print(f"❌ Không tìm thấy file: {net_file}")
