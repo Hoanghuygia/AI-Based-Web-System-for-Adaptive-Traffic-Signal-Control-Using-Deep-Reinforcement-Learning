@@ -19,10 +19,15 @@ class SUMORandomTripsWrapper:
         else:
             self.traffic_data_files = traffic_data_files if isinstance(traffic_data_files, list) else [traffic_data_files]
         print(f"Traffic data files: {self.traffic_data_files}")
+        # self.base_params = {
+        #     'normal': {'period': 8, 'fringe_factor': 1, 'via_prob': 0.1},
+        #     'moderate': {'period': 4, 'fringe_factor': 3, 'via_prob': 0.25},
+        #     'heavy': {'period': 2, 'fringe_factor': 5, 'via_prob': 0.4}
+        # }
         self.base_params = {
-            'normal': {'period': 8, 'fringe_factor': 1, 'via_prob': 0.1},
-            'moderate': {'period': 4, 'fringe_factor': 3, 'via_prob': 0.25},
-            'heavy': {'period': 2, 'fringe_factor': 5, 'via_prob': 0.4}
+            'normal': {'period': 0.8, 'fringe_factor': 1, 'via_prob': 0.1},      # 8/10 = 0.8
+            'moderate': {'period': 0.4, 'fringe_factor': 3, 'via_prob': 0.25},   # 4/10 = 0.4  
+            'heavy': {'period': 0.2, 'fringe_factor': 5, 'via_prob': 0.4}        # 2/10 = 0.2
         }
         self.vehicle_types = [
             {"id": "motorcycle", "vClass": "motorcycle", "accel": "3.0", "decel": "5.0", "sigma": "0.7", "length": "2.0", "width": "0.8", "maxSpeed": "16.67", "color": "yellow", "minGap": "0.5", "lcAssertive": "1.6", "lcSpeedGain": "1.6", "lcStrategic": "1.3", "lcCooperative": "0.7"},
@@ -109,7 +114,7 @@ class SUMORandomTripsWrapper:
             return counts, speed
         except Exception as e:
             print(f"[ERROR] Failed to estimate vehicle counts: {e}. Using default.")
-            return {'motorcycle': 300, 'car': 50, 'bus': 5, 'truck': 3}, 10.0
+            return {'motorcycle': 3000, 'car': 500, 'bus': 50, 'truck': 30}, 10.0
 
     def assign_vehicle_types(self, vehicles, hour_pattern):
         """Assign vehicle types to vehicles based on traffic pattern"""
