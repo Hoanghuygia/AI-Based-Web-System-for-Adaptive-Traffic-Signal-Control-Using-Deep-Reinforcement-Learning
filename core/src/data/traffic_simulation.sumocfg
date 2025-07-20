@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+        <net-file value="region_1.net.xml" />
+        <route-files value="generated_routes.rou.xml" />
+        <additional-files value="calibrator_fixed.xml,detectors_fixed.xml" />
+    </input>
+    <time>
+        <begin value="0" />
+        <end value="3600" />
+    </time>
+    <processing>
+        <ignore-route-errors value="true" />
+    </processing>
+    <report>
+        <verbose value="true" />
+        <no-step-log value="true" />
+    </report>
+</configuration>
