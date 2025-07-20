@@ -3,11 +3,13 @@
     <input>
         <net-file value="region_1.net.xml" />
         <route-files value="generated_routes.rou.xml" />
-        <additional-files value="calibrator_fixed.xml,detectors_fixed.xml" />
+        <!-- <additional-files value="calibrator_new.xml,detectors_fixed.xml" /> -->
+        <additional-files value="calibrator_optimized.xml,detectors_fixed.xml" />
+        <!-- <additional-files value="detectors_fixed.xml" /> -->
     </input>
     <time>
-        <begin value="0" />
-        <end value="3600" />
+        <begin value="25200" />
+        <end value="36000" />
     </time>
     <processing>
         <ignore-route-errors value="true" />
