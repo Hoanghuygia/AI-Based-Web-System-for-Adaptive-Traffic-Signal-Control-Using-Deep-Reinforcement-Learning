@@ -3,6 +3,9 @@ from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 import traci
 import asyncio
 import json
+import base64
+from io import BytesIO
+import pyautogui
 
 router = APIRouter()
 
@@ -63,3 +66,20 @@ async def websocket_sumo_data(websocket: WebSocket):
     except WebSocketDisconnect:
         print("🔌 WebSocket client disconnected")
 
+@router.websocket("/ws/sumo-image")
+async def websocket_endpoint(websocket: WebSocket):
+    await websocket.accept()
+    try:
+        while True:
+            screenshot = pyautogui.screenshot()  # Capture toàn màn hình
+            # Nếu bạn chỉ muốn phần SUMO-GUI: screenshot = pyautogui.screenshot(region=(x, y, w, h))
+
+            buffer = BytesIO()
+            screenshot.save(buffer, format="JPEG")
+            img_str = base64.b64encode(buffer.getvalue()).decode("utf-8")
+
+            await websocket.send_text(img_str)
+            await asyncio.sleep(1)  # Gửi mỗi 1 giây
+    except Exception as e:
+        print(f"WebSocket error: {e}")
+        await websocket.close()
