@@ -14,7 +14,16 @@ class SUMOManager:
             print("SUMO already running.")
             return
 
-        sumo_cmd = [self.sumo_binary, "-c", self.sumo_cfg_path, "--remote-port", str(self.port)]
+        # sumo_cmd = [self.sumo_binary, "-c", self.sumo_cfg_path, "--remote-port", str(self.port)]
+        sumo_cmd = [
+            self.sumo_binary,
+            "-c", self.sumo_cfg_path,
+            "--remote-port", str(self.port),
+            "--start",                
+            "--step-length", "1",  
+            "--delay", "1000"
+            # "--start"        
+        ]
         self.process = subprocess.Popen(sumo_cmd)
         traci.init(self.port)
         self.running = True

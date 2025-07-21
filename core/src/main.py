@@ -1,21 +1,26 @@
-from fastapi import FastAPI, status
-from starlette.exceptions import HTTPException as StarletteHTTPException
-from starlette.middleware.cors import CORSMiddleware
-from contextlib import asynccontextmanager
+import os
 import asyncio
+from fastapi import FastAPI, status
+from contextlib import asynccontextmanager
+from starlette.middleware.cors import CORSMiddleware
+from starlette.exceptions import HTTPException as StarletteHTTPException
 
-from core.src.core.sumo_manager import SUMOManager
+from src.api.routers import routers
 from src.core.config import settings
+from src.core.sumo_manager import SUMOManager
 from src.core.errors import http_422_error_handler, http_error_handler
 from src.db.mongodb_utils import close_mongo_connection, open_mongo_connection
-from src.api.routers import routers
 
-sumo_manager = SUMOManager(sumo_cfg_path="data/map.sumocfg")
+# sumo_manager = SUMOManager(sumo_cfg_path="data/traffic_simulation.sumocfg")
+sumo_cfg_path = os.path.join(os.path.dirname(__file__), "data", "traffic_simulation.sumocfg")
+print(f"Using SUMO config path: {sumo_cfg_path}")
+sumo_manager = SUMOManager(sumo_cfg_path=os.path.abspath(sumo_cfg_path))
+
 
 async def run_sumo_steps():
     while sumo_manager.is_running():
         sumo_manager.step()
-        await asyncio.sleep(1)  # delay 1 giây mỗi step
+        await asyncio.sleep(0.05)  
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
