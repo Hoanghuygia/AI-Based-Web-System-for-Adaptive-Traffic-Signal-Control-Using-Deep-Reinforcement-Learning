@@ -2,14 +2,17 @@
 <configuration>
     <input>
         <net-file value="region_1.net.xml" />
-        <route-files value="generated_routes.rou.xml" />
-        <!-- <additional-files value="calibrator_new.xml,detectors_fixed.xml" /> -->
-        <additional-files value="calibrator_optimized.xml,detectors_fixed.xml" />
-        <!-- <additional-files value="detectors_fixed.xml" /> -->
+        <route-files value="routes_8am_9am.rou.xml" />
+        <additional-files value="calibrator_8_optimized.xml,detectors_hour_8_fixed.xml" />
+        <!-- <route-files value="routes_7am_8am.rou.xml" /> -->
+        <!-- <additional-files value="calibrator_8_optimized.xml,detectors_hour_7_fixed.xml" /> -->
+        <gui-settings-file value="display.gui-settings.xml"/>
     </input>
     <time>
-        <begin value="25200" />
-        <end value="36000" />
+        <!-- <begin value="25200" />
+        <end value="28800" /> -->
+        <begin value="28800" />
+        <end value="32400" />
     </time>
     <processing>
         <ignore-route-errors value="true" />

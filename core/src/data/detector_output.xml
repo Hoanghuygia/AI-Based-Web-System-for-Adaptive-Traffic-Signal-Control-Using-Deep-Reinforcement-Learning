@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-07-20 10:56:05 by Eclipse SUMO GUI Version 1.22.0
+<!-- generated on 2025-07-21 08:52:56 by Eclipse SUMO GUI Version 1.22.0
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
-        <net-file value="region_1.net.xml"/>
-        <route-files value="generated_routes.rou.xml"/>
-        <additional-files value="calibrator_optimized.xml,detectors_fixed.xml"/>
+        <net-file value="C:\Users\LAPTOP\Documents\Code\FastAPI\AI-Based-Web-System-for-Adaptive-Traffic-Signal-Control-Using-Deep-Reinforcement-Learning\core\src\data\region_1.net.xml"/>
+        <route-files value="C:\Users\LAPTOP\Documents\Code\FastAPI\AI-Based-Web-System-for-Adaptive-Traffic-Signal-Control-Using-Deep-Reinforcement-Learning\core\src\data\routes_8am_9am.rou.xml"/>
+        <additional-files value="C:\Users\LAPTOP\Documents\Code\FastAPI\AI-Based-Web-System-for-Adaptive-Traffic-Signal-Control-Using-Deep-Reinforcement-Learning\core\src\data\calibrator_8_optimized.xml,C:\Users\LAPTOP\Documents\Code\FastAPI\AI-Based-Web-System-for-Adaptive-Traffic-Signal-Control-Using-Deep-Reinforcement-Learning\core\src\data\detectors_hour_8_fixed.xml"/>
     </input>
 
     <time>
-        <begin value="25200"/>
-        <end value="36000"/>
+        <begin value="28800"/>
+        <end value="32400"/>
         <step-length value="1"/>
     </time>
 
@@ -24,7 +24,12 @@
         <no-step-log value="true"/>
     </report>
 
+    <traci_server>
+        <remote-port value="8813"/>
+    </traci_server>
+
     <gui_only>
+        <gui-settings-file value="C:\Users\LAPTOP\Documents\Code\FastAPI\AI-Based-Web-System-for-Adaptive-Traffic-Signal-Control-Using-Deep-Reinforcement-Learning\core\src\data\display.gui-settings.xml"/>
         <start value="true"/>
         <delay value="1000"/>
     </gui_only>
