@@ -30,6 +30,12 @@ pillow = "^11.3.0"
 pyautogui = "^0.9.54"
 websockets = "^15.0.1"
 
+sumo-rl = "^1.4.4"
+stable-baselines3 = "^2.0.0"
+gymnasium = "^0.29.0"
+numpy = "^1.24.0"
+pandas = "^2.0.0"
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
