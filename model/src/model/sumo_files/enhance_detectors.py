@@ -7,7 +7,7 @@ def fix_induction_loops():
     
     # Kiểm tra file tồn tại
     net_file = "network/region_1.net.xml"
-    det_file = "additional/detectors.xml"
+    det_file = "additional/detectors_hour_8.xml"
     
     if not os.path.exists(net_file):
         print(f"❌ Không tìm thấy file: {net_file}")
@@ -117,7 +117,7 @@ def fix_induction_loops():
                 print(f"  ... và {len(problem_detectors) - 10} detector khác")
             
             # Lưu file đã sửa
-            output_file = "additional/detectors_fixed.xml"
+            output_file = "additional/detectors_hour_8_fixed.xml"
             tree.write(output_file, encoding='utf-8', xml_declaration=True)
             print(f"\n✅ Đã lưu file đã sửa: {output_file}")
             
