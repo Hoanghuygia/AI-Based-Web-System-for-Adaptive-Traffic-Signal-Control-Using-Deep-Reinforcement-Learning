@@ -7,7 +7,7 @@ def fix_calibrators():
     
     # Kiểm tra file tồn tại
     net_file = "network/region_1.net.xml"
-    cal_file = "additional/calibrator_new.xml"
+    cal_file = "additional/calibrator_hour_8.xml"
     
     if not os.path.exists(net_file):
         print(f"❌ Không tìm thấy file: {net_file}")
@@ -147,16 +147,16 @@ def fix_calibrators():
                 print(f"\nĐã xóa {removed_count} calibrator có edge không tồn tại")
             
             # Lưu file đã sửa
-            output_file = "additional/calibrator_fixed.xml"
+            output_file = "additional/calibrator_hour_8_fixed.xml"
             tree.write(output_file, encoding='utf-8', xml_declaration=True)
             print(f"\n✅ Đã lưu file đã sửa: {output_file}")
             
             # Cập nhật file cấu hình
             print("\n📝 Cập nhật file region_1.sumocfg:")
             print("Thay đổi dòng:")
-            print("  <additional-files value=\"additional/detectors_fixed.xml,additional/calibrator.xml\"/>")
+            print("  <additional-files value=\"additional/detectors_fixed.xml,additional/.xml\"/>")
             print("Thành:")
-            print("  <additional-files value=\"additional/detectors_fixed.xml,additional/calibrator_fixed.xml\"/>")
+            print("  <additional-files value=\"additional/detectors_fixed.xml,additional/calibrator_hour_8.xml\"/>")
             
         else:
             print("✅ Tất cả calibrator đều OK!")
