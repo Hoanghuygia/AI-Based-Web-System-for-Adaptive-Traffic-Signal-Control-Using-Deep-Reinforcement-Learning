@@ -37,8 +37,8 @@ const Auth = () => {
             ).unwrap();
 
             if (result) {
-                console.log("Navigate to test");
-                navigate("/test");
+                console.log("Navigate to Dashboard");
+                navigate("/dashboard");
             }
         } catch (error) {
             console.error("Login failed:", error);

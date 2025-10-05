@@ -3,15 +3,22 @@ import { getToken } from "@src/utils/authUtils";
 import { JSX, lazy, Suspense } from "react";
 import { Navigate, RouteObject } from "react-router-dom";
 
-const Auth = lazy(() => import('@src/pages/login_register'));
-const NotFoundPage = lazy(() => import('@src/pages/error'));
-const Test = lazy(() => import('@src/components/Test'));
-const EmptyLayout = lazy(() => import('@src/layout/EmptyLayout'));
+const Auth = lazy(
+    () => import("@src/pages/login_register")
+);
+const NotFoundPage = lazy(() => import("@src/pages/error"));
+// const Test = lazy(() => import('@src/components/Test'));
+const Dashboard = lazy(
+    () => import("@src/pages/dashboard")
+);
+const EmptyLayout = lazy(
+    () => import("@src/layout/EmptyLayout")
+);
 
 const AuthRoute = ({children}: {children: JSX.Element}) => {
 
-    // need to check if the token is valid or expired or not 
-    // using api 
+    // need to check if the token is valid or expired or not
+    // using api
     const token = getToken();
     console.log("Token: ", token);
 
@@ -23,7 +30,7 @@ const AuthRoute = ({children}: {children: JSX.Element}) => {
 
 const GuestRoute = ({ children }: { children: JSX.Element }) => {
     const token = getToken()
-    return token ? <Navigate to="/test" replace /> : children;
+    return token ? <Navigate to="/dashboard" replace /> : children;
 };
 
 const routes: RouteObject[] = [
@@ -37,9 +44,9 @@ const routes: RouteObject[] = [
             </AuthRoute>
         ),
         children: [
-            {path: '', element: <Navigate to= "/test" replace />},
-            {path: 'test', element: (
-                <Test/>
+            {path: '', element: <Navigate to= "/dashboard" replace />},
+            {path: 'dashboard', element: (
+                <Dashboard/>
             )}
         ]
     },
@@ -79,11 +86,16 @@ Use for testing purpose
 */
 // const routes: RouteObject[] = [
 //     {
-//         path: '/',
+//         path: "/",
 //         element: (
-//             // <Auth/>
-//             <NotFoundPage/>
-//         )
+//             <EmptyLayout>
+//                 <Suspense fallback={<LoadingPage />}>
+//                     {/* <Auth/> */}
+//                     {/* <NotFoundPage /> */}
+//                     <Dashboard />
+//                 </Suspense>
+//             </EmptyLayout>
+//         ),
 //     },
 // ];
 
