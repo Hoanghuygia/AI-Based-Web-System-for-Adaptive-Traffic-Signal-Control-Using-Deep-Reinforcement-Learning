@@ -19,7 +19,9 @@ export default {
           800: "#5b21b6",
           900: "#4c1d95",
           950: "#2e1065",
-        }
+        },
+        'customGray': '#e5e7eb',
+        'customIndigo': '#a5b4fc',
       },
     },
   },
