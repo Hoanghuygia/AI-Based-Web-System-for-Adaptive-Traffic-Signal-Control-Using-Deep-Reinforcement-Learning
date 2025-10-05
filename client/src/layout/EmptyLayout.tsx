@@ -5,25 +5,17 @@ import { Outlet } from "react-router-dom";
 const { Content } = Layout;
 
 type EmptyLayoutPros = {
-    children ?: React.ReactNode
+    children?: React.ReactNode;
 };
 
-const EmptyLayout: React.FC<EmptyLayoutPros> = ({children}) => {
-  return (
-    <Layout style={{ minHeight: "100vh", background: "linear-gradient(to right, #e5e7eb, #a5b4fc)"}}>
-      <Content
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          background: "transparent", 
-        }}
-      >
-        {children || <Outlet />}
-      </Content>
-    </Layout>
-  );
+const EmptyLayout: React.FC<EmptyLayoutPros> = ({ children }) => {
+    return (
+        <Layout className="min-h-screen bg-gradient-to-r from-customGray to-customIndigo">
+            <Content className="flex justify-center items-center bg-transparent">
+                {children || <Outlet />}
+            </Content>
+        </Layout>
+    );
 };
 
 export default EmptyLayout;
-

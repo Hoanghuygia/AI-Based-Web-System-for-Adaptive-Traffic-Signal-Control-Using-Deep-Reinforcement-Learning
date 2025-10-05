@@ -1,5 +1,3 @@
-// import Test from "@src/components/Test";
-// import EmptyLayout from "@src/layout/EmptyLayout";
 import LoadingPage from "@src/pages/loading";
 import { getToken } from "@src/utils/authUtils";
 import { JSX, lazy, Suspense } from "react";
@@ -27,21 +25,6 @@ const GuestRoute = ({ children }: { children: JSX.Element }) => {
     const token = getToken()
     return token ? <Navigate to="/test" replace /> : children;
 };
-
-/*
-Use for testing purpose 
-*/
-// const routes: RouteObject[] = [
-//     {
-//         path: '/',
-//         element: (
-//             // <Auth/>
-//             <NotFoundPage/>
-//         )
-//     },
-// ];
-
-// export default routes;
 
 const routes: RouteObject[] = [
     {
@@ -90,3 +73,18 @@ const routes: RouteObject[] = [
 ];
 
 export default routes;
+
+/*
+Use for testing purpose 
+*/
+// const routes: RouteObject[] = [
+//     {
+//         path: '/',
+//         element: (
+//             // <Auth/>
+//             <NotFoundPage/>
+//         )
+//     },
+// ];
+
+// export default routes;
