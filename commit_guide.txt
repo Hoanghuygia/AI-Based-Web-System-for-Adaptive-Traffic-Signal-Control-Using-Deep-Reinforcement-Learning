@@ -1,0 +1,40 @@
+Commit Message Guidelines
+=========================
+
+Use Conventional Commits style for clear, consistent history. Structure:
+<type>[scope]: <description>
+
+- <type>: Required, lowercase (see types below).
+- [scope]: Optional, one of: (model), (fe), (be), (aibe).
+  - model: ML models or data-related changes.
+  - fe: Frontend (UI/UX).
+  - be: Backend (API/server).
+  - aibe: AI integrations or tools.
+- <description>: Short (under 50 chars), imperative mood (e.g., "add", not "added").
+
+Types:
+- feat: New feature.
+- fix: Bug fix.
+- docs: Documentation.
+- style: Formatting (no logic change).
+- refactor: Code restructure.
+- perf: Performance improvements.
+- test: Tests.
+- chore: Maintenance (e.g., deps).
+
+Examples:
+1. feat(fe): add login form
+   (Adds new user login UI.)
+
+2. fix(be): handle invalid API inputs
+
+3. refactor(model): optimize neural network layer
+   Improves training speed by 20%.
+
+4. chore(aibe): update dependencies
+   BREAKING CHANGE: Requires Node.js 18+.
+
+Tips:
+- Keep body under 72 chars/line if added.
+- Use for automation (e.g., changelogs).
+- Enforce with commitlint.
