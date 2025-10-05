@@ -1,6 +1,9 @@
 import React from "react";
 import { Input, Button } from "antd";
-import { UserOutlined, LockOutlined } from "@ant-design/icons";
+import {
+    UserOutlined,
+    LockOutlined,
+} from "@ant-design/icons";
 
 type LoginFormProps = {
     loginUsername: string;
@@ -19,14 +22,18 @@ const LoginForm: React.FC<LoginFormProps> = ({
 }) => {
     return (
         <div className="p-10">
-            <h1 className="text-3xl font-bold mb-4">Login</h1>
+            <h1 className="text-3xl font-bold mb-4">
+                Login
+            </h1>
             <div className="mb-4">
                 <Input
                     size="large"
                     placeholder="Username"
                     prefix={<UserOutlined />}
                     value={loginUsername}
-                    onChange={(e) => setLoginUsername(e.target.value)}
+                    onChange={(e) =>
+                        setLoginUsername(e.target.value)
+                    }
                 />
             </div>
             <div className="mb-4">
@@ -35,7 +42,9 @@ const LoginForm: React.FC<LoginFormProps> = ({
                     placeholder="Password"
                     prefix={<LockOutlined />}
                     value={loginPassword}
-                    onChange={(e) => setLoginPassword(e.target.value)}
+                    onChange={(e) =>
+                        setLoginPassword(e.target.value)
+                    }
                 />
             </div>
             <div className="mb-2 text-right">
@@ -50,7 +59,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
                 type="primary"
                 block
                 size="large"
-                className="mb-4 bg-purple-500"
+                className="mb-4 !bg-purple-500 !text-white !border-white hover:!bg-white hover:!text-purple-500 hover:!border-purple-500 transition duration-300"
                 onClick={handleLogin}
             >
                 Login

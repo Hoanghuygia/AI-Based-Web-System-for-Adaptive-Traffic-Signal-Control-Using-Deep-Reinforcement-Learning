@@ -74,9 +74,9 @@ const Auth = () => {
     };
 
     return (
-        // <div className="w-full h-full flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-200 to-indigo-200">
         <div className="relative w-full max-w-4xl h-[550px] bg-white shadow-2xl rounded-3xl overflow-hidden">
-            <div className="flex h-full">
+            {/*Can be merged, 1 for layout, 1 for style, easier to maintain */}
+            <div className="flex h-full"> 
                 <div className="w-1/2 h-full relative">
                     {/* Panel Login */}
                     <div
