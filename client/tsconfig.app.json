@@ -34,6 +34,7 @@
       "@routes/*": ["src/routes/*"],
       "@pages/*": ["src/pages/*"],
       "@layout/*": ["src/layout/*"],
+      "@i18n/*": ["src/i18n/*"],
     }
   },
   "include": ["src"]
