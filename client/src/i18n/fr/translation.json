@@ -1,0 +1,17 @@
+{
+    "login-register": {
+        "login": "Connexion",
+        "username": "Nom d'utilisateur",
+        "password": "Mot de passe",
+        "button": "Se connecter",
+        "login-link": "ou connectez-vous avec les réseaux sociaux",
+        "forgot-password": "Mot de passe oublié ?",
+        "hello-welcome": "Bonjour, Bienvenue !",
+        "dont-have-an-account": "Vous n'avez pas de compte ?",
+        "register": "S'inscrire",
+        "email": "Email",
+        "register-link": "ou inscrivez-vous avec les réseaux sociaux",
+        "welcome-back": "Bon retour !",
+        "already-have-an-account": "Vous avez déjà un compte ?"
+    }
+}
