@@ -5,6 +5,7 @@ import {
     LockOutlined,
     MailOutlined,
 } from "@ant-design/icons";
+import { useTranslation } from "react-i18next";
 
 type RegisterFormProps = {
     registerUsername: string;
@@ -25,16 +26,17 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
     setRegisterPassword,
     handleRegister,
 }) => {
+    const { t } = useTranslation();
     console.log("Render RegisterForm");
     return (
         <div className="p-10">
             <h1 className="text-3xl font-bold mb-4">
-                Register
+                {t("login-register.register")}
             </h1>
             <div className="mb-4">
                 <Input
                     size="large"
-                    placeholder="Username"
+                    placeholder={t("login-register.username")}
                     prefix={<UserOutlined />}
                     value={registerUsername}
                     onChange={(e) =>
@@ -45,7 +47,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
             <div className="mb-4">
                 <Input
                     size="large"
-                    placeholder="Email"
+                    placeholder={t("login-register.email")}
                     prefix={<MailOutlined />}
                     value={registerEmail}
                     onChange={(e) =>
@@ -56,7 +58,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
             <div className="mb-4">
                 <Input.Password
                     size="large"
-                    placeholder="Password"
+                    placeholder={t("login-register.password")}
                     prefix={<LockOutlined />}
                     value={registerPassword}
                     onChange={(e) =>
@@ -71,11 +73,11 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
                 className="mb-4 !bg-purple-500 !text-white !border-white hover:!bg-white hover:!text-purple-500 hover:!border-purple-500 transition duration-300"
                 onClick={handleRegister}
             >
-                Register
+                {t("login-register.register")}
             </Button>
 
             <p className="text-sm text-gray-500 text-center mb-2">
-                or register with social platforms
+                {t("login-register.register-link")}
             </p>
             <div className="flex justify-center space-x-4">
                 <a
