@@ -8,6 +8,7 @@ type PanelLoginProps = {
 const PanelLogin: React.FC<PanelLoginProps> = ({
     resetStateInput,
 }) => {
+    console.log("Render PanelLogin");
     return (
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center bg-purple-500 p-6">
             <h1 className="text-2xl font-bold mb-2">
@@ -25,4 +26,4 @@ const PanelLogin: React.FC<PanelLoginProps> = ({
     );
 };
 
-export default PanelLogin;
+export const MemoizedPanelLogin = React.memo(PanelLogin);

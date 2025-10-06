@@ -1,8 +1,8 @@
-import { use, useState } from "react";
-import LoginForm from "./components/LoginForm";
-import PanelLogin from "./components/PaneLogin";
-import RegisterForm from "./components/RegisterForm";
-import PanelRegister from "./components/PanelRegister";
+import { use, useCallback, useState } from "react";
+import {MemoizedLoginForm} from "./components/LoginForm";
+import {MemoizedPanelLogin} from "./components/PaneLogin";
+import {MemoizedRegisterForm} from "./components/RegisterForm";
+import {MemoizedPanelRegister} from "./components/PanelRegister";
 import { login, register } from "@src/stores/user.slice";
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch } from "@src/stores/hooks";
@@ -43,6 +43,8 @@ const Auth = () => {
         } catch (error) {
             console.error("Login failed:", error);
         }
+        console.log("Navigate to Dashboard");
+        navigate("/dashboard");
     };
 
     const handleRegister = async () => {
@@ -63,7 +65,7 @@ const Auth = () => {
         }
     };
 
-    const resetStateInput = (isRegistering: boolean) => {
+    const resetStateInput = useCallback((isRegistering: boolean)=> {
         console.log("Resetl all state: ");
         setIsRegistering(isRegistering);
         setLoginPassword("");
@@ -71,7 +73,7 @@ const Auth = () => {
         setRegisterEmail("");
         setRegisterPassword("");
         setRegisterUsername("");
-    };
+    }, [])
 
     return (
         <div className="relative w-full max-w-4xl h-[550px] bg-white shadow-2xl rounded-3xl overflow-hidden">
@@ -86,7 +88,7 @@ const Auth = () => {
                                 : "opacity-100"
                         }`}
                     >
-                        <PanelLogin
+                        <MemoizedPanelLogin
                             resetStateInput={
                                 resetStateInput
                             }
@@ -101,7 +103,7 @@ const Auth = () => {
                                 : "opacity-0 pointer-events-none"
                         }`}
                     >
-                        <RegisterForm
+                        <MemoizedRegisterForm
                             registerUsername={
                                 registerUsername
                             }
@@ -132,7 +134,7 @@ const Auth = () => {
                                 : "opacity-0 pointer-events-none"
                         }`}
                     >
-                        <PanelRegister
+                        <MemoizedPanelRegister
                             resetStateInput={
                                 resetStateInput
                             }
@@ -147,7 +149,7 @@ const Auth = () => {
                                 : "opacity-100 pointer-events-auto"
                         }`}
                     >
-                        <LoginForm
+                        <MemoizedLoginForm
                             loginUsername={loginUsername}
                             setLoginUsername={
                                 setLoginUsername

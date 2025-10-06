@@ -8,6 +8,7 @@ type PanelRegisterProps = {
 const PanelRegister: React.FC<PanelRegisterProps> = ({
     resetStateInput,
 }) => {
+    console.log("Render PanelRegister");
     return (
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center bg-purple-500 p-6">
             <h1 className="text-2xl font-bold mb-2">
@@ -25,4 +26,4 @@ const PanelRegister: React.FC<PanelRegisterProps> = ({
     );
 };
 
-export default PanelRegister;
+export const MemoizedPanelRegister = React.memo(PanelRegister);
