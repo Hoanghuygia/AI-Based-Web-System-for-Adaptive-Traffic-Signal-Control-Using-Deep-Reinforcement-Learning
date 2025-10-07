@@ -1,23 +1,17 @@
 import express from 'express';
-import mongoose from 'mongoose';
+// import mongoose from 'mongoose';
 import morgan from 'morgan';
 import helmet from 'helmet';
 import cors from 'cors';
 import {route} from './routes/index.js';
 import { handleError } from './middlewares/index.js';
-import config from './config/index.js';
+import env from './config/index.js';
+import { connectMongooseCloud } from './config/mongoose.js';
 
 
 const app = express();
 
-mongoose.connect(config.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-}).then(() => {
-    console.log('Connected to MongoDB Cloud');
-}).catch((err) => {
-    console.error('MongoDB connection error:', err);
-});
+connectMongooseCloud();
 
 app.use(morgan('dev'));
 app.use(helmet());
@@ -32,7 +26,7 @@ app.use(cors());
 route(app)
 handleError(app)
 
-const PORT = config.PORT;
+const PORT = env.PORT;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
