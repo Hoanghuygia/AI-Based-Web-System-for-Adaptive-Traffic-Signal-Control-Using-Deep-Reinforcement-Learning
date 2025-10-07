@@ -4,6 +4,7 @@ import {
     UserOutlined,
     LockOutlined,
 } from "@ant-design/icons";
+import { useTranslation } from "react-i18next";
 
 type LoginFormProps = {
     loginUsername: string;
@@ -20,15 +21,17 @@ const LoginForm: React.FC<LoginFormProps> = ({
     setLoginPassword,
     handleLogin,
 }) => {
+    console.log("Render LoginForm");
+    const { t } = useTranslation();
     return (
         <div className="p-10">
             <h1 className="text-3xl font-bold mb-4">
-                Login
+                {t("login-register.login")}
             </h1>
             <div className="mb-4">
                 <Input
                     size="large"
-                    placeholder="Username"
+                    placeholder={t("login-register.username")}
                     prefix={<UserOutlined />}
                     value={loginUsername}
                     onChange={(e) =>
@@ -39,7 +42,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
             <div className="mb-4">
                 <Input.Password
                     size="large"
-                    placeholder="Password"
+                    placeholder={t("login-register.password")}
                     prefix={<LockOutlined />}
                     value={loginPassword}
                     onChange={(e) =>
@@ -52,7 +55,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
                     href="#"
                     className="text-sm text-gray-500 hover:text-purple-700"
                 >
-                    Forgot Password?
+                    {t("login-register.forgot-password")}
                 </a>
             </div>
             <Button
@@ -62,10 +65,10 @@ const LoginForm: React.FC<LoginFormProps> = ({
                 className="mb-4 !bg-purple-500 !text-white !border-white hover:!bg-white hover:!text-purple-500 hover:!border-purple-500 transition duration-300"
                 onClick={handleLogin}
             >
-                Login
+                {t("login-register.button")}
             </Button>
             <p className="text-sm text-gray-500 text-center mb-2">
-                or login with social platforms
+                {t("login-register.login-link")}
             </p>
             <div className="flex justify-center space-x-4">
                 <a
@@ -97,4 +100,4 @@ const LoginForm: React.FC<LoginFormProps> = ({
     );
 };
 
-export default LoginForm;
+export const MemoizedLoginForm = React.memo(LoginForm);

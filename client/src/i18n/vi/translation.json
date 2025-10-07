@@ -1,0 +1,17 @@
+{
+    "login-register": {
+        "login": "Đăng nhập",
+        "username": "Tên đăng nhập",
+        "password": "Mật khẩu",
+        "button": "Đăng nhập",
+        "login-link": "hoặc đăng nhập bằng mạng xã hội",
+        "forgot-password": "Quên mật khẩu?",
+        "hello-welcome": "Xin chào, Chào mừng bạn!",
+        "dont-have-an-account": "Bạn chưa có tài khoản?",
+        "register": "Đăng ký",
+        "email": "Email",
+        "register-link": "hoặc đăng ký bằng mạng xã hội",
+        "welcome-back": "Chào mừng bạn quay trở lại!",
+        "already-have-an-account": "Bạn đã có tài khoản?"
+    }
+}

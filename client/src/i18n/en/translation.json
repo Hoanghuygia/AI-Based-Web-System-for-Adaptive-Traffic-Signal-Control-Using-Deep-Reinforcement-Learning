@@ -1,0 +1,17 @@
+{
+    "login-register": {
+        "login": "Login",
+        "username": "Username",
+        "password": "Password",
+        "button": "Log In",
+        "login-link": "or login with social platforms",
+        "forgot-password": "Forgot Password?",
+        "hello-welcome": "Hello, Welcome!",
+        "dont-have-an-account": "Don't have an account?",
+        "register": "Register",
+        "email": "Email",
+        "register-link": "or register with social platforms",
+        "welcome-back": "Welcome Back!",
+        "already-have-an-account": "Already have an account?"
+    }
+}
