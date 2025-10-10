@@ -67,6 +67,7 @@ export const userSlice = createSlice({
     initialState: initialUserState,
     reducers: {
         logout: (state) => {
+            console.log("User logged out");
             state.currentUser = null;
             state.photoURL = null;
             state.email = null;
