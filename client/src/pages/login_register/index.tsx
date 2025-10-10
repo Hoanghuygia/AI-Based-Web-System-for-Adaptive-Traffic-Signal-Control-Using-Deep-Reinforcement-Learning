@@ -1,4 +1,4 @@
-import { use, useCallback, useState } from "react";
+import { useCallback, useState } from "react";
 import { MemoizedLoginForm } from "./components/LoginForm";
 import { MemoizedPanelLogin } from "./components/PaneLogin";
 import { MemoizedRegisterForm } from "./components/RegisterForm";
@@ -6,10 +6,13 @@ import { MemoizedPanelRegister } from "./components/PanelRegister";
 import { login, register } from "@src/stores/user.slice";
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch } from "@src/stores/hooks";
+import { useTranslation } from "react-i18next";
 
 const Auth = () => {
     const [isRegistering, setIsRegistering] =
         useState(false);
+
+    const { t } = useTranslation();
 
     // Login states
     const [loginUsername, setLoginUsername] = useState("");
@@ -79,11 +82,21 @@ const Auth = () => {
     );
 
     return (
-        <div className="relative w-full max-w-4xl h-[550px] bg-white shadow-2xl rounded-3xl overflow-hidden">
+        <div
+            id="login-register"
+            className="relative w-full max-w-4xl h-[550px] m-8 bg-white shadow-2xl rounded-3xl overflow-hidden"
+        >
             {/*Can be merged, 1 for layout, 1 for style, easier to maintain */}
             <div className="flex h-full flex-col md:flex-row">
                 {/* Left Side */}
-                <div id="left-side" className={`w-full md:w-1/2 h-full relative flex items-center justify-center ${isRegistering ? "" : "hidden md:block"}`}>
+                <div
+                    id="left-side"
+                    className={`w-full md:w-1/2 h-full relative flex items-center justify-center ${
+                        isRegistering
+                            ? ""
+                            : "hidden md:block"
+                    }`}
+                >
                     {/* Panel Login */}
                     <div
                         className={`hidden md:block transition-all duration-700 ${
@@ -105,7 +118,7 @@ const Auth = () => {
                         className={`absolute inset-0 flex items-center justify-center transition-all duration-700 ${
                             isRegistering
                                 ? "opacity-100 pointer-events-auto"
-                                : "opacity-0 pointer-events-none hidden" 
+                                : "opacity-0 pointer-events-none hidden"
                         }`}
                     >
                         <MemoizedRegisterForm
@@ -131,7 +144,14 @@ const Auth = () => {
                 </div>
 
                 {/* Right Side */}
-                <div id="right-side" className={`w-full md:w-1/2 h-full relative flex items-center justify-center ${isRegistering ? "hidden md:block" : ""}`}>
+                <div
+                    id="right-side"
+                    className={`w-full md:w-1/2 h-full relative flex items-center justify-center ${
+                        isRegistering
+                            ? "hidden md:block"
+                            : ""
+                    }`}
+                >
                     {/* Panel Register */}
                     <div
                         className={`hidden md:block transition-all duration-700 ${
@@ -167,6 +187,48 @@ const Auth = () => {
                             handleLogin={handleLogin}
                         />
                     </div>
+                </div>
+
+                {/* Mobile Register Link - Only shown on mobile */}
+                <div
+                    className={`md:hidden text-center pt-4 pb-8 border-t border-gray-200 ${
+                        isRegistering ? "hidden" : ""
+                    }`}
+                >
+                    <p className="text-sm text-gray-600">
+                        {t(
+                            "login-register.dont-have-an-account"
+                        )}{" "}
+                        <a
+                            onClick={() =>
+                                resetStateInput(true)
+                            }
+                            className="text-purple-600 font-medium hover:text-purple-700"
+                        >
+                            {t("login-register.register")}
+                        </a>
+                    </p>
+                </div>
+
+                {/* Mobile Login Link - Only shown on mobile */}
+                <div
+                    className={`md:hidden text-center pt-4 pb-8 border-t border-gray-2001} ${
+                        isRegistering ? "" : "hidden"
+                    }`}
+                >
+                    <p className="text-sm text-gray-600">
+                        {t(
+                            "login-register.already-have-an-account"
+                        )}{" "}
+                        <a
+                            onClick={() =>
+                                resetStateInput(false)
+                            }
+                            className="text-purple-600 font-medium hover:text-purple-700"
+                        >
+                            {t("login-register.login")}
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
