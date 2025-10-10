@@ -29,3 +29,5 @@ const PanelRegister: React.FC<PanelRegisterProps> = ({
 };
 
 export const MemoizedPanelRegister = React.memo(PanelRegister);
+
+
