@@ -29,3 +29,7 @@ const PanelLogin: React.FC<PanelLoginProps> = ({
 };
 
 export const MemoizedPanelLogin = React.memo(PanelLogin);
+
+
+
+

@@ -110,3 +110,6 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
 };
 
 export const MemoizedRegisterForm = React.memo(RegisterForm);
+
+
+

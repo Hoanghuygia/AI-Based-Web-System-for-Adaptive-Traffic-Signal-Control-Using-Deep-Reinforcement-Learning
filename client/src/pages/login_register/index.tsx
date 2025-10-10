@@ -1,8 +1,8 @@
 import { use, useCallback, useState } from "react";
-import {MemoizedLoginForm} from "./components/LoginForm";
-import {MemoizedPanelLogin} from "./components/PaneLogin";
-import {MemoizedRegisterForm} from "./components/RegisterForm";
-import {MemoizedPanelRegister} from "./components/PanelRegister";
+import { MemoizedLoginForm } from "./components/LoginForm";
+import { MemoizedPanelLogin } from "./components/PaneLogin";
+import { MemoizedRegisterForm } from "./components/RegisterForm";
+import { MemoizedPanelRegister } from "./components/PanelRegister";
 import { login, register } from "@src/stores/user.slice";
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch } from "@src/stores/hooks";
@@ -65,24 +65,28 @@ const Auth = () => {
         }
     };
 
-    const resetStateInput = useCallback((isRegistering: boolean)=> {
-        console.log("Resetl all state: ");
-        setIsRegistering(isRegistering);
-        setLoginPassword("");
-        setLoginUsername("");
-        setRegisterEmail("");
-        setRegisterPassword("");
-        setRegisterUsername("");
-    }, [])
+    const resetStateInput = useCallback(
+        (isRegistering: boolean) => {
+            console.log("Resetl all state: ");
+            setIsRegistering(isRegistering);
+            setLoginPassword("");
+            setLoginUsername("");
+            setRegisterEmail("");
+            setRegisterPassword("");
+            setRegisterUsername("");
+        },
+        []
+    );
 
     return (
         <div className="relative w-full max-w-4xl h-[550px] bg-white shadow-2xl rounded-3xl overflow-hidden">
             {/*Can be merged, 1 for layout, 1 for style, easier to maintain */}
-            <div className="flex h-full"> 
-                <div className="w-1/2 h-full relative">
+            <div className="flex h-full flex-col md:flex-row">
+                {/* Left Side */}
+                <div id="left-side" className={`w-full md:w-1/2 h-full relative flex items-center justify-center ${isRegistering ? "" : "hidden md:block"}`}>
                     {/* Panel Login */}
                     <div
-                        className={`transition-all duration-700 ${
+                        className={`hidden md:block transition-all duration-700 ${
                             isRegistering
                                 ? "opacity-0 pointer-events-none"
                                 : "opacity-100"
@@ -97,10 +101,11 @@ const Auth = () => {
 
                     {/* Register Form */}
                     <div
-                        className={`transition-all duration-700 ${
+                        id="register-form"
+                        className={`absolute inset-0 flex items-center justify-center transition-all duration-700 ${
                             isRegistering
                                 ? "opacity-100 pointer-events-auto"
-                                : "opacity-0 pointer-events-none"
+                                : "opacity-0 pointer-events-none hidden" 
                         }`}
                     >
                         <MemoizedRegisterForm
@@ -125,10 +130,11 @@ const Auth = () => {
                     </div>
                 </div>
 
-                <div className="w-1/2 h-full relative">
+                {/* Right Side */}
+                <div id="right-side" className={`w-full md:w-1/2 h-full relative flex items-center justify-center ${isRegistering ? "hidden md:block" : ""}`}>
                     {/* Panel Register */}
                     <div
-                        className={`transition-all duration-700 ${
+                        className={`hidden md:block transition-all duration-700 ${
                             isRegistering
                                 ? "opacity-100"
                                 : "opacity-0 pointer-events-none"
@@ -143,7 +149,7 @@ const Auth = () => {
 
                     {/* Login Form */}
                     <div
-                        className={`transition-all duration-700 ${
+                        className={`absolute inset-0 flex items-center justify-center transition-all duration-700 ${
                             isRegistering
                                 ? "opacity-0 pointer-events-none"
                                 : "opacity-100 pointer-events-auto"
@@ -164,7 +170,6 @@ const Auth = () => {
                 </div>
             </div>
         </div>
-        // </div>
     );
 };
 
