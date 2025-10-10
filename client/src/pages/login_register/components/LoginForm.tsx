@@ -5,6 +5,9 @@ import {
     LockOutlined,
 } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import { useAppDispatch } from "@src/stores/hooks";
+import { loginWithGoogle } from "@src/stores/user.slice";
 
 type LoginFormProps = {
     loginUsername: string;
@@ -23,6 +26,23 @@ const LoginForm: React.FC<LoginFormProps> = ({
 }) => {
     console.log("Render LoginForm");
     const { t } = useTranslation();
+
+    const navigate = useNavigate();
+
+    const dispatch = useAppDispatch();
+
+    const handleLoginWithGoogle = async () => {
+        try {
+            const userData = await dispatch(
+                loginWithGoogle()
+            ).unwrap();
+            console.log("Login successfully:", userData);
+            navigate("/dashboard");
+        } catch (error) {
+            console.error("Login failed:", error);
+        }
+    };
+
     return (
         <div className="p-10">
             <h1 className="text-3xl font-bold mb-4">
@@ -31,7 +51,9 @@ const LoginForm: React.FC<LoginFormProps> = ({
             <div className="mb-4">
                 <Input
                     size="large"
-                    placeholder={t("login-register.username")}
+                    placeholder={t(
+                        "login-register.username"
+                    )}
                     prefix={<UserOutlined />}
                     value={loginUsername}
                     onChange={(e) =>
@@ -42,7 +64,9 @@ const LoginForm: React.FC<LoginFormProps> = ({
             <div className="mb-4">
                 <Input.Password
                     size="large"
-                    placeholder={t("login-register.password")}
+                    placeholder={t(
+                        "login-register.password"
+                    )}
                     prefix={<LockOutlined />}
                     value={loginPassword}
                     onChange={(e) =>
@@ -72,7 +96,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
             </p>
             <div className="flex justify-center space-x-4">
                 <a
-                    href="#"
+                    onClick={handleLoginWithGoogle}
                     className="px-3 py-2.5 border-2 border-gray-300 rounded-md text-2xl text-gray-800 hover:text-red-500 transition"
                 >
                     <i className="bx bxl-google"></i>
@@ -101,5 +125,3 @@ const LoginForm: React.FC<LoginFormProps> = ({
 };
 
 export const MemoizedLoginForm = React.memo(LoginForm);
-
-
