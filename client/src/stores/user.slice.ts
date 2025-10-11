@@ -6,9 +6,9 @@ import { signInWithPopup } from "firebase/auth";
 import { auth, googleProvider } from "@src/config/firebase";
 
 const initialUserState: UserState = {
-    currentUser: null,
-    photoURL: null,
-    email: null,
+    currentUser: localStorage.getItem("username"),
+    photoURL: localStorage.getItem("photoURL"),
+    email: localStorage.getItem("email"),
     token: localStorage.getItem("token"),
     refreshToken: localStorage.getItem('refresh-token'),
     loading: false,
@@ -21,7 +21,7 @@ export const login = createAsyncThunk(
         username: string;
         password: string
     }) => {
-        const response = await loginApi({ user: credential });
+    const response = await loginApi(credential);
         return response.data;
     }
 )
@@ -57,7 +57,7 @@ export const register = createAsyncThunk(
         username: string;
         password: string
     }) => {
-        const response = await registerApi({ user: credential });
+    const response = await registerApi(credential);
         return response.data;
     }
 )

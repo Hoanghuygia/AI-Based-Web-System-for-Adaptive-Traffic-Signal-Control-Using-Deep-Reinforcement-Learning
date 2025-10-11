@@ -13,5 +13,20 @@
         "register-link": "or register with social platforms",
         "welcome-back": "Welcome Back!",
         "already-have-an-account": "Already have an account?"
+    },
+    "dashboard": {
+        "title": "Dashboard",
+        "appName": "Traffic Management System",
+        "welcome": "Welcomel",
+        "notification": "Notification",
+        "logout": "Logout",
+        "overview": "Overview",
+        "management": "Management",
+        "dashboard": "Dashboard",
+        "analytics": "Analytics",
+        "junction": "Junction",
+        "systemSetting": "System Setting",
+        "profile": "Profile",
+        "setting": "Setting"
     }
 }
