@@ -1,3 +1,4 @@
+import MainLayout from "@src/layout/MainLayout";
 import LoadingPage from "@src/pages/loading";
 import { getToken } from "@src/utils/authUtils";
 import { JSX, lazy, Suspense } from "react";
@@ -39,7 +40,7 @@ const routes: RouteObject[] = [
         element: (
             <AuthRoute>
                 <Suspense fallback={<LoadingPage/>}>
-                    <EmptyLayout/>
+                    <MainLayout/>
                 </Suspense>
             </AuthRoute>
         ),
