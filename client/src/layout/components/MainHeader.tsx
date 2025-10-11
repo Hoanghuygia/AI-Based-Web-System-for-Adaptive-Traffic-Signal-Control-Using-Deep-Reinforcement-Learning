@@ -4,6 +4,8 @@ import {
     EnvironmentOutlined,
     MenuOutlined,
 } from "@ant-design/icons";
+import { useTranslation } from "react-i18next";
+
 
 type MainHeaderProps = {
     username: string;
@@ -12,20 +14,22 @@ type MainHeaderProps = {
 const MainHeader: React.FC<MainHeaderProps> = ({
     username,
 }) => {
+    const { t } = useTranslation();
+
     return (
         <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3">
                 <EnvironmentOutlined className="!text-purple-500 text-3xl" />
                 <h1 className="text-lg font-semibold">
-                    Traffic Management System
+                    {t("dashboard.appName")}
                 </h1>
             </div>
             <div className="flex items-center space-x-6">
                 <span className="text-gray-600">
-                    Welcome, {username}
+                    {t("dashboard.welcome")}, {username}
                 </span>
                 <button className="cursor-pointer flex items-center justify-self-center h-8 px-4 rounded-md text-gray-600 hover:text-gray-800 hover:bg-gray-200">
-                    Notification
+                    {t("dashboard.notification")}
                 </button>
                 <Button
                     type="text"

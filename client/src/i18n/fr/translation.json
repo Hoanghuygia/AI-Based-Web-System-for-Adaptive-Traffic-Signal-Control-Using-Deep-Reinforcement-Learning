@@ -13,5 +13,20 @@
         "register-link": "ou inscrivez-vous avec les réseaux sociaux",
         "welcome-back": "Bon retour !",
         "already-have-an-account": "Vous avez déjà un compte ?"
+    },
+    "dashboard": {
+        "title": "Tableau de bord",
+        "appName": "Système de gestion du trafic",
+        "welcome": "Bienvenue,",
+        "notification": "Notifications",
+        "logout": "Déconnexion",
+        "overview": "Aperçu",
+        "management": "Gestion",
+        "dashboard": "Tableau de bord",
+        "analytics": "Analyses",
+        "junction": "Intersection",
+        "systemSetting": "Paramètres du système",
+        "profile": "Profil",
+        "setting": "Paramètres"
     }
 }

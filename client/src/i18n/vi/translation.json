@@ -13,5 +13,20 @@
         "register-link": "hoặc đăng ký bằng mạng xã hội",
         "welcome-back": "Chào mừng bạn quay trở lại!",
         "already-have-an-account": "Bạn đã có tài khoản?"
+    },
+    "dashboard": {
+        "title": "Bảng điều khiển",
+        "appName": "Hệ thống quản lý giao thông",
+        "welcome": "Chào mừng,",
+        "notification": "Thông báo",
+        "logout": "Đăng xuất",
+        "overview": "Tổng quan",
+        "management": "Quản lý",
+        "dashboard": "Bảng điều khiển",
+        "analytics": "Phân tích",
+        "junction": "Giao lộ",
+        "systemSetting": "Cài đặt hệ thống",
+        "profile": "Hồ sơ",
+        "setting": "Cài đặt"
     }
 }
