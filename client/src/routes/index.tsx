@@ -16,12 +16,23 @@ const EmptyLayout = lazy(
     () => import("@src/layout/EmptyLayout")
 );
 
+const Analytics = lazy(
+    () => import("@src/pages/analytics")
+);
+
+const Junctions = lazy(
+    () => import("@src/pages/junctions")
+);
+
+const Settings = lazy(
+    () => import("@src/pages/settings")
+    );
+
 const AuthRoute = ({children}: {children: JSX.Element}) => {
 
     // need to check if the token is valid or expired or not
     // using api
     const token = getToken();
-    console.log("Token: ", token);
 
     if(!token){
         return <Navigate to="/login" replace/>;
@@ -46,9 +57,10 @@ const routes: RouteObject[] = [
         ),
         children: [
             {path: '', element: <Navigate to= "/dashboard" replace />},
-            {path: 'dashboard', element: (
-                <Dashboard/>
-            )}
+            {path: 'dashboard', element: ( <Dashboard/>)},
+            {path: 'analytics', element: ( <Analytics/>)},
+            {path: 'settings', element: ( <Settings/>)},
+            {path: 'junctions', element: ( <Junctions/>)}
         ]
     },
     {

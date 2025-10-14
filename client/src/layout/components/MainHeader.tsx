@@ -6,6 +6,8 @@ import {
 } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useAppDispatch } from "@src/stores/hooks";
+import { logout } from "@src/stores/user.slice";
 
 type MainHeaderProps = {
     username: string;
@@ -16,6 +18,13 @@ const MainHeader: React.FC<MainHeaderProps> = ({
 }) => {
     const { t } = useTranslation();
     const navigate = useNavigate();
+
+    const dispatch = useAppDispatch();
+
+    const handleLogout = () => {
+        dispatch(logout());
+        navigate("/login");
+    };
 
     const items = [
         {
@@ -32,11 +41,16 @@ const MainHeader: React.FC<MainHeaderProps> = ({
         },
     ];
 
+    console.log("Render MainHeader");
+
     return (
         <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3">
                 <EnvironmentOutlined className="!text-purple-500 text-3xl" />
-                <h1 className="cursor-pointer text-lg font-semibold" onClick={() => navigate("/dashboard")}>
+                <h1
+                    className="cursor-pointer text-lg font-semibold"
+                    onClick={() => navigate("/dashboard")}
+                >
                     {t("dashboard.appName")}
                 </h1>
             </div>
@@ -50,8 +64,19 @@ const MainHeader: React.FC<MainHeaderProps> = ({
                 </button>
 
                 <Dropdown
-                    menu={{ items }}
-                    overlayClassName="custom-dropdown"
+                    menu={{
+                        items,
+                        onClick: ({ key }) => {
+                            if (key === "3") {
+                                handleLogout();
+                            } else if (key === "1") {
+                                // navigate("/profile");
+                            } else if (key === "2") {
+                                // navigate("/settings");
+                            }
+                        },
+                    }}
+                    overlayClassName="custom-dropdown-mainheader"
                     placement="bottomRight"
                     trigger={["click"]}
                 >
