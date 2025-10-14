@@ -1,16 +1,13 @@
-import { useAppDispatch } from "@src/stores/hooks";
-import { logout } from "@src/stores/user.slice";
 import { Button, Dropdown, Input } from "antd";
-import { useNavigate } from "react-router-dom";
-import {
-    SearchOutlined,
-    FilterOutlined,
-    ArrowRightOutlined,
-} from "@ant-design/icons";
+import { SearchOutlined, FilterOutlined } from "@ant-design/icons";
 import HeaderRow from "./components/HeaderRow";
+import JunctionCard from "./components/JunctionCard";
 
 export default function Dashboard() {
     console.log("Render Dashboard");
+    const handleClick = (id: string) => {
+        console.log("Clicked junction ID:", id);
+    };
 
     const items = [
         {
@@ -28,6 +25,180 @@ export default function Dashboard() {
         {
             key: "4",
             label: "Light Traffic",
+        },
+    ];
+
+    type TrafficStatus = "low" | "medium" | "high";
+
+    const junctionData: {
+        id: string;
+        name: string;
+        lat: number;
+        lng: number;
+        status: TrafficStatus;
+        lastUpdated: string;
+        congestionLevel: number;
+        location: string;
+    }[] = [
+        {
+            id: "411926580",
+            name: "Hai Ba Trung - Nguyen Thi Minh Khai",
+            lat: 10.782879,
+            lng: 106.698107,
+            status: "high",
+            lastUpdated: "5 minutes ago",
+            congestionLevel: 85,
+            location: "District 3, Ho Chi Minh City",
+        },
+        {
+            id: "411925946",
+            name: "Pham Ngoc Thach - Nguyen Thi Minh Khai",
+            lat: 10.781696,
+            lng: 106.696943,
+            status: "medium",
+            lastUpdated: "2 minutes ago",
+            congestionLevel: 45,
+            location: "District 3, Ho Chi Minh City",
+        },
+        {
+            id: "411926604",
+            name: "Pasteur - Nguyen Thi Minh Khai",
+            lat: 10.780516,
+            lng: 106.695852,
+            status: "low",
+            lastUpdated: "1 minute ago",
+            congestionLevel: 15,
+            location: "District 3, Ho Chi Minh City",
+        },
+        {
+            id: "2664205599",
+            name: "Nam Ky Khoi Nghia - Nguyen Thi Minh Khai",
+            lat: 10.779559,
+            lng: 106.694981,
+            status: "high",
+            lastUpdated: "3 minutes ago",
+            congestionLevel: 90,
+            location: "District 3, Ho Chi Minh City",
+        },
+        {
+            id: "411926212",
+            name: "Nam Ky Khoi Nghia - Vo Van Tan",
+            lat: 10.780477,
+            lng: 106.693959,
+            status: "medium",
+            lastUpdated: "7 minutes ago",
+            congestionLevel: 50,
+            location: "District 3, Ho Chi Minh City",
+        },
+        {
+            id: "411925942",
+            name: "Pasteur - Vo Van Tan",
+            lat: 10.781432,
+            lng: 106.6948,
+            status: "low",
+            lastUpdated: "10 minutes ago",
+            congestionLevel: 20,
+            location: "District 3, Ho Chi Minh City",
+        },
+        {
+            id: "411926599",
+            name: "Ho Con Rua",
+            lat: 10.782695,
+            lng: 106.695875,
+            status: "medium",
+            lastUpdated: "4 minutes ago",
+            congestionLevel: 60,
+            location: "District 3, Ho Chi Minh City",
+        },
+        {
+            id: "411926578",
+            name: "Hai Ba Trung - Tran Cao Van",
+            lat: 10.783801,
+            lng: 106.697048,
+            status: "high",
+            lastUpdated: "6 minutes ago",
+            congestionLevel: 80,
+            location: "District 3, Ho Chi Minh City",
+        },
+        {
+            id: "411926523",
+            name: "Hai Ba Trung - Nguyen Dinh Chieu",
+            lat: 10.784677,
+            lng: 106.695944,
+            status: "medium",
+            lastUpdated: "1 minute ago",
+            congestionLevel: 35,
+            location: "District 3, Ho Chi Minh City",
+        },
+        {
+            id: "411926597",
+            name: "Pham Ngoc Thach - Nguyen Dinh Chieu",
+            lat: 10.783561,
+            lng: 106.694855,
+            status: "low",
+            lastUpdated: "8 minutes ago",
+            congestionLevel: 25,
+            location: "District 3, Ho Chi Minh City",
+        },
+        {
+            id: "411926554",
+            name: "Pasteur - Nguyen Dinh Chieu",
+            lat: 10.782421,
+            lng: 106.693784,
+            status: "high",
+            lastUpdated: "3 minutes ago",
+            congestionLevel: 75,
+            location: "District 3, Ho Chi Minh City",
+        },
+        {
+            id: "411926164",
+            name: "Nam Ky Khoi Nghia - Nguyen Dinh Chieu",
+            lat: 10.781454,
+            lng: 106.692907,
+            status: "medium",
+            lastUpdated: "9 minutes ago",
+            congestionLevel: 55,
+            location: "District 3, Ho Chi Minh City",
+        },
+        {
+            id: "411926532",
+            name: "Nam Ky Khoi Nghia - Dien Bien Phu",
+            lat: 10.783504,
+            lng: 106.690758,
+            status: "high",
+            lastUpdated: "2 minutes ago",
+            congestionLevel: 92,
+            location: "District 3, Ho Chi Minh City",
+        },
+        {
+            id: "411926559",
+            name: "Pasteur - Dien Bien Phu",
+            lat: 10.784368,
+            lng: 106.691692,
+            status: "medium",
+            lastUpdated: "5 minutes ago",
+            congestionLevel: 40,
+            location: "District 3, Ho Chi Minh City",
+        },
+        {
+            id: "411926419",
+            name: "Pham Ngoc Thach - Dien Bien Phu",
+            lat: 10.78551,
+            lng: 106.692774,
+            status: "low",
+            lastUpdated: "1 minute ago",
+            congestionLevel: 10,
+            location: "District 3, Ho Chi Minh City",
+        },
+        {
+            id: "411926477",
+            name: "Hai Ba Trung - Dien Bien Phu",
+            lat: 10.786472,
+            lng: 106.693728,
+            status: "high",
+            lastUpdated: "4 minutes ago",
+            congestionLevel: 88,
+            location: "District 3, Ho Chi Minh City",
         },
     ];
 
@@ -73,48 +244,15 @@ export default function Dashboard() {
                 </Dropdown>
             </div>
             <div className="w-full flex flex-col justify-start items-center">
-                <HeaderRow/>
-
-                {/* Card row */}
-                <div
-                    id="card"
-                    className="relative w-full flex flex-row items-center cursor-pointer 
-        bg-white px-6 py-4 border border-gray-200 hover:shadow-md transition-shadow"
-                >
-                    {/* Junction Info */}
-                    <div className="flex flex-row flex-[3] items-center">
-                        <p
-                            id="dot"
-                            className="font-bold text-5xl leading-none text-red-500 flex items-center justify-center h-full"
-                        >
-                            •
-                        </p>
-                        <div className="flex flex-col justify-center items-start pl-4">
-                            <p className="text-base font-semibold text-gray-800">
-                                Hai Ba Trung - Nguyen Thi
-                                Minh Khai
-                            </p>
-                            <p className="text-xs text-gray-500">
-                                ID: JCT-001 • Congestion:
-                                45%
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Status */}
-                    <div className="flex flex-[2] justify-center">
-                        <p className="inline-block text-xs font-semibold bg-red-400 text-white px-3 py-1 rounded-2xl">
-                            Heavy Traffic
-                        </p>
-                    </div>
-
-                    {/* Last Update */}
-                    <p className="flex-[1] text-left text-sm text-gray-500">
-                        5 minutes ago
-                    </p>
-
-                    {/* Arrow Icon */}
-                    <ArrowRightOutlined className="absolute right-6 text-gray-400 text-lg hover:text-gray-600 transition-colors" />
+                <HeaderRow />
+                <div className="w-full mx-auto mt-4">
+                    {junctionData.map((junction) => (
+                        <JunctionCard
+                            key={junction.id}
+                            junction={junction}
+                            onClick={handleClick}
+                        />
+                    ))}
                 </div>
             </div>
         </div>
