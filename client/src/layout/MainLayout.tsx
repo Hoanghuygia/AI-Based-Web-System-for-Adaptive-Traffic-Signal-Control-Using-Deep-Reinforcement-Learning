@@ -22,7 +22,7 @@ const MainLayout: React.FC<MainLayoutPros> = ({
     console.log("Render MainLayout")
 
     return (
-        <Layout className="h-dvh">
+        <Layout className="min-h-screen">
             <Header className="bg-white shadow-md sticky top-0 z-50 ">
                 <MainHeader username={username} />
             </Header>
