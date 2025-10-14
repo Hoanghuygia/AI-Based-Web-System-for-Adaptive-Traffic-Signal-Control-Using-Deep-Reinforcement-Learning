@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.title{
+.title {
     font-size: 50;
     color: red;
     background-color: violet;
@@ -10,5 +10,17 @@
 
 /* Custom style cho dropdown của Ant Design */
 .custom-dropdown .ant-dropdown-menu {
-  min-width: 150px; /* hoặc 200px tùy bạn */
+    min-width: 150px; /* hoặc 200px tùy bạn */
+}
+
+.ant-menu-item-selected {
+    background-color: #7c3aed !important;
+}
+
+.ant-menu-item-group-title {
+    color: #e0e0ff;
+    font-weight: 600;
+    padding-left: 16px;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
