@@ -9,8 +9,12 @@
 }
 
 /* Custom style cho dropdown của Ant Design */
-.custom-dropdown .ant-dropdown-menu {
+.custom-dropdown-mainheader .ant-dropdown-menu {
     min-width: 150px; /* hoặc 200px tùy bạn */
+}
+
+.custom-dropdown-search-bar .ant-dropdown-menu {
+    min-width: 200px; /* hoặc 200px tùy bạn */
 }
 
 .ant-menu-item-selected {

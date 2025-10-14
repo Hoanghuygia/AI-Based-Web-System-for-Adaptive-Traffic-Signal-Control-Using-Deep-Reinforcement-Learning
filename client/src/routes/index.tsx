@@ -33,7 +33,6 @@ const AuthRoute = ({children}: {children: JSX.Element}) => {
     // need to check if the token is valid or expired or not
     // using api
     const token = getToken();
-    console.log("Token: ", token);
 
     if(!token){
         return <Navigate to="/login" replace/>;

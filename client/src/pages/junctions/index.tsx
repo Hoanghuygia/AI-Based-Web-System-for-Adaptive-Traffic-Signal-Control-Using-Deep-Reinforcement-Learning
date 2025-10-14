@@ -3,8 +3,8 @@ import {logout} from "@src/stores/user.slice";
 import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
 
-export default function Dashboard() {
-    console.log("Dashboard loaded");
+export default function Junctions() {
+    console.log("Render Junctions");
     const dispatch = useAppDispatch();
     const navigate = useNavigate();
 

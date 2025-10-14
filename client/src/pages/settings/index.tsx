@@ -3,8 +3,8 @@ import {logout} from "@src/stores/user.slice";
 import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
 
-export default function Dashboard() {
-    console.log("Dashboard loaded");
+export default function Settings() {
+    console.log("Render Settings");
     const dispatch = useAppDispatch();
     const navigate = useNavigate();
 
@@ -15,8 +15,8 @@ export default function Dashboard() {
 
     return (
         <div className="p-4">
-            <h1 className="text-2xl font-bold mb-4">Analytics</h1>
-            <p>Welcome to the Analytics!</p>
+            <h1 className="text-2xl font-bold mb-4">System Settings</h1>
+            <p>Welcome to the System Settings!</p>
 
             <Button
                 type="primary"
