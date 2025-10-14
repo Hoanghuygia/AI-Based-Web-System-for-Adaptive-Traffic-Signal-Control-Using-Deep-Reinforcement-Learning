@@ -5,7 +5,9 @@ import { useNavigate } from "react-router-dom";
 import {
     SearchOutlined,
     FilterOutlined,
+    ArrowRightOutlined,
 } from "@ant-design/icons";
+import HeaderRow from "./components/HeaderRow";
 
 export default function Dashboard() {
     console.log("Render Dashboard");
@@ -30,7 +32,7 @@ export default function Dashboard() {
     ];
 
     return (
-        <div className="flex flex-col justify-start items-center gap-y-4 p-4">
+        <div className="flex flex-col justify-start items-center gap-y-5 p-4">
             <div className="w-full flex flex-col justify-center items-start">
                 <h1 className="text-2xl font-bold mb-4">
                     Traffic Junction List
@@ -69,6 +71,51 @@ export default function Dashboard() {
                         Filter By Status
                     </Button>
                 </Dropdown>
+            </div>
+            <div className="w-full flex flex-col justify-start items-center">
+                <HeaderRow/>
+
+                {/* Card row */}
+                <div
+                    id="card"
+                    className="relative w-full flex flex-row items-center cursor-pointer 
+        bg-white px-6 py-4 border border-gray-200 hover:shadow-md transition-shadow"
+                >
+                    {/* Junction Info */}
+                    <div className="flex flex-row flex-[3] items-center">
+                        <p
+                            id="dot"
+                            className="font-bold text-5xl leading-none text-red-500 flex items-center justify-center h-full"
+                        >
+                            •
+                        </p>
+                        <div className="flex flex-col justify-center items-start pl-4">
+                            <p className="text-base font-semibold text-gray-800">
+                                Hai Ba Trung - Nguyen Thi
+                                Minh Khai
+                            </p>
+                            <p className="text-xs text-gray-500">
+                                ID: JCT-001 • Congestion:
+                                45%
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Status */}
+                    <div className="flex flex-[2] justify-center">
+                        <p className="inline-block text-xs font-semibold bg-red-400 text-white px-3 py-1 rounded-2xl">
+                            Heavy Traffic
+                        </p>
+                    </div>
+
+                    {/* Last Update */}
+                    <p className="flex-[1] text-left text-sm text-gray-500">
+                        5 minutes ago
+                    </p>
+
+                    {/* Arrow Icon */}
+                    <ArrowRightOutlined className="absolute right-6 text-gray-400 text-lg hover:text-gray-600 transition-colors" />
+                </div>
             </div>
         </div>
     );
