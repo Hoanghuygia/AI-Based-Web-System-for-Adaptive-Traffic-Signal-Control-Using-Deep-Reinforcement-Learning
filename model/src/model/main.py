@@ -12,6 +12,12 @@ from model.utils.create_demand_file import create_route_file
 from model.utils.create_traffic_light_config import create_traffic_light_config
 from model.utils.create_sumo_config_file import create_sumo_config
 
+def download_OSM_file_m(args):
+    """
+    Download map data by downloading OSM file.
+    """
+    download_map(coords_dict=args.cord, file_path=args.osm_path, visual_path= args.osm_visual_path)
+        
 def collect_map_data(args):
     """
     Collect map data by downloading OSM file and converting to SUMO network.
@@ -22,7 +28,6 @@ def collect_map_data(args):
         print("Convert Successfully!")
     else:
         print("Convert Failed")
-
 
 def collect_traffic_infor(args):
     """
@@ -192,6 +197,22 @@ def main():
         description="Model to optimize traffic light signal"
     )
     subparser = parser.add_subparsers(dest="command", help="Command to run")
+    
+    # ------------------------------------------------
+    # Subparser: download_osm_map
+    # ------------------------------------------------
+    collect_parser = subparser.add_parser(
+        "download_osm_map", help="Collect data map for model"
+    )
+    collect_parser.add_argument(
+        "--cord", type=str, default=config.OSM_CORDINATOR, help="Coordinator / BBOx of map"
+    )
+    collect_parser.add_argument(
+        "--osm-path", type=str, default=config.OSM_PATH, help="Path to save OSM file"
+    )
+    collect_parser.add_argument(
+        "--osm-visual-path", type=str, default=config.VISUAL_OSM_PATH, help="Visual file"
+    )
 
     # ------------------------------------------------
     # Subparser: collect_data_map
@@ -357,6 +378,8 @@ def main():
     # ================================================
     args = parser.parse_args()
 
+    if args.command == "download_osm_map":
+        download_OSM_file_m(args)
     if args.command == "collect_data_map":
         collect_map_data(args)
     elif args.command == "collect_traffic":
