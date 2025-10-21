@@ -34,3 +34,16 @@ WEEKDAY_MAP = {
 TRAFFIC_DIR = os.path.join(DATA_DIR, 'traffic')
 INTERSEC_DIR = os.path.join(DATA_DIR, 'intersections')
 INTERSECTION_DATA_FILE = os.path.join(INTERSEC_DIR, 'intersection_list.csv')
+
+
+
+
+OSM_CORDINATOR = {
+    "min_lon": 106.689806,
+    "min_lat": 10.779500,
+    "max_lon": 106.6983333,
+    "max_lat": 10.787028
+}
+OSM_PATH = "src/model/data/map/region_bbox.osm"
+VISUAL_OSM_PATH = "src/model/data/map/region_bbox.jpeg"
+NET_FILE_PATH = "src/model/sumo_files/network/region_bbox.net.xml"

@@ -12,17 +12,21 @@ from model.utils.create_demand_file import create_route_file
 from model.utils.create_traffic_light_config import create_traffic_light_config
 from model.utils.create_sumo_config_file import create_sumo_config
 
-def collect_map_data(args):
+def download_OSM_file_m(args):
     """
-    Collect map data by downloading OSM file and converting to SUMO network.
+    Download map data by downloading OSM file.
     """
-    download_map(savePath=args.map_image_chart)
+    download_map(coords_dict=args.cord, file_path=args.osm_path, visual_path= args.osm_visual_path)
+        
+def convert_OSM_to_SUMO_m(args):
+    """
+    Converting to SUMO network.
+    """
     success = convert_osm_to_net(osm_file=args.osm_path, net_file=args.net_file)
     if success:
         print("Convert Successfully!")
     else:
         print("Convert Failed")
-
 
 def collect_traffic_infor(args):
     """
@@ -192,25 +196,36 @@ def main():
         description="Model to optimize traffic light signal"
     )
     subparser = parser.add_subparsers(dest="command", help="Command to run")
-
+    
     # ------------------------------------------------
-    # Subparser: collect_data_map
+    # Subparser: download_osm_map
     # ------------------------------------------------
     collect_parser = subparser.add_parser(
-        "collect_data_map", help="Collect data map for model"
+        "download_osm_map", help="Collect data map for model"
     )
     collect_parser.add_argument(
-        "--osm-path", type=str, default=config.DISTRICT_1_OSM, help="Path to OSM file"
+        "--cord", type=str, default=config.OSM_CORDINATOR, help="Coordinator / BBOx of map"
     )
     collect_parser.add_argument(
-        "--net-file", type=str, default=config.DISTRICT_1_NET, help="Path to SUMO network file"
+        "--osm-path", type=str, default=config.OSM_PATH, help="Path to save OSM file"
     )
     collect_parser.add_argument(
-        "--map-image-chart",
-        type=str,
-        default=config.DISTRICT_1_TRAFFIC_CHART,
-        help="Path to traffic chart image",
+        "--osm-visual-path", type=str, default=config.VISUAL_OSM_PATH, help="Visual file"
     )
+
+    # ------------------------------------------------
+    # Subparser: convert_OSM_to_SUMO
+    # ------------------------------------------------
+    collect_parser = subparser.add_parser(
+        "convert_OSM_to_SUMO", help="Convert OSM file to .net.xml file"
+    )
+    collect_parser.add_argument(
+        "--osm-path", type=str, default=config.OSM_PATH, help="Path to OSM file"
+    )
+    collect_parser.add_argument(
+        "--net-file", type=str, default=config.NET_FILE_PATH, help="Path to SUMO network file"
+    )
+
 
     # ------------------------------------------------
     # Subparser: collect_traffic
@@ -357,8 +372,10 @@ def main():
     # ================================================
     args = parser.parse_args()
 
-    if args.command == "collect_data_map":
-        collect_map_data(args)
+    if args.command == "download_osm_map":
+        download_OSM_file_m(args)
+    if args.command == "convert_OSM_to_SUMO":
+        convert_OSM_to_SUMO_m(args)
     elif args.command == "collect_traffic":
         collect_traffic_infor(args)
     elif args.command == "create_demand":

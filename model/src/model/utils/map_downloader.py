@@ -6,9 +6,10 @@ from shapely.geometry import Polygon
 
 def download_map(coords_dict, file_path, visual_path):
     """
-    Downloads map data from OSM within a bounding box and saves it to a .osm file + a visual image.
+    Downloads a map from OSM based on a bounding box and saves it as an .osm file
+    plus a visual image of the network.
 
-    Parameters
+    Parameters:
     ----------
     coords_dict : dict
         Dictionary containing the bounding box:
@@ -18,30 +19,32 @@ def download_map(coords_dict, file_path, visual_path):
             "max_lon": float,
             "max_lat": float
         }
+
     file_path : str
-        Path to save the .osm file
+        Path to save the OSM file (e.g., "data/map/region.osm")
+
     visual_path : str
-        Path to save the network visualization image (.png)
+        Path to save the network visualization image (e.g., "data/map/region.png")
     """
 
     ox.settings.all_oneway = True
 
-    # Create polygon from bounding box
-    bbox_coords = [
+    # Create a polygon from the bounding box
+    bounding_box = [
         (coords_dict["min_lon"], coords_dict["min_lat"]),
         (coords_dict["min_lon"], coords_dict["max_lat"]),
         (coords_dict["max_lon"], coords_dict["max_lat"]),
         (coords_dict["max_lon"], coords_dict["min_lat"]),
     ]
 
-    poly = Polygon(bbox_coords)
+    poly = Polygon(bounding_box)
     if not poly.is_valid:
         raise ValueError("Invalid Polygon.")
 
     gdf = gpd.GeoDataFrame(index=[0], crs="EPSG:4326", geometry=[poly])
 
     try:
-        # Download the road graph from the polygon
+        # Download the road network graph
         G = ox.graph_from_polygon(
             gdf.loc[0, "geometry"], network_type="drive", simplify=False
         )
