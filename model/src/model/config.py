@@ -46,3 +46,4 @@ OSM_CORDINATOR = {
 }
 OSM_PATH = "src/model/data/map/region_bbox.osm"
 VISUAL_OSM_PATH = "src/model/data/map/region_bbox.jpeg"
+NET_FILE_PATH = "src/model/sumo_files/network/region_bbox.net.xml"

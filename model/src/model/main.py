@@ -18,11 +18,10 @@ def download_OSM_file_m(args):
     """
     download_map(coords_dict=args.cord, file_path=args.osm_path, visual_path= args.osm_visual_path)
         
-def collect_map_data(args):
+def convert_OSM_to_SUMO_m(args):
     """
-    Collect map data by downloading OSM file and converting to SUMO network.
+    Converting to SUMO network.
     """
-    download_map(savePath=args.map_image_chart)
     success = convert_osm_to_net(osm_file=args.osm_path, net_file=args.net_file)
     if success:
         print("Convert Successfully!")
@@ -215,23 +214,18 @@ def main():
     )
 
     # ------------------------------------------------
-    # Subparser: collect_data_map
+    # Subparser: convert_OSM_to_SUMO
     # ------------------------------------------------
     collect_parser = subparser.add_parser(
-        "collect_data_map", help="Collect data map for model"
+        "convert_OSM_to_SUMO", help="Convert OSM file to .net.xml file"
     )
     collect_parser.add_argument(
-        "--osm-path", type=str, default=config.DISTRICT_1_OSM, help="Path to OSM file"
+        "--osm-path", type=str, default=config.OSM_PATH, help="Path to OSM file"
     )
     collect_parser.add_argument(
-        "--net-file", type=str, default=config.DISTRICT_1_NET, help="Path to SUMO network file"
+        "--net-file", type=str, default=config.NET_FILE_PATH, help="Path to SUMO network file"
     )
-    collect_parser.add_argument(
-        "--map-image-chart",
-        type=str,
-        default=config.DISTRICT_1_TRAFFIC_CHART,
-        help="Path to traffic chart image",
-    )
+
 
     # ------------------------------------------------
     # Subparser: collect_traffic
@@ -380,8 +374,8 @@ def main():
 
     if args.command == "download_osm_map":
         download_OSM_file_m(args)
-    if args.command == "collect_data_map":
-        collect_map_data(args)
+    if args.command == "convert_OSM_to_SUMO":
+        convert_OSM_to_SUMO_m(args)
     elif args.command == "collect_traffic":
         collect_traffic_infor(args)
     elif args.command == "create_demand":
