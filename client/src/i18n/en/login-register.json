@@ -1,0 +1,35 @@
+{
+  "title": {
+    "login": "Login",
+    "register": "Register",
+    "helloWelcome": "Hello, Welcome!",
+    "welcomeBack": "Welcome Back!"
+  },
+  "form": {
+    "username": {
+      "label": "Username",
+      "placeholder": "Username"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Email"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Password"
+    }
+  },
+  "button": {
+    "login": "Log In",
+    "register": "Register",
+    "forgotPassword": "Forgot Password?"
+  },
+  "socialLogin": {
+    "loginWith": "or login with social platforms",
+    "registerWith": "or register with social platforms"
+  },
+  "prompt": {
+    "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?"
+  }
+}

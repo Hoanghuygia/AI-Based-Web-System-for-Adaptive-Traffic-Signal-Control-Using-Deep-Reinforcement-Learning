@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  thesis-fe:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: thesis-fe
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+      - ./index.html:/app/index.html
+      - ./tsconfig.json:/app/tsconfig.json
+      - ./tsconfig.app.json:/app/tsconfig.app.json
+      - ./tailwind.config.js:/app/tailwind.config.js
+      - ./postcss.config.js:/app/postcss.config.js
+      # Prevent node_modules from being overwritten
+      - /app/node_modules
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=development
+      - VITE_HOST=0.0.0.0
+      - CHOKIDAR_USEPOLLING=true
+    networks:
+      - thesis-network
+    stdin_open: true
+    tty: true
+
+networks:
+  thesis-network:
+    driver: bridge

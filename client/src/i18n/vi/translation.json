@@ -1,32 +1,75 @@
 {
-    "login-register": {
-        "login": "Đăng nhập",
-        "username": "Tên đăng nhập",
-        "password": "Mật khẩu",
-        "button": "Đăng nhập",
-        "login-link": "hoặc đăng nhập bằng mạng xã hội",
-        "forgot-password": "Quên mật khẩu?",
-        "hello-welcome": "Xin chào, Chào mừng bạn!",
-        "dont-have-an-account": "Bạn chưa có tài khoản?",
-        "register": "Đăng ký",
-        "email": "Email",
-        "register-link": "hoặc đăng ký bằng mạng xã hội",
-        "welcome-back": "Chào mừng bạn quay trở lại!",
-        "already-have-an-account": "Bạn đã có tài khoản?"
+    "loginRegister": {
+        "title": {
+            "login": "Đăng nhập",
+            "register": "Đăng ký",
+            "helloWelcome": "Xin chào, Chào mừng bạn!",
+            "welcomeBack": "Chào mừng bạn quay trở lại!"
+        },
+        "form": {
+            "username": {
+                "label": "Tên đăng nhập",
+                "placeholder": "Tên đăng nhập"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "Email"
+            },
+            "password": {
+                "label": "Mật khẩu",
+                "placeholder": "Mật khẩu"
+            }
+        },
+        "button": {
+            "login": "Đăng nhập",
+            "register": "Đăng ký",
+            "forgotPassword": "Quên mật khẩu?"
+        },
+        "socialLogin": {
+            "loginWith": "hoặc đăng nhập bằng mạng xã hội",
+            "registerWith": "hoặc đăng ký bằng mạng xã hội"
+        },
+        "prompt": {
+            "dontHaveAccount": "Bạn chưa có tài khoản?",
+            "alreadyHaveAccount": "Bạn đã có tài khoản?"
+        }
     },
     "dashboard": {
-        "title": "Bảng điều khiển",
-        "appName": "Hệ thống quản lý giao thông",
-        "welcome": "Chào mừng,",
-        "notification": "Thông báo",
-        "logout": "Đăng xuất",
-        "overview": "Tổng quan",
-        "management": "Quản lý",
-        "dashboard": "Bảng điều khiển",
-        "analytics": "Phân tích",
-        "junction": "Giao lộ",
-        "systemSetting": "Cài đặt hệ thống",
-        "profile": "Hồ sơ",
-        "setting": "Cài đặt"
+        "page": {
+            "title": "Danh sách giao lộ giao thông",
+            "description": "Giám sát và quản lý tắc nghận giao thông tại các giao lộ ở Quận 3, Thành phố Hồ Chí Minh"
+        },
+        "table": {
+            "header": {
+                "junctionName": "Tên giao lộ",
+                "status": "Trạng thái",
+                "lastUpdate": "Cập nhật cuối"
+            }
+        },
+        "filter": {
+            "searchPlaceholder": "Tìm kiếm giao lộ...",
+            "filterButton": "Lọc theo trạng thái",
+            "all": "Tất cả",
+            "heavyTraffic": "Giao thông đông đúc",
+            "moderateTraffic": "Giao thông trung bình",
+            "lightTraffic": "Giao thông thưa thớt"
+        },
+        "card": {
+            "congestion": "Tắc nghận"
+        },
+        "nav": {
+            "appName": "Hệ thống quản lý giao thông",
+            "welcome": "Chào mừng,",
+            "notification": "Thông báo",
+            "logout": "Đăng xuất",
+            "overview": "Tổng quan",
+            "management": "Quản lý",
+            "dashboard": "Bảng điều khiển",
+            "analytics": "Phân tích",
+            "junction": "Giao lộ",
+            "systemSetting": "Cài đặt hệ thống",
+            "profile": "Hồ sơ",
+            "setting": "Cài đặt"
+        }
     }
 }

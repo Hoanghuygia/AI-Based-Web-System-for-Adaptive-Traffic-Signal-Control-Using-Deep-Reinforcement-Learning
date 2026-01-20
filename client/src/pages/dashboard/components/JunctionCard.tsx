@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRightOutlined } from "@ant-design/icons";
+import { useTranslation } from "react-i18next";
 
 type Junction = {
     id: string;
@@ -21,6 +22,8 @@ const JunctionCard: React.FC<JunctionCardProps> = ({
     junction,
     onClick,
 }) => {
+    const { t } = useTranslation();
+    
     const statusColors: Record<string, string> = {
         high: "bg-red-400 text-white",
         medium: "bg-yellow-400 text-black",
@@ -28,9 +31,9 @@ const JunctionCard: React.FC<JunctionCardProps> = ({
     };
 
     const statusText: Record<string, string> = {
-        high: "Heavy Traffic",
-        medium: "Moderate Traffic",
-        low: "Light Traffic",
+        high: t("dashboard.filter.heavyTraffic"),
+        medium: t("dashboard.filter.moderateTraffic"),
+        low: t("dashboard.filter.lightTraffic"),
     };
 
     return (
@@ -53,7 +56,7 @@ const JunctionCard: React.FC<JunctionCardProps> = ({
                         {junction.name}
                     </p>
                     <p className="text-xs text-gray-500">
-                        ID: {junction.id} • Congestion:{" "}
+                        ID: {junction.id} • {t("dashboard.card.congestion")}:{" "}
                         {junction.congestionLevel}%
                     </p>
                 </div>

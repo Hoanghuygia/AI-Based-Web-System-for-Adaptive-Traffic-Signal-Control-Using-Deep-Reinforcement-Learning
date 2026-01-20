@@ -1,32 +1,75 @@
 {
-    "login-register": {
-        "login": "Login",
-        "username": "Username",
-        "password": "Password",
-        "button": "Log In",
-        "login-link": "or login with social platforms",
-        "forgot-password": "Forgot Password?",
-        "hello-welcome": "Hello, Welcome!",
-        "dont-have-an-account": "Don't have an account?",
-        "register": "Register",
-        "email": "Email",
-        "register-link": "or register with social platforms",
-        "welcome-back": "Welcome Back!",
-        "already-have-an-account": "Already have an account?"
+    "loginRegister": {
+        "title": {
+            "login": "Login",
+            "register": "Register",
+            "helloWelcome": "Hello, Welcome!",
+            "welcomeBack": "Welcome Back!"
+        },
+        "form": {
+            "username": {
+                "label": "Username",
+                "placeholder": "Username"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "Email"
+            },
+            "password": {
+                "label": "Password",
+                "placeholder": "Password"
+            }
+        },
+        "button": {
+            "login": "Log In",
+            "register": "Register",
+            "forgotPassword": "Forgot Password?"
+        },
+        "socialLogin": {
+            "loginWith": "or login with social platforms",
+            "registerWith": "or register with social platforms"
+        },
+        "prompt": {
+            "dontHaveAccount": "Don't have an account?",
+            "alreadyHaveAccount": "Already have an account?"
+        }
     },
     "dashboard": {
-        "title": "Dashboard",
-        "appName": "Traffic Management System",
-        "welcome": "Welcomel",
-        "notification": "Notification",
-        "logout": "Logout",
-        "overview": "Overview",
-        "management": "Management",
-        "dashboard": "Dashboard",
-        "analytics": "Analytics",
-        "junction": "Junction",
-        "systemSetting": "System Setting",
-        "profile": "Profile",
-        "setting": "Setting"
+        "page": {
+            "title": "Traffic Junction List",
+            "description": "Monitor and manage traffic congestion at various junctions in District 3, Ho Chi Minh City"
+        },
+        "table": {
+            "header": {
+                "junctionName": "Junction Name",
+                "status": "Status",
+                "lastUpdate": "Last Update"
+            }
+        },
+        "filter": {
+            "searchPlaceholder": "Search junctions...",
+            "filterButton": "Filter By Status",
+            "all": "All",
+            "heavyTraffic": "Heavy Traffic",
+            "moderateTraffic": "Moderate Traffic",
+            "lightTraffic": "Light Traffic"
+        },
+        "card": {
+            "congestion": "Congestion"
+        },
+        "nav": {
+            "appName": "Traffic Management System",
+            "welcome": "Welcome",
+            "notification": "Notification",
+            "logout": "Logout",
+            "overview": "Overview",
+            "management": "Management",
+            "dashboard": "Dashboard",
+            "analytics": "Analytics",
+            "junction": "Junction",
+            "systemSetting": "System Setting",
+            "profile": "Profile",
+            "setting": "Setting"
+        }
     }
 }
