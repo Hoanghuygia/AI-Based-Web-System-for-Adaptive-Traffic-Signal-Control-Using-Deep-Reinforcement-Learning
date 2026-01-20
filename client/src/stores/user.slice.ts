@@ -76,7 +76,7 @@ export const userSlice = createSlice({
             localStorage.removeItem('username');
             localStorage.removeItem('photoURL');
             localStorage.removeItem('email');
-            localStorage.removeItem('token');
+            localStorage.removeItem('token'); // mình đang lưu token trong storage không ổn lắm 
             localStorage.removeItem('refresh-token');
         },
         setUser: (state, action) => {
