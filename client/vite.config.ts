@@ -22,6 +22,15 @@ export default defineConfig({
     host: true,
     port: 5173,
     open: false,
+    strictPort: true,
+    watch: {
+      usePolling: true,
+      interval: 1000,
+    },
+    hmr: {
+      host: 'localhost',
+      port: 5173,
+    },
     proxy: {
       '/api': {
         target: 'http://127.0.0.1:8000/',

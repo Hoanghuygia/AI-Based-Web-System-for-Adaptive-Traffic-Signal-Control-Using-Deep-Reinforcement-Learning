@@ -1,32 +1,75 @@
 {
-    "login-register": {
-        "login": "Connexion",
-        "username": "Nom d'utilisateur",
-        "password": "Mot de passe",
-        "button": "Se connecter",
-        "login-link": "ou connectez-vous avec les réseaux sociaux",
-        "forgot-password": "Mot de passe oublié ?",
-        "hello-welcome": "Bonjour, Bienvenue !",
-        "dont-have-an-account": "Vous n'avez pas de compte ?",
-        "register": "S'inscrire",
-        "email": "Email",
-        "register-link": "ou inscrivez-vous avec les réseaux sociaux",
-        "welcome-back": "Bon retour !",
-        "already-have-an-account": "Vous avez déjà un compte ?"
+    "loginRegister": {
+        "title": {
+            "login": "Connexion",
+            "register": "S'inscrire",
+            "helloWelcome": "Bonjour, Bienvenue !",
+            "welcomeBack": "Bon retour !"
+        },
+        "form": {
+            "username": {
+                "label": "Nom d'utilisateur",
+                "placeholder": "Nom d'utilisateur"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "Email"
+            },
+            "password": {
+                "label": "Mot de passe",
+                "placeholder": "Mot de passe"
+            }
+        },
+        "button": {
+            "login": "Se connecter",
+            "register": "S'inscrire",
+            "forgotPassword": "Mot de passe oublié ?"
+        },
+        "socialLogin": {
+            "loginWith": "ou connectez-vous avec les réseaux sociaux",
+            "registerWith": "ou inscrivez-vous avec les réseaux sociaux"
+        },
+        "prompt": {
+            "dontHaveAccount": "Vous n'avez pas de compte ?",
+            "alreadyHaveAccount": "Vous avez déjà un compte ?"
+        }
     },
     "dashboard": {
-        "title": "Tableau de bord",
-        "appName": "Système de gestion du trafic",
-        "welcome": "Bienvenue,",
-        "notification": "Notifications",
-        "logout": "Déconnexion",
-        "overview": "Aperçu",
-        "management": "Gestion",
-        "dashboard": "Tableau de bord",
-        "analytics": "Analyses",
-        "junction": "Intersection",
-        "systemSetting": "Paramètres du système",
-        "profile": "Profil",
-        "setting": "Paramètres"
+        "page": {
+            "title": "Liste des intersections de trafic",
+            "description": "Surveiller et gérer la congestion du trafic aux différentes intersections du District 3, Ho Chi Minh Ville"
+        },
+        "table": {
+            "header": {
+                "junctionName": "Nom de l'intersection",
+                "status": "Statut",
+                "lastUpdate": "Dernière mise à jour"
+            }
+        },
+        "filter": {
+            "searchPlaceholder": "Rechercher des intersections...",
+            "filterButton": "Filtrer par statut",
+            "all": "Tous",
+            "heavyTraffic": "Trafic dense",
+            "moderateTraffic": "Trafic modéré",
+            "lightTraffic": "Trafic léger"
+        },
+        "card": {
+            "congestion": "Congestion"
+        },
+        "nav": {
+            "appName": "Système de gestion du trafic",
+            "welcome": "Bienvenue,",
+            "notification": "Notifications",
+            "logout": "Déconnexion",
+            "overview": "Aperçu",
+            "management": "Gestion",
+            "dashboard": "Tableau de bord",
+            "analytics": "Analyses",
+            "junction": "Intersection",
+            "systemSetting": "Paramètres du système",
+            "profile": "Profil",
+            "setting": "Paramètres"
+        }
     }
 }

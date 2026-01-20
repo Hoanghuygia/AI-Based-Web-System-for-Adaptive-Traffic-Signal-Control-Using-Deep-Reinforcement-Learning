@@ -2,9 +2,12 @@ import { Button, Dropdown, Input } from "antd";
 import { SearchOutlined, FilterOutlined } from "@ant-design/icons";
 import HeaderRow from "./components/HeaderRow";
 import JunctionCard from "./components/JunctionCard";
+import { useTranslation } from "react-i18next";
 
 export default function Dashboard() {
     console.log("Render Dashboard");
+    const { t } = useTranslation();
+    
     const handleClick = (id: string) => {
         console.log("Clicked junction ID:", id);
     };
@@ -12,19 +15,19 @@ export default function Dashboard() {
     const items = [
         {
             key: "1",
-            label: "All",
+            label: t("dashboard.filter.all"),
         },
         {
             key: "2",
-            label: "Heavy Traffic",
+            label: t("dashboard.filter.heavyTraffic"),
         },
         {
             key: "3",
-            label: "Moderate Traffic",
+            label: t("dashboard.filter.moderateTraffic"),
         },
         {
             key: "4",
-            label: "Light Traffic",
+            label: t("dashboard.filter.lightTraffic"),
         },
     ];
 
@@ -206,12 +209,10 @@ export default function Dashboard() {
         <div className="flex flex-col justify-start items-center gap-y-5 p-4">
             <div className="w-full flex flex-col justify-center items-start">
                 <h1 className="text-2xl font-bold mb-4">
-                    Traffic Junction List
+                    {t("dashboard.page.title")}
                 </h1>
                 <p>
-                    Monitor and manage traffic congestion at
-                    various junctions in District 3, Ho Chi
-                    Minh City
+                    {t("dashboard.page.description")}
                 </p>
             </div>
             <div
@@ -223,7 +224,7 @@ export default function Dashboard() {
                     <Input
                         className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2
                         focus:ring-purple-500 focus:border-transparent  hover:!border-purple-500 hover:!text-purple-500 transition duration-300"
-                        placeholder="Search junctions..."
+                        placeholder={t("dashboard.filter.searchPlaceholder")}
                     />
                 </div>
 
@@ -239,7 +240,7 @@ export default function Dashboard() {
                     hover:!border-purple-500 hover:!text-purple-500 
                     transition duration-300"
                     >
-                        Filter By Status
+                        {t("dashboard.filter.filterButton")}
                     </Button>
                 </Dropdown>
             </div>

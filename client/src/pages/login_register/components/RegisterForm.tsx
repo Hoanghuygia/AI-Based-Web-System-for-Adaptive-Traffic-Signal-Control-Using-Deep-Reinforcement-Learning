@@ -31,12 +31,12 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
     return (
         <div className="p-10">
             <h1 className="text-3xl font-bold mb-4">
-                {t("login-register.register")}
+                {t("loginRegister.title.register")}
             </h1>
             <div className="mb-4">
                 <Input
                     size="large"
-                    placeholder={t("login-register.username")}
+                    placeholder={t("loginRegister.form.username.placeholder")}
                     prefix={<UserOutlined />}
                     value={registerUsername}
                     onChange={(e) =>
@@ -47,7 +47,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
             <div className="mb-4">
                 <Input
                     size="large"
-                    placeholder={t("login-register.email")}
+                    placeholder={t("loginRegister.form.email.placeholder")}
                     prefix={<MailOutlined />}
                     value={registerEmail}
                     onChange={(e) =>
@@ -58,7 +58,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
             <div className="mb-4">
                 <Input.Password
                     size="large"
-                    placeholder={t("login-register.password")}
+                    placeholder={t("loginRegister.form.password.placeholder")}
                     prefix={<LockOutlined />}
                     value={registerPassword}
                     onChange={(e) =>
@@ -73,11 +73,11 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
                 className="mb-4 !bg-purple-500 !text-white !border-white hover:!bg-white hover:!text-purple-500 hover:!border-purple-500 transition duration-300"
                 onClick={handleRegister}
             >
-                {t("login-register.register")}
+                {t("loginRegister.button.register")}
             </Button>
 
             <p className="text-sm text-gray-500 text-center mb-2">
-                {t("login-register.register-link")}
+                {t("loginRegister.socialLogin.registerWith")}
             </p>
             <div className="flex justify-center space-x-4">
                 <a

@@ -1,0 +1,35 @@
+{
+  "title": {
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "helloWelcome": "Bonjour, Bienvenue !",
+    "welcomeBack": "Bon retour !"
+  },
+  "form": {
+    "username": {
+      "label": "Nom d'utilisateur",
+      "placeholder": "Nom d'utilisateur"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Email"
+    },
+    "password": {
+      "label": "Mot de passe",
+      "placeholder": "Mot de passe"
+    }
+  },
+  "button": {
+    "login": "Se connecter",
+    "register": "S'inscrire",
+    "forgotPassword": "Mot de passe oublié ?"
+  },
+  "socialLogin": {
+    "loginWith": "ou connectez-vous avec les réseaux sociaux",
+    "registerWith": "ou inscrivez-vous avec les réseaux sociaux"
+  },
+  "prompt": {
+    "dontHaveAccount": "Vous n'avez pas de compte ?",
+    "alreadyHaveAccount": "Vous avez déjà un compte ?"
+  }
+}

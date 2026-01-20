@@ -46,13 +46,13 @@ const LoginForm: React.FC<LoginFormProps> = ({
     return (
         <div className="p-10">
             <h1 className="text-3xl font-bold mb-4">
-                {t("login-register.login")}
+                {t("loginRegister.title.login")}
             </h1>
             <div className="mb-4">
                 <Input
                     size="large"
                     placeholder={t(
-                        "login-register.username"
+                        "loginRegister.form.username.placeholder"
                     )}
                     prefix={<UserOutlined />}
                     value={loginUsername}
@@ -65,7 +65,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
                 <Input.Password
                     size="large"
                     placeholder={t(
-                        "login-register.password"
+                        "loginRegister.form.password.placeholder"
                     )}
                     prefix={<LockOutlined />}
                     value={loginPassword}
@@ -79,7 +79,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
                     href="#"
                     className="text-sm text-gray-500 hover:text-purple-700"
                 >
-                    {t("login-register.forgot-password")}
+                    {t("loginRegister.button.forgotPassword")}
                 </a>
             </div>
             <Button
@@ -89,10 +89,10 @@ const LoginForm: React.FC<LoginFormProps> = ({
                 className="mb-4 !bg-purple-500 !text-white !border-white hover:!bg-white hover:!text-purple-500 hover:!border-purple-500 transition duration-300"
                 onClick={handleLogin}
             >
-                {t("login-register.button")}
+                {t("loginRegister.button.login")}
             </Button>
             <p className="text-sm text-gray-500 text-center mb-2">
-                {t("login-register.login-link")}
+                {t("loginRegister.socialLogin.loginWith")}
             </p>
             <div className="flex justify-center space-x-4">
                 <a

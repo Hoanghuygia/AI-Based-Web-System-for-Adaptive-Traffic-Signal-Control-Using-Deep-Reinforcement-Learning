@@ -1,0 +1,35 @@
+{
+  "title": {
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "helloWelcome": "Xin chào, Chào mừng bạn!",
+    "welcomeBack": "Chào mừng bạn quay trở lại!"
+  },
+  "form": {
+    "username": {
+      "label": "Tên đăng nhập",
+      "placeholder": "Tên đăng nhập"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Email"
+    },
+    "password": {
+      "label": "Mật khẩu",
+      "placeholder": "Mật khẩu"
+    }
+  },
+  "button": {
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "forgotPassword": "Quên mật khẩu?"
+  },
+  "socialLogin": {
+    "loginWith": "hoặc đăng nhập bằng mạng xã hội",
+    "registerWith": "hoặc đăng ký bằng mạng xã hội"
+  },
+  "prompt": {
+    "dontHaveAccount": "Bạn chưa có tài khoản?",
+    "alreadyHaveAccount": "Bạn đã có tài khoản?"
+  }
+}
