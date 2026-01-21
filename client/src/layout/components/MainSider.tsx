@@ -24,7 +24,7 @@ const MainSider: React.FC<MainSiderProps> = ({
     return (
         <Sider
             width={260}
-            className="bg-purple-500 shadow-md !rounded-xl"
+            className="bg-purple-500 shadow-md !rounded-l-lg"
             breakpoint="lg"
             collapsedWidth="0"
         >

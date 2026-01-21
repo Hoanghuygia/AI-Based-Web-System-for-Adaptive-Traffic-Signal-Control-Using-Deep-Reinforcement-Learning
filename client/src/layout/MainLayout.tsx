@@ -29,7 +29,7 @@ const MainLayout: React.FC<MainLayoutPros> = ({
             <div id="container-a" className="my-8 px-12 h-full">
                 <Layout className="w-full h-full">
                     <MainSider selectedKey={selectedKey} />
-                    <Content className="p-4 bg-gray-100">
+                    <Content id="main-content" className="p-4 bg-white rounded-r-lg">
                         {children || <Outlet />}
                     </Content>
                 </Layout>
