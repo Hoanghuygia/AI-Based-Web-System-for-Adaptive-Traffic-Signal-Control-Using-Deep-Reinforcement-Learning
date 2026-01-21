@@ -7,6 +7,7 @@ import {
     ApartmentOutlined,
 } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 type MainSiderProps = {
     selectedKey: string;
@@ -16,6 +17,7 @@ const MainSider: React.FC<MainSiderProps> = ({
     selectedKey,
 }) => {
     const navigate = useNavigate();
+    const { t } = useTranslation();
 
     console.log("Render MainSider", selectedKey);
 
@@ -35,33 +37,33 @@ const MainSider: React.FC<MainSiderProps> = ({
                 items={[
                     {
                         type: "group",
-                        label: "OVERVIEW",
+                        label: t("dashboard.nav.overview"),
                         children: [
                             {
                                 key: "dashboard",
                                 icon: <DashboardOutlined />,
-                                label: "Dashboard",
+                                label: t("dashboard.nav.dashboard"),
                             },
                             {
                                 key: "analytics",
                                 icon: <BarChartOutlined />,
-                                label: "Analytics",
+                                label: t("dashboard.nav.analytics"),
                             },
                         ],
                     },
                     {
                         type: "group",
-                        label: "MANAGEMENT",
+                        label: t("dashboard.nav.management"),
                         children: [
                             {
                                 key: "junctions",
                                 icon: <ApartmentOutlined />,
-                                label: "Junctions",
+                                label: t("dashboard.nav.junction"),
                             },
                             {
                                 key: "settings",
                                 icon: <SettingOutlined />,
-                                label: "System Settings",
+                                label: t("dashboard.nav.systemSetting"),
                             },
                         ],
                     },

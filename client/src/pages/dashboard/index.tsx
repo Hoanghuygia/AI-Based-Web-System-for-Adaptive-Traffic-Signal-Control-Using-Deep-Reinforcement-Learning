@@ -3,13 +3,17 @@ import { SearchOutlined, FilterOutlined } from "@ant-design/icons";
 import HeaderRow from "./components/HeaderRow";
 import JunctionCard from "./components/JunctionCard";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 export default function Dashboard() {
     console.log("Render Dashboard");
+
     const { t } = useTranslation();
+    const navigate = useNavigate();
     
     const handleClick = (id: string) => {
         console.log("Clicked junction ID:", id);
+        navigate(`/dashboard/${id}`);
     };
 
     const items = [

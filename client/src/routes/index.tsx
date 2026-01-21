@@ -1,4 +1,6 @@
+import DisplayLayout from "@src/layout/DisplayLayout";
 import MainLayout from "@src/layout/MainLayout";
+import JunctionDetail from "@src/pages/junction-detail";
 import LoadingPage from "@src/pages/loading";
 import { getToken } from "@src/utils/authUtils";
 import { JSX, lazy, Suspense } from "react";
@@ -60,7 +62,7 @@ const routes: RouteObject[] = [
             {path: 'dashboard', element: ( <Dashboard/>)},
             {path: 'analytics', element: ( <Analytics/>)},
             {path: 'settings', element: ( <Settings/>)},
-            {path: 'junctions', element: ( <Junctions/>)}
+            {path: 'junctions', element: ( <Junctions/>)},
         ]
     },
     {
@@ -75,6 +77,22 @@ const routes: RouteObject[] = [
                             <Auth/>
                         </Suspense>
                     </GuestRoute>
+                )
+            }
+        ]
+    },
+    {
+        path: '/dashboard/:id',
+        element: <DisplayLayout/>,
+        children: [
+            {
+                path: '',
+                element: (
+                    <AuthRoute>
+                        <Suspense fallback={<LoadingPage/>}>
+                            <JunctionDetail/>
+                        </Suspense>
+                    </AuthRoute>
                 )
             }
         ]
