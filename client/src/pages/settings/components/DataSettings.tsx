@@ -1,21 +1,20 @@
 import { DatabaseOutlined } from '@ant-design/icons';
 import { Checkbox, ConfigProvider, InputNumber } from 'antd';
-import { useState } from 'react';
+import { memo } from 'react';
+import { DataSettingsData } from '../types';
 
 interface Props {
     disabled?: boolean;
+    data: DataSettingsData;
+    onChange: (data: Partial<DataSettingsData>) => void;
 }
 
-export default function DataSettings({ disabled = false }: Props) {
-    const [dataRetention, setDataRetention] = useState(90);
-    const [enableDataExport, setEnableDataExport] = useState(true);
-    const [autoBackup, setAutoBackup] = useState(true);
-
+function DataSettings({ disabled = false, data, onChange }: Props) {
     return (
         <ConfigProvider
             theme={{
                 token: {
-                    colorPrimary: '#8b5cf6', // purple-400
+                    colorPrimary: '#8b5cf6',
                 },
             }}
         >
@@ -29,8 +28,8 @@ export default function DataSettings({ disabled = false }: Props) {
                 <div className='mb-6'>
                     <label className='block mb-2 font-medium'>Data Retention (days)</label>
                     <InputNumber
-                        value={dataRetention}
-                        onChange={(value) => setDataRetention(value || 0)}
+                        value={data.dataRetention}
+                        onChange={(value) => onChange({ dataRetention: value || 1 })}
                         min={1}
                         max={365}
                         className='w-full md:w-1/2'
@@ -41,8 +40,8 @@ export default function DataSettings({ disabled = false }: Props) {
                 {/* Enable Data Export Checkbox */}
                 <div className='flex items-start mb-4'>
                     <Checkbox
-                        checked={enableDataExport}
-                        onChange={(e) => setEnableDataExport(e.target.checked)}
+                        checked={data.enableDataExport}
+                        onChange={(e) => onChange({ enableDataExport: e.target.checked })}
                         className='mt-1'
                         disabled={disabled}
                     >
@@ -56,8 +55,8 @@ export default function DataSettings({ disabled = false }: Props) {
                 {/* Auto Backup Checkbox */}
                 <div className='flex items-start'>
                     <Checkbox
-                        checked={autoBackup}
-                        onChange={(e) => setAutoBackup(e.target.checked)}
+                        checked={data.autoBackup}
+                        onChange={(e) => onChange({ autoBackup: e.target.checked })}
                         className='mt-1'
                         disabled={disabled}
                     >
@@ -71,3 +70,5 @@ export default function DataSettings({ disabled = false }: Props) {
         </ConfigProvider>
     );
 }
+
+export default memo(DataSettings);

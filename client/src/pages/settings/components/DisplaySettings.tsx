@@ -1,16 +1,15 @@
 import { BgColorsOutlined } from '@ant-design/icons';
 import { Select } from 'antd';
-import { useState } from 'react';
+import { memo } from 'react';
+import { DisplaySettingsData } from '../types';
 
 interface Props {
     disabled?: boolean;
+    data: DisplaySettingsData;
+    onChange: (data: Partial<DisplaySettingsData>) => void;
 }
 
-export default function DisplaySettings({ disabled = false }: Props) {
-    const [theme, setTheme] = useState('Light');
-    const [dateFormat, setDateFormat] = useState('DD/MM/YYYY');
-    const [timeFormat, setTimeFormat] = useState('24 Hour');
-
+function DisplaySettings({ disabled = false, data, onChange }: Props) {
     return (
         <div className="border border-gray-200 rounded-lg p-6 mt-4">
             <div className='flex items-center mb-6'>
@@ -23,8 +22,8 @@ export default function DisplaySettings({ disabled = false }: Props) {
                 <div>
                     <label className='block mb-2 font-medium'>Theme</label>
                     <Select
-                        value={theme}
-                        onChange={(value) => setTheme(value)}
+                        value={data.theme}
+                        onChange={(value) => onChange({ theme: value })}
                         className='w-full'
                         disabled={disabled}
                         options={[
@@ -37,8 +36,8 @@ export default function DisplaySettings({ disabled = false }: Props) {
                 <div>
                     <label className='block mb-2 font-medium'>Date Format</label>
                     <Select
-                        value={dateFormat}
-                        onChange={(value) => setDateFormat(value)}
+                        value={data.dateFormat}
+                        onChange={(value) => onChange({ dateFormat: value })}
                         className='w-full'
                         disabled={disabled}
                         options={[
@@ -51,8 +50,8 @@ export default function DisplaySettings({ disabled = false }: Props) {
                 <div>
                     <label className='block mb-2 font-medium'>Time Format</label>
                     <Select
-                        value={timeFormat}
-                        onChange={(value) => setTimeFormat(value)}
+                        value={data.timeFormat}
+                        onChange={(value) => onChange({ timeFormat: value })}
                         className='w-full'
                         disabled={disabled}
                         options={[
@@ -65,3 +64,5 @@ export default function DisplaySettings({ disabled = false }: Props) {
         </div>
     );
 }
+
+export default memo(DisplaySettings);

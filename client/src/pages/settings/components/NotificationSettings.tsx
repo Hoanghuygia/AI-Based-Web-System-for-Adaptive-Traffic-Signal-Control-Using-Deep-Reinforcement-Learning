@@ -1,17 +1,15 @@
 import { BellOutlined } from '@ant-design/icons';
 import { Checkbox, ConfigProvider } from 'antd';
-import { useState } from 'react';
+import { memo } from 'react';
+import { NotificationSettingsData } from '../types';
 
 interface Props {
     disabled?: boolean;
+    data: NotificationSettingsData;
+    onChange: (data: Partial<NotificationSettingsData>) => void;
 }
 
-export default function NotificationSettings({ disabled = false }: Props) {
-    const [emailNotifications, setEmailNotifications] = useState(true);
-    const [trafficAlerts, setTrafficAlerts] = useState(true);
-    const [systemNotifications, setSystemNotifications] = useState(true);
-    const [weeklyReport, setWeeklyReport] = useState(true);
-
+function NotificationSettings({ disabled = false, data, onChange }: Props) {
     return (
         <ConfigProvider
             theme={{
@@ -30,8 +28,8 @@ export default function NotificationSettings({ disabled = false }: Props) {
                 {/* Email Notifications */}
                 <div className='flex items-start'>
                     <Checkbox
-                        checked={emailNotifications}
-                        onChange={(e) => setEmailNotifications(e.target.checked)}
+                        checked={data.emailNotifications}
+                        onChange={(e) => onChange({ emailNotifications: e.target.checked })}
                         className='mt-1'
                         disabled={disabled}
                     >
@@ -45,8 +43,8 @@ export default function NotificationSettings({ disabled = false }: Props) {
                 {/* Traffic Alerts */}
                 <div className='flex items-start'>
                     <Checkbox
-                        checked={trafficAlerts}
-                        onChange={(e) => setTrafficAlerts(e.target.checked)}
+                        checked={data.trafficAlerts}
+                        onChange={(e) => onChange({ trafficAlerts: e.target.checked })}
                         className='mt-1'
                         disabled={disabled}
                     >
@@ -60,8 +58,8 @@ export default function NotificationSettings({ disabled = false }: Props) {
                 {/* System Notifications */}
                 <div className='flex items-start'>
                     <Checkbox
-                        checked={systemNotifications}
-                        onChange={(e) => setSystemNotifications(e.target.checked)}
+                        checked={data.systemNotifications}
+                        onChange={(e) => onChange({ systemNotifications: e.target.checked })}
                         className='mt-1'
                         disabled={disabled}
                     >
@@ -75,14 +73,14 @@ export default function NotificationSettings({ disabled = false }: Props) {
                 {/* Weekly Report */}
                 <div className='flex items-start'>
                     <Checkbox
-                        checked={weeklyReport}
-                        onChange={(e) => setWeeklyReport(e.target.checked)}
+                        checked={data.weeklyReport}
+                        onChange={(e) => onChange({ weeklyReport: e.target.checked })}
                         className='mt-1'
                         disabled={disabled}
                     >
                         <div>
-                            <div className='text-sm font-medium'>Weekly Report</div>
-                            <div className='text-xs text-gray-500'>Receive weekly traffic summary</div>
+                            <div className='font-medium text-base'>Weekly Report</div>
+                            <div className='text-sm text-gray-500'>Receive weekly traffic summary</div>
                         </div>
                     </Checkbox>
                 </div>
@@ -91,3 +89,5 @@ export default function NotificationSettings({ disabled = false }: Props) {
         </ConfigProvider>
     );
 }
+
+export default memo(NotificationSettings);

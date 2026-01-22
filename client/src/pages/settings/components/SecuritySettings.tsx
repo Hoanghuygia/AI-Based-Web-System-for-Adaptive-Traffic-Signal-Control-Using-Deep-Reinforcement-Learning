@@ -1,24 +1,24 @@
 import { LockOutlined } from '@ant-design/icons';
 import { Checkbox, ConfigProvider, InputNumber } from 'antd';
-import { useState } from 'react';
+import { memo } from 'react';
+import { SecuritySettingsData } from '../types';
 
 interface Props {
     disabled?: boolean;
+    data: SecuritySettingsData;
+    onChange: (data: Partial<SecuritySettingsData>) => void;
 }
 
-export default function SecuritySettings({ disabled = false }: Props) {
-    const [twoFactorAuth, setTwoFactorAuth] = useState(false);
-    const [sessionTimeout, setSessionTimeout] = useState(30);
-
+function SecuritySettings({ disabled = false, data, onChange }: Props) {
     return (
         <ConfigProvider
             theme={{
                 token: {
-                    colorPrimary: '#8b5cf6', // purple-400
+                    colorPrimary: '#8b5cf6',
                 },
             }}
         >
-            <div className="border border-gray-200 rounded-lg p-6">
+            <div className="border border-gray-200 rounded-lg p-6 mt-4">
                 <div className='flex items-center mb-6'>
                     <LockOutlined className='mr-2 text-lg' />
                     <h1 className='text-xl font-semibold m-0'>Security Settings</h1>
@@ -28,8 +28,8 @@ export default function SecuritySettings({ disabled = false }: Props) {
                     {/* Two-Factor Authentication Checkbox */}
                     <div className='flex items-start'>
                         <Checkbox
-                            checked={twoFactorAuth}
-                            onChange={(e) => setTwoFactorAuth(e.target.checked)}
+                            checked={data.twoFactorAuth}
+                            onChange={(e) => onChange({ twoFactorAuth: e.target.checked })}
                             className='mt-1'
                             disabled={disabled}
                         >
@@ -44,8 +44,8 @@ export default function SecuritySettings({ disabled = false }: Props) {
                     <div>
                         <label className='block mb-2 font-medium'>Session Timeout (minutes)</label>
                         <InputNumber
-                            value={sessionTimeout}
-                            onChange={(value) => setSessionTimeout(value || 0)}
+                            value={data.sessionTimeout}
+                            onChange={(value) => onChange({ sessionTimeout: value || 5 })}
                             min={5}
                             max={120}
                             className='w-full'
@@ -57,3 +57,5 @@ export default function SecuritySettings({ disabled = false }: Props) {
         </ConfigProvider>
     );
 }
+
+export default memo(SecuritySettings);

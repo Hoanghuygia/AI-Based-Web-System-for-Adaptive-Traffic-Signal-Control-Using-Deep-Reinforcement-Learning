@@ -1,20 +1,20 @@
 import { GlobalOutlined } from '@ant-design/icons';
 import { Checkbox, ConfigProvider, InputNumber } from 'antd';
-import { useState } from 'react';
+import { memo } from 'react';
+import { APISettingsData } from '../types';
 
 interface Props {
     disabled?: boolean;
+    data: APISettingsData;
+    onChange: (data: Partial<APISettingsData>) => void;
 }
 
-export default function APISettings({ disabled = false }: Props) {
-    const [enableAPIAccess, setEnableAPIAccess] = useState(true);
-    const [apiRateLimit, setApiRateLimit] = useState(1000);
-
+function APISettings({ disabled = false, data, onChange }: Props) {
     return (
         <ConfigProvider
             theme={{
                 token: {
-                    colorPrimary: '#8b5cf6', // purple-500
+                    colorPrimary: '#8b5cf6',
                 },
             }}
         >
@@ -27,8 +27,8 @@ export default function APISettings({ disabled = false }: Props) {
                 {/* Enable API Access Checkbox */}
                 <div className='flex items-start mb-6'>
                     <Checkbox
-                        checked={enableAPIAccess}
-                        onChange={(e) => setEnableAPIAccess(e.target.checked)}
+                        checked={data.enableAPIAccess}
+                        onChange={(e) => onChange({ enableAPIAccess: e.target.checked })}
                         className='mt-1'
                         disabled={disabled}
                     >
@@ -43,8 +43,8 @@ export default function APISettings({ disabled = false }: Props) {
                 <div>
                     <label className='block mb-2 font-medium'>API Rate Limit (requests/hour)</label>
                     <InputNumber
-                        value={apiRateLimit}
-                        onChange={(value) => setApiRateLimit(value || 0)}
+                        value={data.apiRateLimit}
+                        onChange={(value) => onChange({ apiRateLimit: value || 100 })}
                         min={100}
                         max={10000}
                         className='w-full md:w-1/2'
@@ -55,3 +55,5 @@ export default function APISettings({ disabled = false }: Props) {
         </ConfigProvider>
     );
 }
+
+export default memo(APISettings);

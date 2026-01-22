@@ -1,21 +1,20 @@
 import { ThunderboltOutlined } from '@ant-design/icons';
 import { Checkbox, ConfigProvider, InputNumber } from 'antd';
-import { useState } from 'react';
+import { memo } from 'react';
+import { SystemPreferencesData } from '../types';
 
 interface Props {
     disabled?: boolean;
+    data: SystemPreferencesData;
+    onChange: (data: Partial<SystemPreferencesData>) => void;
 }
 
-export default function SystemPreferences({ disabled = false }: Props) {
-    const [updateFrequency, setUpdateFrequency] = useState(5);
-    const [maxCongestionThreshold, setMaxCongestionThreshold] = useState(80);
-    const [enableAutoOptimization, setEnableAutoOptimization] = useState(true);
-
+function SystemPreferences({ disabled = false, data, onChange }: Props) {
     return (
         <ConfigProvider
             theme={{
                 token: {
-                    colorPrimary: '#8b5cf6', // purple-500
+                    colorPrimary: '#8b5cf6',
                 },
             }}
         >
@@ -30,8 +29,8 @@ export default function SystemPreferences({ disabled = false }: Props) {
                     <div>
                         <label className='block mb-2 font-medium'>Update Frequency (seconds)</label>
                         <InputNumber
-                            value={updateFrequency}
-                            onChange={(value) => setUpdateFrequency(value || 0)}
+                            value={data.updateFrequency}
+                            onChange={(value) => onChange({ updateFrequency: value || 1 })}
                             min={1}
                             max={60}
                             className='w-full'
@@ -41,8 +40,8 @@ export default function SystemPreferences({ disabled = false }: Props) {
                     <div>
                         <label className='block mb-2 font-medium'>Max Congestion Threshold (%)</label>
                         <InputNumber
-                            value={maxCongestionThreshold}
-                            onChange={(value) => setMaxCongestionThreshold(value || 0)}
+                            value={data.maxCongestionThreshold}
+                            onChange={(value) => onChange({ maxCongestionThreshold: value || 0 })}
                             min={0}
                             max={100}
                             className='w-full'
@@ -54,8 +53,8 @@ export default function SystemPreferences({ disabled = false }: Props) {
                 {/* Enable Auto Optimization Checkbox */}
                 <div className='flex items-start mt-6'>
                     <Checkbox
-                        checked={enableAutoOptimization}
-                        onChange={(e) => setEnableAutoOptimization(e.target.checked)}
+                        checked={data.enableAutoOptimization}
+                        onChange={(e) => onChange({ enableAutoOptimization: e.target.checked })}
                         className='mt-1'
                         disabled={disabled}
                     >
@@ -69,3 +68,5 @@ export default function SystemPreferences({ disabled = false }: Props) {
         </ConfigProvider>
     );
 }
+
+export default memo(SystemPreferences);
