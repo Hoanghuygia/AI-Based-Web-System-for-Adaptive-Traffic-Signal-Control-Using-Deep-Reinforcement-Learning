@@ -56,11 +56,6 @@ const MainSider: React.FC<MainSiderProps> = ({
                         label: t("dashboard.nav.management"),
                         children: [
                             {
-                                key: "junctions",
-                                icon: <ApartmentOutlined />,
-                                label: t("dashboard.nav.junction"),
-                            },
-                            {
                                 key: "settings",
                                 icon: <SettingOutlined />,
                                 label: t("dashboard.nav.systemSetting"),

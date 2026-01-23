@@ -2,6 +2,7 @@ import { Alert, Button, Spin } from "antd";
 import { ReloadOutlined } from "@ant-design/icons";
 import GlobalKPIOverview from "./components/GlobalKPIOverview";
 import TrafficPerformance from "./components/TrafficPerformance";
+import CongestionDensityAnalysis from "./components/CongestionDensityAnalysis";
 import { useAnalytics } from "./hooks/useAnalytics";
 
 export default function Analytics() {
@@ -56,18 +57,18 @@ export default function Analytics() {
                     {/* Traffic Performance */}
                     <TrafficPerformance />
 
+                    {/* Congestion & Density Analysis */}
+                    <CongestionDensityAnalysis loading={isLoading} />
+
                     {/* Placeholder for other sections */}
-                    <div className="grid grid-cols-1 gap-6 mt-6">
-                        <div className="bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
-                            <p className="text-gray-500">Congestion & Density Analysis - Coming Soon</p>
-                        </div>
+                    {/* <div className="grid grid-cols-1 gap-6 mt-6">
                         <div className="bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
                             <p className="text-gray-500">Junction-Level Analysis - Coming Soon</p>
                         </div>
                         <div className="bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
                             <p className="text-gray-500">Temporal & AI Control Analysis - Coming Soon</p>
                         </div>
-                    </div>
+                    </div> */}
                 </>
             )}
         </div>
