@@ -8,7 +8,7 @@ const HeaderRow: React.FC<HeaderRowProps> = ({}) => {
     return (
         <div
             className="w-full flex flex-row items-center
-        bg-gray-200 rounded-t-lg px-6 py-3 text-gray-600 font-semibold text-sm uppercase tracking-wider shadow-sm"
+        bg-gray-50 rounded-t-lg px-6 py-3 text-gray-600 font-semibold text-sm uppercase tracking-wider shadow-sm"
         >
             <p className="flex-[3] text-left">
                 {t("dashboard.table.header.junctionName")}

@@ -24,7 +24,7 @@ const MainSider: React.FC<MainSiderProps> = ({
     return (
         <Sider
             width={260}
-            className="bg-purple-500 shadow-md !rounded-xl"
+            className="bg-purple-500 shadow-md !rounded-l-lg"
             breakpoint="lg"
             collapsedWidth="0"
         >
@@ -55,11 +55,6 @@ const MainSider: React.FC<MainSiderProps> = ({
                         type: "group",
                         label: t("dashboard.nav.management"),
                         children: [
-                            {
-                                key: "junctions",
-                                icon: <ApartmentOutlined />,
-                                label: t("dashboard.nav.junction"),
-                            },
                             {
                                 key: "settings",
                                 icon: <SettingOutlined />,

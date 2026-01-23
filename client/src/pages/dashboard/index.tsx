@@ -221,7 +221,7 @@ export default function Dashboard() {
             </div>
             <div
                 id="filter-bar"
-                className="w-full flex flex-row justify-start items-center bg-gray-200 p-4 rounded-md"
+                className="w-full flex flex-row justify-start items-center bg-gray-50 p-4 rounded-md"
             >
                 <div className="relative flex-1">
                     <SearchOutlined className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 z-10" />
