@@ -5,6 +5,7 @@ const { Header, Content } = Layout;
 import { useAppSelector } from "@src/stores/hooks";
 import MainHeader from "@src/layout/components/MainHeader";
 import MainSider from "./components/MainSider";
+import MainFooter from "../components/footer/MainFooter";
 
 type MainLayoutPros = {
     children?: React.ReactNode;
@@ -34,6 +35,7 @@ const MainLayout: React.FC<MainLayoutPros> = ({
                     </Content>
                 </Layout>
             </div>
+            <MainFooter />
         </Layout>
     );
 };
